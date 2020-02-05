@@ -86,32 +86,32 @@ add_theme_support(
 	'editor-color-palette',
 	array(
 		array(
-			'name'  => esc_html__( 'Blue', 'bygone-theme' ),
+			'name'  => esc_html__( 'Green', 'bygone-theme' ),
 			'slug'  => 'green',
 			'color' => '#00685a',
 		),
 		array(
-			'name'  => esc_html__( 'Green', 'bygone-theme' ),
+			'name'  => esc_html__( 'Lightyellow', 'bygone-theme' ),
 			'slug'  => 'lightyellow',
 			'color' => '#ffe66a',
 		),
 		array(
-			'name'  => esc_html__( 'Green', 'bygone-theme' ),
+			'name'  => esc_html__( 'Brown', 'bygone-theme' ),
 			'slug'  => 'brown',
 			'color' => '#42210b',
 		),
 		array(
-			'name'  => esc_html__( 'Green', 'bygone-theme' ),
+			'name'  => esc_html__( 'Black', 'bygone-theme' ),
 			'slug'  => 'black',
 			'color' => '#000000',
 		),
 		array(
-			'name'  => esc_html__( 'Green', 'bygone-theme' ),
+			'name'  => esc_html__( 'White', 'bygone-theme' ),
 			'slug'  => 'white',
 			'color' => '#ffffff',
 		),
 		array(
-			'name'  => esc_html__( 'Green', 'bygone-theme' ),
+			'name'  => esc_html__( 'Gray', 'bygone-theme' ),
 			'slug'  => 'gray',
 			'color' => '#222222',
 		),
