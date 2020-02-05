@@ -114,8 +114,8 @@ add_theme_support(
 			'name'  => esc_html__( 'Gray', 'bygone-theme' ),
 			'slug'  => 'gray',
 			'color' => '#222222',
-		)
-	)
+		),
+		
 );
 
 /**
