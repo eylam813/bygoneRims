@@ -115,7 +115,7 @@ add_theme_support(
 			'slug'  => 'gray',
 			'color' => '#222222',
 		)
-	)	
+	)
 );
 
 /**
