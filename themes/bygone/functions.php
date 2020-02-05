@@ -79,6 +79,50 @@ if ( ! function_exists( 'bygone_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+		/**
+ * Add support for custom color palette
+ */
+add_theme_support(
+	'editor-color-palette',
+	array(
+		array(
+			'name'  => esc_html__( 'Green', 'bygone-theme' ),
+			'slug'  => 'green',
+			'color' => '#00685a',
+		),
+		array(
+			'name'  => esc_html__( 'Lightyellow', 'bygone-theme' ),
+			'slug'  => 'lightyellow',
+			'color' => '#ffe66a',
+		),
+		array(
+			'name'  => esc_html__( 'Brown', 'bygone-theme' ),
+			'slug'  => 'brown',
+			'color' => '#42210b',
+		),
+		array(
+			'name'  => esc_html__( 'Black', 'bygone-theme' ),
+			'slug'  => 'black',
+			'color' => '#000000',
+		),
+		array(
+			'name'  => esc_html__( 'White', 'bygone-theme' ),
+			'slug'  => 'white',
+			'color' => '#ffffff',
+		),
+		array(
+			'name'  => esc_html__( 'Gray', 'bygone-theme' ),
+			'slug'  => 'gray',
+			'color' => '#222222',
+		)
+	)
+);
+
+/**
+ * Add support for disabling custom colors
+ */
+add_theme_support( 'disable-custom-colors' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'bygone_setup' );
