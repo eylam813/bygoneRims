@@ -115,7 +115,7 @@ add_theme_support(
 			'slug'  => 'gray',
 			'color' => '#222222',
 		)
-	)	
+	)
 );
 
 /**
@@ -177,11 +177,22 @@ function bygone_scripts() {
 add_action( 'wp_enqueue_scripts', 'bygone_scripts' );
 
 
-function bygone_styles(){
-	wp_enqueue_style('bygonecss', get_stylesheet_directory_uri().'/assets/css/bygone.css', array());
+function bygone_theme_scripts(){
+	// loading the custom CSS file
+	wp_enqueue_style('bygone-theme-style', get_stylesheet_directory_uri().'/assets/css/bygone.css', array());
+
+	// queueing the foundation stuff
+	wp_enqueue_style('bygone-foundation', get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', null, '6.5.1');
+	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
+	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery', 'bygone-theme-what-input'), '6.5.1', true);
+
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		// depends if u want to include comments with blog single items
+		wp_enqueue_script('comment-reply');
+	}
 }
 
-add_action( 'wp_enqueue_scripts', 'bygone_styles' );
+add_action( 'wp_enqueue_scripts', 'bygone_theme_scripts' );
 
 
 /**
