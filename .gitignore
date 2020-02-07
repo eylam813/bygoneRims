@@ -15,3 +15,6 @@ Thumbs.db
 /uploads/
 
 #WordPress plugins
+/plugins/advance-custom-fields/
+/plugins/block-unit-test/
+/plugins/jetpack/
