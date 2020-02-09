@@ -18,10 +18,12 @@ brown: #42210b
 
 body {
     background-color: white;
+    font-family: 'Kulim Park', sans-serif;
 }
 
-p{
-    
+p {
+    font-size: 1.2em;
+    font-family: 'Kulim Park', sans-serif;
 }
 
 
@@ -74,35 +76,54 @@ h6 {
     font-size: 1.6em;
 }
 
+
 /* ordered list */
-ol, ul{
-    font-family: 'Kulim Park', sans-serif; 
+ol,
+ul {
+    font-family: 'Kulim Park', sans-serif;
 }
 
-li{
+li {
     font-size: 1.2rem;
 }
 
 /* blockquote */
-.wp-block-quote{
-    
-}
+.wp-block-quote {}
 
-.wp-block-quote p{
+.wp-block-quote p {
     border-left: #00685a solid 3px;
     padding: 0.5em 2em;
-    font-family: 'Kulim Park', sans-serif; 
+    font-family: 'Kulim Park', sans-serif;
     font-style: italic;
     font-size: 1.2em;
 }
 
-.wp-block-quote cite{
+.wp-block-quote cite {
     font-size: 1em;
     color: #00685a;
     font-style: normal;
     font-weight: 500;
 }
 
-.wp-block-quote cite::before{
+.wp-block-quote cite::before {
     content: "— ";
+}
+
+
+/* image block */
+.wp-block-image img {
+    max-width: 90vw;
+    margin: 0 auto;
+    border: #bbbbbb solid 5px;
+}
+
+
+/* gallery */
+.wp-block-gallery {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.wp-block-gallery img{
+    border: #bbbbbb solid 5px;
 }
