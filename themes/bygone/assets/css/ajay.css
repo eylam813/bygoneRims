@@ -1,1 +1,108 @@
-/*  */
+/* 
+
+colors: 
+green: #00685a
+yellow: #ffe66a
+brown: #42210b 
+
+*/
+
+/* for content, Kulim Park font import. font-family: 'Kulim Park', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
+
+
+/* for headings, american-typewriter font import. font-family: itc-american-typewriter, serif */
+@import url("https://use.typekit.net/xmp2iqs.css");
+
+
+
+body {
+    background-color: white;
+}
+
+p{
+    
+}
+
+
+/* headings */
+h1 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h2 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.2em;
+}
+
+h4 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h5 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.75em;
+}
+
+h6 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6em;
+}
+
+/* ordered list */
+ol, ul{
+    font-family: 'Kulim Park', sans-serif; 
+}
+
+li{
+    font-size: 1.2rem;
+}
+
+/* blockquote */
+.wp-block-quote{
+    
+}
+
+.wp-block-quote p{
+    border-left: #00685a solid 3px;
+    padding: 0.5em 2em;
+    font-family: 'Kulim Park', sans-serif; 
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.wp-block-quote cite{
+    font-size: 1em;
+    color: #00685a;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.wp-block-quote cite::before{
+    content: "— ";
+}
