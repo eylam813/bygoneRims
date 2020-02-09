@@ -194,6 +194,8 @@ function bygone_theme_scripts(){
 
 	// enqueuing the temporary CSS file (AJAY) 
 	wp_enqueue_style('bygone-ajay-style', get_stylesheet_directory_uri().'/assets/css/ajay.css', array());
+	wp_enqueue_style('bygone-ajay-style', get_stylesheet_directory_uri().'/assets/css/vasu.css', array());
+	wp_enqueue_style('bygone-ajay-style', get_stylesheet_directory_uri().'/assets/css/emily.css', array());
 
 	
 
