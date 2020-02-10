@@ -178,13 +178,27 @@ add_action( 'wp_enqueue_scripts', 'bygone_scripts' );
 
 
 function bygone_theme_scripts(){
-	// loading the custom CSS file
-	wp_enqueue_style('bygone-theme-style', get_stylesheet_directory_uri().'/assets/css/bygone.css', array());
-
+	
 	// queueing the foundation stuff
 	wp_enqueue_style('bygone-foundation', get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', null, '6.5.1');
 	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery', 'bygone-theme-what-input'), '6.5.1', true);
+
+	// pushed the foundation files above our custom files otherwise it was overriding our styles
+
+
+	// loading the custom CSS file
+	wp_enqueue_style('bygone-theme-style', get_stylesheet_directory_uri().'/assets/css/bygone.css', array());
+
+
+
+	// enqueuing the temporary CSS file (AJAY) 
+	wp_enqueue_style('bygone-ajay-style', get_stylesheet_directory_uri().'/assets/css/ajay.css', array());
+	wp_enqueue_style('bygone-ajay-style', get_stylesheet_directory_uri().'/assets/css/vasu.css', array());
+	wp_enqueue_style('bygone-ajay-style', get_stylesheet_directory_uri().'/assets/css/emily.css', array());
+
+	
+
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		// depends if u want to include comments with blog single items
