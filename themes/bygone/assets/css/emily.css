@@ -1,1 +1,10 @@
-/*  */
+/* reduce size and center header on page */
+header {
+    margin: 0 auto;
+    width: 90vw;
+}
+/* add green underline */
+header#masthead.site-header {
+    border-bottom: 3px solid #00685a;
+
+}
