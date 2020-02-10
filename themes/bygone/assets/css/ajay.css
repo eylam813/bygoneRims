@@ -1,1 +1,232 @@
-/*  */
+/* 
+
+colors: 
+green: #00685a
+yellow: #ffe66a
+brown: #42210b 
+
+*/
+
+/* for content, Kulim Park font import. font-family: 'Kulim Park', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
+
+
+/* for headings, american-typewriter font import. font-family: itc-american-typewriter, serif */
+@import url("https://use.typekit.net/xmp2iqs.css");
+
+
+
+body {
+    background-color: white;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+/* headings */
+h1 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h2 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.2em;
+}
+
+h4 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h5 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.75em;
+}
+
+h6 {
+    color: #00685a;
+    font-family: itc-american-typewriter, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6em;
+}
+
+
+/* ordered list */
+ol,
+ul {
+    font-family: 'Kulim Park', sans-serif;
+}
+
+li {
+    font-size: 1.2rem;
+}
+
+/* blockquote */
+
+.wp-block-quote p {
+    border-left: #00685a solid 3px;
+    padding: 0.5em 2em;
+    font-family: 'Kulim Park', sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.wp-block-quote cite {
+    font-size: 1em;
+    color: #00685a;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.wp-block-quote cite::before {
+    content: "— ";
+}
+
+
+/* image block */
+.wp-block-image img {
+    max-width: 90vw;
+    margin: 0 auto;
+    border: #bbbbbb solid 5px;
+}
+
+
+/* gallery */
+.wp-block-gallery {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.wp-block-gallery img {
+    border: #bbbbbb solid 5px;
+}
+
+
+/* search widget */
+.search-form {
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+.search-form .screen-reader-text {
+    font-size: 1.5em;
+    color: #00685a;
+}
+
+.search-form * {
+    border-radius: 5px;
+}
+
+.search-form .search-field {
+    padding: 10px;
+    color: #00685a;
+    font-size: 1.5em;
+}
+
+.search-form .search-submit {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #00685a;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/* table block */
+
+.wp-block-table td{
+    font-size: 1.2em;
+    line-height: 3;
+}
+
+.wp-block-table tr:hover {
+    background-color: #dddddd;
+}
+
+.wp-block-table tr:nth-child(odd) {
+    background-color: #f3f4f5;
+}
+
+.wp-block-table th {
+    background-color: #00685a;
+    /* padding: 10px 20px; */
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+/* code block */
+.wp-block-code{
+    padding: 20px 30px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    max-width: 90vw;
+    border-radius: 10px;
+    border: #bbbbbb solid 3px;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.wp-block-code code{
+    border-left: #00685a 2px solid;
+    padding-left: 20px;
+}
+
+/* pullquote block */
+.wp-block-pullquote p{
+    border-left: #00685a solid 3px;
+    border-right: #00685a solid 3px;
+    padding: 0.5em 2em;
+    font-style: italic;
+}
+
+
+.wp-block-pullquote cite {
+    font-size: 1em;
+    color: #00685a;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.wp-block-pullquote cite::before {
+    content: "— ";
+}
+
+/* verse block */
+.wp-block-verse{
+    border-style:solid;
+    border-width:1px 0 1px 20px;
+    border-image:url(http://opbokken.nu/meuk/curly.png) 1 20 stretch;
+    padding-left: 0.5em 5em;
+    font-size: 1.5em;
+}
