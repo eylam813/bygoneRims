@@ -88,6 +88,7 @@ div#page.site footer#colophon.site-footer div#social-media-icons {
 div#page.site footer#colophon.site-footer div#quick-links {
     width: 90vw;
     background-color: blue;
+    display: flex;
 }
 div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
     background-color: rebeccapurple;
