@@ -6,5 +6,18 @@ header {
 /* add green underline */
 header#masthead.site-header {
     border-bottom: 3px solid #00685a;
-
 }
+
+/* layout header elements in a row */
+.site-branding {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* layout primary menu li in a row */
+#primary-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
