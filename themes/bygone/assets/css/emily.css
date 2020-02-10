@@ -1,1 +1,94 @@
-/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ footer ------ */
+
+div#page.site footer#colophon.site-footer div#social-media-icons {
+    background-color: rebeccapurple;
+    height: 90px;
+}
+div#page.site footer#colophon.site-footer div#quick-links {
+    width: 90vw;
+    background-color: blue;
+}
+div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
+    background-color: rebeccapurple;
+}
