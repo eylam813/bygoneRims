@@ -37,22 +37,13 @@
 				?>
 			</nav><!-- #site-navigation -->
 
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$bygone_description = get_bloginfo( 'description', 'display' );
-			if ( $bygone_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"></p>
-			<?php endif; ?>
+			<?php the_custom_logo(); ?>
+			<div id="header-right-container">
+				<div id="searchbox" class="header-right">search</div>
+				<div id="favbox" class="header-right">fav</div>
+				<div id="cartbox" class="header-right">cart</div>
+				<div id="sign-in-box" class="header-right">sign</div>
+			<div>
 		</div><!-- .site-branding -->
 
 
