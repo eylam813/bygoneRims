@@ -35,9 +35,9 @@
 
 
 /* HEADER --------*/
-header h1.entry-title {
+/* header h1.entry-title {
     display: none;
-}
+} */
 
 /* layout header elements in a row */
 .site-branding {
@@ -134,22 +134,24 @@ ul#primary-menu.menu:first-child{
 
 
 /*  FOOTER -------- */
-/* adding specified height to social media link footer */
+footer {
+    margin-top: 6rem;
+}
+/* indicating height to social media link footer */
 div#page.site footer#colophon.site-footer div#social-media-icons {
-    /* background-color: rgba(102, 51, 153, 0.212); */
     height: fit-content;
 }
 
 /* adding background colour to lower footer */
 div#page.site footer#colophon.site-footer #quick-links{
     background-color: gainsboro;
-    /* border: 1px solid blue; */
     display: flex;
 }
-/* TEMP BACKGROUND COLOUR */
-/* div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
-    background-color: rgb(153, 126, 51);
-} */
+#quick-links a {
+    color: #00685a;
+    font-size: 1rem;
+    line-height: 2rem;
+}
 
 #social-title {
     color: black;
@@ -162,7 +164,6 @@ div#page.site footer#colophon.site-footer #quick-links{
     align-items: center;
 }
 #footer-line {
-    /* color: #00685a; */
     border: 3px solid #00685a;
     border-radius: 2px;
     width: 90vw;
@@ -178,21 +179,24 @@ div#page.site footer#colophon.site-footer #quick-links{
     list-style: none;
     padding: 0;
     margin: 0 20px;
-
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+/* get rid of the "edit page" link */
 footer.entry-footer {
     display: none;
 }
 
-
 .site-info {
     text-align: center;
     background-color: gainsboro;
+    color: grey;
 }
+
+
+/* MEDIA QUERIES -------- */
 
 /* for tablet size and down */
 @media only screen and (max-width: 768px) {

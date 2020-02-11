@@ -30,33 +30,28 @@
 			</div>
 		</div>
 		<div id="quick-links" class="grid-x large-12 medium-12 small-12">
-			<div id="foot-menu-1" class="foot-menu large-3 medium-6 small-12">
-				<p>
-					<?php 
-						wp_get_nav_menu_name( 'footer-menu-1' )
-					?>
-				</p>
+			<div id="foot-menu-1" class="foot-menu large-3 medium-3 small-6">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-1',
 					) );
 				?>
 			</div>
-			<div id="foot-menu-2" class="foot-menu large-3 medium-6 small-12">
+			<div id="foot-menu-2" class="foot-menu large-3 medium-3 small-6">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-2',
 					) );
 				?>
 			</div>
-			<div id="foot-menu-3" class="foot-menu large-3 medium-6 small-12">
+			<div id="foot-menu-3" class="foot-menu large-3 medium-3 small-6">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-3',
 					) );
 				?>
 			</div>
-			<div id="foot-menu-4" class="foot-menu large-3 medium-6 small-12">
+			<div id="foot-menu-4" class="foot-menu large-3 medium-3 small-6">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-4',
