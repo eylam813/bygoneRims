@@ -20,6 +20,7 @@ brown: #42210b
 :root {
     --header-font: mr-eaves-modern, sans-serif;
     /* --header-font: 'Kulim Park', sans-serif; */
+    --green: #00685a;
 }
 
 body {
@@ -39,7 +40,7 @@ a:visited {
 
 /* headings */
 h1 {
-    color: #00685a;
+    color: var(--green);
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -47,7 +48,7 @@ h1 {
 }
 
 h2 {
-    color: #00685a;
+    color: var(--green);
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -55,7 +56,7 @@ h2 {
 }
 
 h3 {
-    color: #00685a;
+    color: var(--green);
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -63,7 +64,7 @@ h3 {
 }
 
 h4 {
-    color: #00685a;
+    color: var(--green);
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -71,7 +72,7 @@ h4 {
 }
 
 h5 {
-    color: #00685a;
+    color: var(--green);
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -79,7 +80,7 @@ h5 {
 }
 
 h6 {
-    color: #00685a;
+    color: var(--green);
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -100,7 +101,7 @@ li {
 /* blockquote */
 
 .wp-block-quote p {
-    border-left: #00685a solid 3px;
+    border-left: var(--green) solid 3px;
     padding: 0.5em 2em;
     font-family: 'Kulim Park', sans-serif;
     font-style: italic;
@@ -109,7 +110,7 @@ li {
 
 .wp-block-quote cite {
     font-size: 1em;
-    color: #00685a;
+    color: var(--green);
     font-style: normal;
     font-weight: 500;
 }
@@ -147,7 +148,7 @@ li {
 
 .search-form .screen-reader-text {
     font-size: 1.5em;
-    color: #00685a;
+    color: var(--green);
 }
 
 .search-form * {
@@ -156,14 +157,14 @@ li {
 
 .search-form .search-field {
     padding: 10px;
-    color: #00685a;
+    color: var(--green);
     font-size: 1.5em;
 }
 
 .search-form .search-submit {
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #00685a;
+    background-color: var(--green);
     color: white;
     font-size: 1.5em;
 }
@@ -185,7 +186,7 @@ li {
 }
 
 .wp-block-table th {
-    background-color: #00685a;
+    background-color: var(--green);
     /* padding: 10px 20px; */
     color: white;
     font-weight: lighter;
@@ -205,7 +206,7 @@ li {
 }
 
 .wp-block-code code {
-    border-left: #00685a 2px solid;
+    border-left: var(--green) 2px solid;
     padding-left: 20px;
 }
 
@@ -225,8 +226,8 @@ li {
 }
 
 .wp-block-pullquote p {
-    border-left: #00685a solid 3px;
-    border-right: #00685a solid 3px;
+    border-left: var(--green)solid 3px;
+    border-right: var(--green) solid 3px;
     padding: 0.5em 2em;
     font-style: italic;
 }
@@ -234,7 +235,7 @@ li {
 
 .wp-block-pullquote cite {
     font-size: 1em;
-    color: #00685a;
+    color: var(--green);
     font-style: normal;
     font-weight: 500;
 }
@@ -276,7 +277,7 @@ li {
     height: 150px;
     max-width: 90vw;
     margin: 0 auto;
-    border-bottom: #00685a solid 3px;
+    border-bottom: var(--green) solid 3px;
     margin-bottom: 50px;
 
 }

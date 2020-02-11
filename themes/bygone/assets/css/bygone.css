@@ -1,8 +1,6 @@
-body{
-    background-color: cornsilk;
-}
-
-h2 {
-    color: blue;
-    font-size: 52px;
+/* to take up full width of the page */
+.alignfull {
+    margin: 32px calc(50% - 50vw);
+    max-width: 100vw;
+    width: 100vw;
 }
