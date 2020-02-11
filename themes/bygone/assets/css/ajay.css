@@ -162,7 +162,7 @@ li {
 
 /* table block */
 
-.wp-block-table td{
+.wp-block-table td {
     font-size: 1.2em;
     line-height: 3;
 }
@@ -184,7 +184,7 @@ li {
 }
 
 /* code block */
-.wp-block-code{
+.wp-block-code {
     padding: 20px 30px;
     margin: 20px auto;
     background-color: #eeeeee;
@@ -195,13 +195,27 @@ li {
     font-size: 1.5em;
 }
 
-.wp-block-code code{
+.wp-block-code code {
     border-left: #00685a 2px solid;
     padding-left: 20px;
 }
 
 /* pullquote block */
-.wp-block-pullquote p{
+.alignright {
+    display: block;
+    margin-left: auto;
+}
+
+.alignleft{
+    display: block;
+    margin-right: auto;
+}
+
+.wp-block-pullquote .aligncenter {
+    max-width: 80vw;
+}
+
+.wp-block-pullquote p {
     border-left: #00685a solid 3px;
     border-right: #00685a solid 3px;
     padding: 0.5em 2em;
@@ -221,10 +235,10 @@ li {
 }
 
 /* verse block */
-.wp-block-verse{
-    border-style:solid;
-    border-width:1px 0 1px 20px;
-    border-image:url(http://opbokken.nu/meuk/curly.png) 1 20 stretch;
+.wp-block-verse {
+    border-style: solid;
+    border-width: 1px 0 1px 20px;
+    border-image: url(http://opbokken.nu/meuk/curly.png) 1 20 stretch;
     padding-left: 0.5em 5em;
     font-size: 1.5em;
 }
