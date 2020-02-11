@@ -14,8 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer grid-x">
+		<!-- decorative footer line -->
 		<hr id="footer-line">
-		<!-- <hr id="footer-line" class="row center-horizontal"> -->
+		<!-- social media footer section -->
 		<div id="social-media-icons-container" class="grid-x grid-padding-x large-12 medium-12 small-12">
 			<div>
 				<h3 id="social-title" class="reset">Connect With Us</h3>
@@ -29,7 +30,11 @@
 				?>
 			</div>
 		</div>
+		<!-- quick links section -->
 		<div id="quick-links" class="grid-x large-12 medium-12 small-12">
+			<div class="cell">
+				<h3 id="quick-links-title">Quick Links</h3>
+			</div>
 			<div id="foot-menu-1" class="foot-menu large-3 medium-3 small-6">
 				<?php
 					wp_nav_menu( array(
