@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div id="social-media-icons" class="row center-vertical">
+		<div id="social-media-icons" class="row center-vertical ">
 			<h3 class="reset">Connect With Us</h3>
 			<?php
 				wp_nav_menu( array(
@@ -23,29 +23,29 @@
 				) );
 			?>
 		</div>
-		<div id="quick-links">
-			<div id="foot-menu-1" class="foot-menu">
+		<div id="quick-links" class="grid-x">
+			<div id="foot-menu-1" class="foot-menu large-3 medium-6 small-12">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-1',
 					) );
 				?>
 				</div>
-			<div id="foot-menu-2" class="foot-menu">
+			<div id="foot-menu-2" class="foot-menu large-3 medium-6 small-12">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-2',
 					) );
 				?>
 			</div>
-			<div id="foot-menu-3" class="foot-menu">
+			<div id="foot-menu-3" class="foot-menu large-3 medium-6 small-12">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-3',
 					) );
 				?>
 			</div>
-			<div id="foot-menu-4" class="foot-menu">
+			<div id="foot-menu-4" class="foot-menu large-3 medium-6 small-12">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-4',
@@ -54,11 +54,7 @@
 			</div>
 		</div>
 		<div class="site-info">
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bygone' ), 'bygone', 'Emily | Ajay | Vasu' );
-				?>
+			<p>Copyright &copy 2020 - ByGone Rims</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

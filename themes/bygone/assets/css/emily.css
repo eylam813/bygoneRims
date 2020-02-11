@@ -158,3 +158,8 @@ div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
 .menu-item a {
     text-decoration: none;
 }
+
+.site-info {
+    text-align: center;
+}
+
