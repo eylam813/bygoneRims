@@ -13,24 +13,35 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div id="social-media-icons" class="row center-vertical ">
-			<h3 class="reset">Connect With Us</h3>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'footer-social',
-					'menu_class' => 'row add-child-border',
-				) );
-			?>
+	<footer id="colophon" class="site-footer grid-x">
+		<hr id="footer-line">
+		<!-- <hr id="footer-line" class="row center-horizontal"> -->
+		<div id="social-media-icons" class="grid-x grid-padding-x large-12 medium-12 small-12">
+			<div>
+				<h3 id="social-title" class="reset">Connect With Us</h3>
+			</div>
+			<div>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-social',
+						'menu_class' => 'row add-child-border',
+					) );
+				?>
+			</div>
 		</div>
-		<div id="quick-links" class="grid-x">
+		<div id="quick-links" class="grid-x large-12 medium-12 small-12">
 			<div id="foot-menu-1" class="foot-menu large-3 medium-6 small-12">
+				<p>
+					<?php 
+						wp_get_nav_menu_name( 'footer-menu-1' )
+					?>
+				</p>
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-1',
 					) );
 				?>
-				</div>
+			</div>
 			<div id="foot-menu-2" class="foot-menu large-3 medium-6 small-12">
 				<?php
 					wp_nav_menu( array(
@@ -53,7 +64,7 @@
 				?>
 			</div>
 		</div>
-		<div class="site-info">
+		<div class="site-info cell">
 			<p>Copyright &copy 2020 - ByGone Rims</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

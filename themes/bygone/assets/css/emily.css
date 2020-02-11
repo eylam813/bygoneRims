@@ -14,6 +14,9 @@
 .row {
     display: flex;
 }
+.center-horizontal {
+    justify-content: center;
+}
 /* vertically center elements that are in a row */
 .center-vertical {
     display:flex;
@@ -124,21 +127,35 @@ ul#primary-menu.menu:first-child{
 /*  FOOTER -------- */
 /* adding specified height to social media link footer */
 div#page.site footer#colophon.site-footer div#social-media-icons {
-    background-color: rgba(102, 51, 153, 0.212);
-    height: 90px;
+    /* background-color: rgba(102, 51, 153, 0.212); */
+    height: fit-content;
 }
 
 /* adding background colour to lower footer */
 div#page.site footer#colophon.site-footer #quick-links{
     background-color: gainsboro;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
 }
 /* TEMP BACKGROUND COLOUR */
-div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
+/* div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
     background-color: rgb(153, 126, 51);
-}
+} */
 
+#social-title {
+    color: black;
+}
+#social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer-line {
+    /* color: #00685a; */
+    border: 3px solid #00685a;
+    border-radius: 2px;
+    width: 90vw;
+    margin-left: 5vw;
+}
 
 /* adding the border to social media links menu */
 .add-child-border li {
@@ -161,5 +178,6 @@ div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
 
 .site-info {
     text-align: center;
+    background-color: gainsboro;
 }
 
