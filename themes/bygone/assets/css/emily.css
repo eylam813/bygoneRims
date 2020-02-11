@@ -155,7 +155,7 @@ div#page.site footer#colophon.site-footer #quick-links{
     padding-left: 40px;
 }
 #quick-links a {
-    color: #00685a;
+    color: var(--green);
     font-size: 1rem;
     line-height: 2rem;
 }
@@ -171,7 +171,7 @@ div#page.site footer#colophon.site-footer #quick-links{
     align-items: center;
 }
 #footer-line {
-    border: 2px solid #00685a;
+    border: 2px solid var(--green);
     border-radius: 2px;
     width: 90vw;
     margin-left: 5vw;
@@ -179,7 +179,7 @@ div#page.site footer#colophon.site-footer #quick-links{
 
 /* adding the border to social media links menu */
 .add-child-border li {
-    border: 3px solid #00685a;
+    border: 3px solid var(--green);
     border-radius: 50%;
     width: 65px;
     height: 65px;
