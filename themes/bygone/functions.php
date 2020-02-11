@@ -194,13 +194,8 @@ function bygone_theme_scripts(){
 
 	// loading the custom CSS file
 	wp_enqueue_style('bygone-theme-style', get_stylesheet_directory_uri().'/assets/css/bygone.css', array());
-
-
-
-	// enqueuing the temporary CSS file (AJAY) 
-	wp_enqueue_style('bygone-ajay-style', get_stylesheet_directory_uri().'/assets/css/ajay.css', array());
-	wp_enqueue_style('bygone-vasu-style', get_stylesheet_directory_uri().'/assets/css/vasu.css', array());
-	wp_enqueue_style('bygone-emily-style', get_stylesheet_directory_uri().'/assets/css/emily.css', array());
+	wp_enqueue_style('bygone-header-style', get_stylesheet_directory_uri().'/assets/css/header.css', array());
+	wp_enqueue_style('bygone-footer-style', get_stylesheet_directory_uri().'/assets/css/footer.css', array());
 
 	
 
