@@ -13,10 +13,23 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div id="social-media-icons">Social</div>
+	<footer id="colophon" class="site-footer ">
+		<div id="social-media-icons">Social
+			<?php
+				// wp_nav_menu( array(
+				// 	'theme_location' => 'footer-social',
+					// 'menu_id'        => 'primary-menu',
+				// ) );
+			?>
+		</div>
 		<div id="quick-links">
-			<div id="foot-menu-1" class="foot-menu">1</div>
+			<div id="foot-menu-1" class="foot-menu">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-1',
+					) );
+				?>
+				</div>
 			<div id="foot-menu-2" class="foot-menu">2</div>
 			<div id="foot-menu-3" class="foot-menu">3</div>
 			<div id="foot-menu-4" class="foot-menu">4</div>

@@ -104,17 +104,18 @@ ul#primary-menu.menu:first-child{
 
 
 
-
+div#page.site footer#colophon.site-footer #quick-links{
+    background-color: gainsboro;
+}
 
 div#page.site footer#colophon.site-footer div#social-media-icons {
-    background-color: rebeccapurple;
+    background-color: rgba(102, 51, 153, 0.212);
     height: 90px;
 }
 div#page.site footer#colophon.site-footer div#quick-links {
-    width: 90vw;
-    background-color: blue;
+    border: 1px solid blue;
     display: flex;
 }
 div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
-    background-color: rebeccapurple;
+    background-color: rgb(153, 126, 51);
 }
