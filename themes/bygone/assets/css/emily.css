@@ -1,13 +1,43 @@
 
 /* reduce size and center header on page */
-header {
+/* header {
     margin: 0 auto;
     width: 90vw;
-}
+} */
 /* add green underline */
-header#masthead.site-header {
+/* header#masthead.site-header {
     border-bottom: 3px solid #00685a;
+} */
+
+/* GENERAL ------- */
+/* class to display children in rows */
+.row {
+    display: flex;
 }
+.center-horizontal {
+    justify-content: center;
+}
+/* vertically center elements that are in a row */
+.center-vertical {
+    display:flex;
+    align-items: center;
+}
+/* class to remove pre-defined css margin/padding */
+.reset {
+    margin:0;
+    padding:0;
+}
+
+/* dynamically generated menu links */
+.menu-item a {
+    text-decoration: none;
+}
+
+
+/* HEADER --------*/
+/* header h1.entry-title {
+    display: none;
+} */
 
 /* layout header elements in a row */
 .site-branding {
@@ -39,7 +69,9 @@ ul#primary-menu.menu:first-child{
 }
 #primary-menu li {
     height: 100%;
-    width: 33%;
+
+    /* took the bottom line away - AJAY */
+    /* width: 33%; */
     border-right: 1px solid gainsboro;
     text-align: center;
 }
@@ -49,15 +81,13 @@ ul#primary-menu.menu:first-child{
 #primary-menu .menu-item a{
     line-height: 90%;
 }
-.custom-logo-link {
-    min-width: 150px;
-    width: 30vw;
-    text-align: center;
-
-    position: relative;
-    top: 50px;
-
+#custom-logo-container a {
+    display: flex;
+    justify-content: center;
 }
+/* #custom-logo-container a img.custom-logo{
+    border: 1px solid purple;
+} */
 
 
 /* -------- header right -------- */
@@ -71,9 +101,9 @@ ul#primary-menu.menu:first-child{
     border-right: 1px solid gainsboro;
 }
 .header-right {
-    width: 25%;
+    /* width: 25%; */
     height: 100%;
-    border-left: 1px solid gainsboro;
+    /* border-left: 1px solid gainsboro; */
     text-align: center;
 }
 .header-right:hover {
@@ -101,6 +131,14 @@ ul#primary-menu.menu:first-child{
 
 
 
+/*  FOOTER -------- */
+footer {
+    margin-top: 6rem;
+}
+/* indicating height to social media link footer */
+div#page.site footer#colophon.site-footer div#social-media-icons {
+    height: fit-content;
+}
 
 /* adding background colour to lower footer */
 div#page.site footer#colophon.site-footer #quick-links{
@@ -151,16 +189,32 @@ div#page.site footer#colophon.site-footer #quick-links{
     align-items: center;
 }
 
+/* get rid of the "edit page" link */
+footer.entry-footer {
+    display: none;
+}
 
-div#page.site footer#colophon.site-footer div#social-media-icons {
-    background-color: rebeccapurple;
-    height: 90px;
+.site-info {
+    text-align: center;
+    background-color: gainsboro;
+    color: grey;
 }
-div#page.site footer#colophon.site-footer div#quick-links {
-    width: 90vw;
-    background-color: blue;
-    display: flex;
-}
-div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
-    background-color: rebeccapurple;
+
+
+/* MEDIA QUERIES -------- */
+
+/* for tablet size and down */
+@media only screen and (max-width: 768px) {
+    #social-media-icons-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin-left: 5vw;
+
+        justify-content: center;
+        align-items: center;
+    }
+    #social-media-icons-inner-container ul{
+        padding-left: 0;
+    }
 }

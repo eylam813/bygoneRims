@@ -45,6 +45,11 @@ if ( ! function_exists( 'bygone_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'bygone' ),
+			'footer-social' => esc_html__( 'footer-social', 'social media links' ),
+			'footer-menu-1' => esc_html__( 'foot-menu-1', 'footer col 1' ),
+			'footer-menu-2' => esc_html__( 'foot-menu-2', 'footer col 2' ),
+			'footer-menu-3' => esc_html__( 'foot-menu-3', 'cooter col 3' ),
+			'footer-menu-4' => esc_html__( 'foot-menu-4', 'cooter col 4' ),
 		) );
 
 		/*
@@ -236,3 +241,40 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Customized menu output
+ */
+class top_bar_walker extends Walker_Nav_Menu {
+
+	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
+		$element->has_children = !empty( $children_elements[$element->ID] );
+		$element->classes[] = ( $element->current || $element->current_item_ancestor ) ? 'active' : '';
+		$element->classes[] = ( $element->has_children ) ? 'has-dropdown not-click' : '';
+
+		parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+	}
+
+	function start_el( &$output, $object, $depth = 0, $args = array(), $current_object_id = 0 ) {
+		$item_html = '';
+		parent::start_el( $item_html, $object, $depth, $args );
+
+		$output .= ( $depth == 0 ) ? '<li class="divider"></li>' : '';
+
+		$classes = empty( $object->classes ) ? array() : (array) $object->classes;
+		if ( in_array('label', $classes) ) {
+			$output .= '<li class="divider"></li>';
+			$item_html = preg_replace( '/<a[^>]*>(.*)<\/a>/iU', '<label>$1</label>', $item_html );
+		}
+
+		if ( in_array('divider', $classes) ) {
+			$item_html = preg_replace( '/<a[^>]*>( .* )<\/a>/iU', '', $item_html );
+		}
+
+		$output .= $item_html;
+	}
+
+	function start_lvl( &$output, $depth = 0, $args = array() ) {
+		$output .= "\n<ul class=\"sub-menu dropdown\">\n";
+	}
+
+}
