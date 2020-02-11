@@ -123,7 +123,7 @@ li {
 .wp-block-image img {
     max-width: 90vw;
     margin: 0 auto;
-    border: #bbbbbb solid 5px;
+    /* border: #bbbbbb solid 5px; */
 }
 
 
