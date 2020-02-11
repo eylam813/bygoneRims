@@ -22,9 +22,10 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 			?>
-			<!-- took away the class grid-container fron the div below -->
-			<div class="grid-x">
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<div class="grid-x grid-margin-x">
+				<div class="cell large-10 ">
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				</div>
 			</div>
 
 			<?php
