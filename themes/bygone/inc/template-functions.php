@@ -31,7 +31,6 @@ add_filter( 'body_class', 'bygone_body_classes' );
  */
 function bygone_pingback_header() {
 	if ( is_singular() && pings_open() ) {
-		echo("hello");
 		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 }
