@@ -9,6 +9,24 @@
     border-bottom: 3px solid #00685a;
 } */
 
+/* GENERAL ------- */
+/* class to display children in rows */
+.row {
+    display: flex;
+}
+/* vertically center elements that are in a row */
+.center-vertical {
+    display:flex;
+    align-items: center;
+}
+/* class to remove pre-defined css margin/padding */
+.reset {
+    margin:0;
+    padding:0;
+}
+
+
+/* HEADER --------*/
 /* layout header elements in a row */
 .site-branding {
     display: flex;
@@ -103,33 +121,26 @@ ul#primary-menu.menu:first-child{
 
 
 
-
-
-
-div#page.site footer#colophon.site-footer #quick-links{
-    background-color: gainsboro;
-}
-
+/*  FOOTER -------- */
+/* adding specified height to social media link footer */
 div#page.site footer#colophon.site-footer div#social-media-icons {
     background-color: rgba(102, 51, 153, 0.212);
     height: 90px;
 }
-div#page.site footer#colophon.site-footer div#quick-links {
+
+/* adding background colour to lower footer */
+div#page.site footer#colophon.site-footer #quick-links{
+    background-color: gainsboro;
     border: 1px solid blue;
     display: flex;
 }
+/* TEMP BACKGROUND COLOUR */
 div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
     background-color: rgb(153, 126, 51);
 }
-.row {
-    display: flex;
-}
-.reset {
-    margin:0;
-    padding:0;
-}
 
 
+/* adding the border to social media links menu */
 .add-child-border li {
     border: 3px solid #00685a;
     border-radius: 50%;
@@ -143,10 +154,7 @@ div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
     justify-content: center;
     align-items: center;
 }
+/* dynamically generated menu links */
 .menu-item a {
     text-decoration: none;
-}
-.center-vertical {
-    display:flex;
-    align-items: center;
 }
