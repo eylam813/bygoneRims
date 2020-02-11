@@ -13,19 +13,54 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bygone' ) ); ?>">
+	<footer id="colophon" class="site-footer grid-x">
+		<hr id="footer-line">
+		<!-- <hr id="footer-line" class="row center-horizontal"> -->
+		<div id="social-media-icons-container" class="grid-x grid-padding-x large-12 medium-12 small-12">
+			<div>
+				<h3 id="social-title" class="reset">Connect With Us</h3>
+			</div>
+			<div id="social-media-icons-inner-container">
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bygone' ), 'WordPress' );
+					wp_nav_menu( array(
+						'theme_location' => 'footer-social',
+						'menu_class' => 'row add-child-border',
+					) );
 				?>
-			</a>
-			<span class="sep"> | </span>
+			</div>
+		</div>
+		<div id="quick-links" class="grid-x large-12 medium-12 small-12">
+			<div id="foot-menu-1" class="foot-menu large-3 medium-3 small-6">
 				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bygone' ), 'bygone', '<a href="https://emilylam.ca">Emily Lam</a>' );
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-1',
+					) );
 				?>
+			</div>
+			<div id="foot-menu-2" class="foot-menu large-3 medium-3 small-6">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-2',
+					) );
+				?>
+			</div>
+			<div id="foot-menu-3" class="foot-menu large-3 medium-3 small-6">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-3',
+					) );
+				?>
+			</div>
+			<div id="foot-menu-4" class="foot-menu large-3 medium-3 small-6">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-4',
+					) );
+				?>
+			</div>
+		</div>
+		<div class="site-info cell">
+			<p>Copyright &copy 2020 - ByGone Rims</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
