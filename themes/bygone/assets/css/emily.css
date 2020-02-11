@@ -119,3 +119,32 @@ div#page.site footer#colophon.site-footer div#quick-links {
 div#page.site footer#colophon.site-footer div#quick-links .foot-menu {
     background-color: rgb(153, 126, 51);
 }
+.row {
+    display: flex;
+}
+.reset {
+    margin:0;
+    padding:0;
+}
+
+
+.add-child-border li {
+    border: 3px solid #00685a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item a {
+    text-decoration: none;
+}
+.center-vertical {
+    display:flex;
+    align-items: center;
+}

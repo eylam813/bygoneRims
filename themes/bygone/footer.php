@@ -13,13 +13,17 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer ">
-		<div id="social-media-icons">Social
+	<footer id="colophon" class="site-footer">
+		<div id="social-media-icons" class="row center-vertical">
+			<h3 class="reset">Connect With Us</h3>
 			<?php
-				// wp_nav_menu( array(
-				// 	'theme_location' => 'footer-social',
+				wp_nav_menu( array(
+					'theme_location' => 'footer-social',
 					// 'menu_id'        => 'primary-menu',
-				// ) );
+					'menu_class' => 'row add-child-border',
+					// 'before' => '<div class="social-round>',
+					// 'after' => '</div>'
+				) );
 			?>
 		</div>
 		<div id="quick-links">
