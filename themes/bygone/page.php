@@ -22,7 +22,8 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 			?>
-			<div class="grid-container">
+			<!-- took away the class grid-container fron the div below -->
+			<div class="grid-x">
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div>
 
