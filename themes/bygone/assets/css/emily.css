@@ -1,13 +1,13 @@
 
 /* reduce size and center header on page */
-header {
+/* header {
     margin: 0 auto;
     width: 90vw;
-}
+} */
 /* add green underline */
-header#masthead.site-header {
+/* header#masthead.site-header {
     border-bottom: 3px solid #00685a;
-}
+} */
 
 /* layout header elements in a row */
 .site-branding {
@@ -39,7 +39,9 @@ ul#primary-menu.menu:first-child{
 }
 #primary-menu li {
     height: 100%;
-    width: 33%;
+
+    /* took the bottom line away - AJAY */
+    /* width: 33%; */
     border-right: 1px solid gainsboro;
     text-align: center;
 }
