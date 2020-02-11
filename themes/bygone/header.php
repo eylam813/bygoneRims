@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,8 +13,9 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
@@ -21,32 +23,29 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bygone' ); ?></a> -->
+	<div id="page" class="site">
+		<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'bygone'); ?></a> -->
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<header id="masthead" class="site-header grid-x">
 
-			<nav id="site-navigation" class="main-navigation">
-				<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bygone' ); ?></button>-->
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-				?>
-			</nav><!-- #site-navigation -->
+			<div class="large-2 option">
+				<h4>Lorem.</h4>
+			</div>
+			<div class="large-2 option">
+				<h4>Lorem.</h4>
+			</div>
+			<img src="<?php echo get_header_image(); ?>" alt="">
 
-			<?php the_custom_logo(); ?>
-			<div id="header-right-container">
-				<div id="searchbox" class="header-right">search</div>
-				<div id="favbox" class="header-right">fav</div>
-				<div id="cartbox" class="header-right">cart</div>
-				<div id="sign-in-box" class="header-right">sign</div>
-			<div>
-		</div><!-- .site-branding -->
+			<div class="large-4"></div>
+
+			<?php
+			wp_nav_menu(array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			));
+			?>
 
 
-	</header><!-- #masthead -->
+		</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+		<div id="content" class="site-content">
