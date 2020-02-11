@@ -28,8 +28,17 @@
     padding:0;
 }
 
+/* dynamically generated menu links */
+.menu-item a {
+    text-decoration: none;
+}
+
 
 /* HEADER --------*/
+header h1.entry-title {
+    display: none;
+}
+
 /* layout header elements in a row */
 .site-branding {
     display: flex;
@@ -145,9 +154,12 @@ div#page.site footer#colophon.site-footer #quick-links{
 #social-title {
     color: black;
 }
-#social-media-icons {
+#social-media-icons-container {
     display: flex;
     flex-wrap: wrap;
+    width: 90vw;
+    margin-left: 5vw;
+    align-items: center;
 }
 #footer-line {
     /* color: #00685a; */
@@ -171,13 +183,29 @@ div#page.site footer#colophon.site-footer #quick-links{
     justify-content: center;
     align-items: center;
 }
-/* dynamically generated menu links */
-.menu-item a {
-    text-decoration: none;
+
+footer.entry-footer {
+    display: none;
 }
+
 
 .site-info {
     text-align: center;
     background-color: gainsboro;
 }
 
+/* for tablet size and down */
+@media only screen and (max-width: 768px) {
+    #social-media-icons-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin-left: 5vw;
+
+        justify-content: center;
+        align-items: center;
+    }
+    #social-media-icons-inner-container ul{
+        padding-left: 0;
+    }
+}

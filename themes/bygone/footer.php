@@ -16,11 +16,11 @@
 	<footer id="colophon" class="site-footer grid-x">
 		<hr id="footer-line">
 		<!-- <hr id="footer-line" class="row center-horizontal"> -->
-		<div id="social-media-icons" class="grid-x grid-padding-x large-12 medium-12 small-12">
+		<div id="social-media-icons-container" class="grid-x grid-padding-x large-12 medium-12 small-12">
 			<div>
 				<h3 id="social-title" class="reset">Connect With Us</h3>
 			</div>
-			<div>
+			<div id="social-media-icons-inner-container">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-social',
