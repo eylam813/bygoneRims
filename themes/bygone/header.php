@@ -34,16 +34,20 @@
 			<div class="large-2 option">
 				<h4>Lorem.</h4>
 			</div>
-			<img src="<?php echo get_header_image(); ?>" alt="">
+			<div id="custom-logo-container" class="large-4">
+				<?php the_custom_logo(); ?>
+			</div>
 
-			<div class="large-4"></div>
-
+			<div class="large-4">
 			<?php
 			wp_nav_menu(array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
+				'link_before' => '<div class="header-right">',
+				'link_after' => '</div>'
 			));
 			?>
+			</div>
 
 
 		</header><!-- #masthead -->
