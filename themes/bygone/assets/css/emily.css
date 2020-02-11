@@ -85,9 +85,9 @@ ul#primary-menu.menu:first-child{
     display: flex;
     justify-content: center;
 }
-#custom-logo-container a img.custom-logo{
+/* #custom-logo-container a img.custom-logo{
     border: 1px solid purple;
-}
+} */
 
 
 /* -------- header right -------- */
