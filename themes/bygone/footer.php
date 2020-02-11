@@ -19,10 +19,7 @@
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'footer-social',
-					// 'menu_id'        => 'primary-menu',
 					'menu_class' => 'row add-child-border',
-					// 'before' => '<div class="social-round>',
-					// 'after' => '</div>'
 				) );
 			?>
 		</div>
@@ -34,9 +31,27 @@
 					) );
 				?>
 				</div>
-			<div id="foot-menu-2" class="foot-menu">2</div>
-			<div id="foot-menu-3" class="foot-menu">3</div>
-			<div id="foot-menu-4" class="foot-menu">4</div>
+			<div id="foot-menu-2" class="foot-menu">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-2',
+					) );
+				?>
+			</div>
+			<div id="foot-menu-3" class="foot-menu">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-3',
+					) );
+				?>
+			</div>
+			<div id="foot-menu-4" class="foot-menu">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'footer-menu-4',
+					) );
+				?>
+			</div>
 		</div>
 		<div class="site-info">
 			<span class="sep"> | </span>
