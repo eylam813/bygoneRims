@@ -24,7 +24,8 @@ get_header();
 			?>
 			<!-- took away the class grid-container fron the div below -->
 			<div class="grid-x grid-margin-x">
-				<div class="cell large-10 ">
+				<div class="cell large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 grid-padding-x">
+				<!-- <div class="cell large-10 large-offset-1 medium-12 "> -->
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				</div>
 			</div>
