@@ -45,28 +45,8 @@ if ( ! function_exists( 'bygone_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'bygone' ),
-			// 'primary' => __('Primary Menu', 'theme_slug' ),
 		) );
 
-		/**
-		 * Primary Menu
-		 */
-		function display_primary_menu() {
-			wp_nav_menu( array(
-				'theme_location' => 'primary',
-				'menu' => 'Primary Menu',
-				'container' => false, // remove nav container
-				'container_class' => '', // class of container
-				'menu_class' => 'top-bar-menu right', // adding custom nav class
-				'before' => '', // before each link <a>
-				'after' => '', // after each link </a>
-				'link_before' => '', // before each link text
-				'link_after' => '', // after each link text
-				'depth' => 5, // limit the depth of the nav
-				'fallback_cb' => false, // fallback function (see below)
-				'walker' => new top_bar_walker()
-			) );
-		}
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
