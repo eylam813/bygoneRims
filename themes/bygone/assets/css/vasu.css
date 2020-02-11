@@ -1,6 +1,12 @@
-/*  */
-.wp-block-file{
+/* file block */
+.wp-block-file {
+    padding: 20px;
     border: #bbbbbb solid 5px;
-    text-align: left;
+    text-align: center;
 }
 
+
+/* page-break block */
+.page-links {
+    text-align: center;
+}
