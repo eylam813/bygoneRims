@@ -16,10 +16,14 @@
     height: 100%;
     padding-top: auto;
 }
+/* class added to header nav menus */
+.nav-menu-cont {
+    height: 100%;
+}
 /* layout primary menu li in a row */
-ul#primary-menu.menu {
+ul#Nav-right.menu, ul#header-menu-left.menu {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-end;
     height: 100%;
     /* remove menu bullets */
@@ -29,10 +33,10 @@ ul#primary-menu.menu {
     margin-bottom: auto;
 }
 /* add border on end */
-ul#primary-menu.menu:first-child{
+ul#Nav-right.menu:first-child, ul#header-menu-left.menu:last-child{
     border-left: 1px solid gainsboro;
 }
-#primary-menu li {
+#Nav-right li, #header-menu-left li {
     height: 100%;
 
     /* took the bottom line away - AJAY */
@@ -40,10 +44,10 @@ ul#primary-menu.menu:first-child{
     border-right: 1px solid gainsboro;
     text-align: center;
 }
-#primary-menu li:hover {
+#Nav-right li:hover, #header-menu-left li:hover  {
     background-color: gainsboro;
 }
-#primary-menu .menu-item a{
+#Nav-right .menu-item a, #header-menu-left .menu-item a{
     line-height: 90%;
 }
 #custom-logo-container a {

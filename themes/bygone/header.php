@@ -34,7 +34,8 @@
 				'theme_location' => 'Nav-left',
 				'menu_id'        => 'header-menu-left',
 				'link_before' => '<div class="header-right">',
-				'link_after' => '</div>'
+				'link_after' => '</div>',
+				'container_class' => 'nav-menu-cont'
 			));
 			?>
 			</div>
@@ -45,10 +46,11 @@
 			<div class="large-4">
 			<?php
 			wp_nav_menu(array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'theme_location' => 'Nav-right',
+				'menu_id'        => 'Nav-right',
 				'link_before' => '<div class="header-right">',
-				'link_after' => '</div>'
+				'link_after' => '</div>',
+				'container_class' => 'nav-menu-cont'
 			));
 			?>
 			</div>
