@@ -230,6 +230,9 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+// loading the woocommerce.php file with a require
+require get_template_directory() . '/inc/woocommerce.php';
+
 /**
  * Load Jetpack compatibility file.
  */
