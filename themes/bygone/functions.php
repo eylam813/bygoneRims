@@ -45,6 +45,7 @@ if ( ! function_exists( 'bygone_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'bygone' ),
+			'Nav-left' => esc_html__( 'Nav-left', 'bygone' ),
 			'footer-social' => esc_html__( 'footer-social', 'social media links' ),
 			'footer-menu-1' => esc_html__( 'foot-menu-1', 'footer col 1' ),
 			'footer-menu-2' => esc_html__( 'foot-menu-2', 'footer col 2' ),
