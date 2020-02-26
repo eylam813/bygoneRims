@@ -396,7 +396,7 @@ li {
     color: white;
 }
 
-.woocommerce-MyAccount-navigation li{
+.woocommerce-MyAccount-navigation li {
     padding: 0 1.5em;
     border-left: solid white 2px;
 }
@@ -434,11 +434,11 @@ li {
     border-bottom: #f0f0f0 2px solid;
 }
 
-.woocommerce-orders-table tr{
+.woocommerce-orders-table tr {
     text-align: center;
 }
 
-.woocommerce-orders-table tbody td{
+.woocommerce-orders-table tbody td {
     padding: 20px 0;
     font-size: 1.2em;
 }
@@ -450,17 +450,18 @@ li {
 
 /* woocommerce my account addresses */
 
-.woocommerce-Address address{
+.woocommerce-Address address {
     font-size: 1.2em;
 }
-.woocommerce-Address address:before{
+
+.woocommerce-Address address:before {
     content: url(../img/home.png);
 }
 
 
 /* woocommerce my account - account detail */
 
-.woocommerce-Button[type="submit"]{
+.woocommerce-Button[type="submit"] {
     background-color: #00685a;
     color: #ffe66a;
     padding: 20px;
@@ -469,13 +470,13 @@ li {
 
 
 
-.woocommerce-EditAccountForm .required{
+.woocommerce-EditAccountForm .required {
     position: relative;
     top: -10px;
     content: url(../img/required.png);
 }
 
-.woocommerce-EditAccountForm .woocommerce-Input{
+.woocommerce-EditAccountForm .woocommerce-Input {
     padding: 5px;
     color: #00685a;
     border: none;
@@ -489,17 +490,23 @@ li {
     padding: 20px;
 }
 
-.woocommerce-EditAccountForm label{
+.woocommerce-EditAccountForm label {
     font-size: 0.8em;
 }
 
-.woocommerce-notices-wrapper .woocommerce-error{
+.woocommerce-notices-wrapper .woocommerce-error {
     color: #c62e2b;
     list-style: none;
     padding: 10px;
-    border-left: #ffe66a 3px solid;
 }
 
-.woocommerce-form-row span{
+.woocommerce-notices-wrapper .woocommerce-error li{
+    border-left: #ffe66a 3px solid;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+
+.woocommerce-form-row span {
     font-size: 0.7em;
 }
