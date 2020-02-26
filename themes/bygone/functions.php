@@ -176,20 +176,23 @@ function bygone_scripts()
 {
 	wp_enqueue_style('bygone-style', get_stylesheet_uri());
 
+	wp_enqueue_script('bygone-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
+
+	wp_enqueue_script('bygone-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
+}
+add_action('wp_enqueue_scripts', 'bygone_scripts');
 
 
-// Adding in the custom theme scripts and styles here  
-
+function bygone_theme_scripts()
+{
 	// queueing the foundation stuff
 	wp_enqueue_style('bygone-foundation', get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', null, '6.5.1');
 	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery', 'bygone-theme-what-input'), '6.5.1', true);
-
-	// pushed the foundation files above our custom files otherwise it was overriding our styles
 
 
 	// loading the custom CSS file
@@ -205,6 +208,7 @@ function bygone_scripts()
 }
 add_action('wp_enqueue_scripts', 'bygone_scripts');
 
+add_action('wp_enqueue_scripts', 'bygone_theme_scripts');
 
 /**
  * Custom template tags for this theme.
@@ -221,12 +225,54 @@ require get_template_directory() . '/inc/template-hooks.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+// loading the woocommerce.php file with a require
+require get_template_directory() . '/inc/woocommerce.php';
+
 /**
  * Load Jetpack compatibility file.
  */
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+
+// start custom post type
+
+// the function to initialize the new post type
+function create_post_type_events() {
+ 
+	// post type will be called "events"
+    register_post_type( 'events',
+    // CPT Options
+        array(
+			// 
+            'labels' => array(
+                'name' => __( 'Events' ),
+                'singular_name' => __( 'Event' )
+			),
+            'public' => true,
+			// to show this post type in block editor (dashboard)
+			'show_in_rest' => true,
+			'has_archive' => true,
+			// slug for the post type will be "events"
+            'rewrite' => array('slug' => 'events'),
+        )
+    );
+}
+// adding the above function as action 
+add_action( 'init', 'create_post_type_events' );
+
+
+// getting our events post type on the front page with other posts
+function add_events_to_query( $query ) {
+    if ( is_home() && $query->is_main_query() )
+        $query->set( 'post_type', array( 'post', 'events' ) );
+    return $query;
+}
+add_action( 'pre_get_posts', 'add_events_to_query' );
+
+
 
 /**
  * Customized menu output

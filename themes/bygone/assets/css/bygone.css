@@ -28,21 +28,25 @@ brown: #42210b
     max-width: 100vw;
     width: 100vw;
 }
+
 .row {
     display: flex;
 }
+
 .center-horizontal {
     justify-content: center;
 }
+
 /* vertically center elements that are in a row */
 .center-vertical {
-    display:flex;
+    display: flex;
     align-items: center;
 }
+
 /* class to remove pre-defined css margin/padding */
 .reset {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 /* dynamically generated menu links */
@@ -244,7 +248,7 @@ li {
     margin-left: auto;
 }
 
-.alignleft{
+.alignleft {
     display: block;
     margin-right: auto;
 }
@@ -285,23 +289,24 @@ li {
 
 
 /* testing the foundation on header */
-.option:hover{
+.option:hover {
     background-color: #dddddd;
 }
 
-.option h4{
+.option h4 {
     text-align: center;
     color: black;
     font-family: sans-serif;
     font-weight: normal;
 }
 
-.option, .menu-item li{
+.option,
+.menu-item li {
     border-left: solid 1px #999999;
     border-right: solid 1px #999999;
 }
 
-.site-header{
+.site-header {
     height: 150px;
     max-width: 90vw;
     margin: 0 auto;
@@ -310,11 +315,11 @@ li {
 
 }
 
-.site-header > * {
+.site-header>* {
     margin-top: 0;
 }
 
-.site-header img{
+.site-header img {
     position: absolute;
     top: 100px;
     left: calc(50vw - 123px)
@@ -324,13 +329,13 @@ li {
     display: flex;
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.menu-item a{
+.menu-item a {
     margin: 0 15px;
     text-align: center;
     color: black;
@@ -355,4 +360,54 @@ li {
 /*  cover image inner text*/
 .wp-block-cover .wp-block-cover__inner-container { 
     color: #00685a;
+}
+
+
+
+
+/* woocommerce my account page */
+
+/* woocommerce my account dashboard */
+
+.woocommerce-MyAccount-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #00685a;
+    color: #ffe66a;
+    padding: 1em;
+}
+
+
+.woocommerce-MyAccount-navigation a{
+    display: block;
+    text-decoration: none;
+    color: #ffe66a;
+    font-size: 1.5em;
+}
+
+.woocommerce-MyAccount-navigation a:visited{
+    color: #ffe66a;
+}
+
+.woocommerce-MyAccount-navigation li:hover{
+    /* text-decoration: underline; */
+    transform: scale(1.05);
+}
+
+.woocommerce-MyAccount-content p{
+    font-size: 1.5em;
+}
+
+.woocommerce-MyAccount-content p:first-of-type{
+    display: inline-block;
+    font-size: 1em;
+    background-color: #f0f0f0;
+    padding: 10px 30px 10px 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
