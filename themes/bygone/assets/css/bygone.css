@@ -478,9 +478,20 @@ li {
     background-color: inherit;
     border-bottom: #a5a5a5 solid 2px;
     text-align: center;
+    padding: 5px;
 }
 
 .woocommerce-EditAccountForm {
     background-color: #f3f4f5;
     padding: 20px;
+}
+
+.woocommerce-EditAccountForm label{
+    font-size: 0.8em;
+}
+
+.woocommerce-notices-wrapper .woocommerce-error{
+    background-color: #42210b;
+    color: white;
+    padding: 10px
 }
