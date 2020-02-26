@@ -380,6 +380,8 @@ li {
     background-color: #00685a;
     color: white;
     padding: 1em;
+    border-left: #ffe66a 10px solid;
+    border-right: #ffe66a 10px solid;
 }
 
 
@@ -395,7 +397,7 @@ li {
 }
 
 .woocommerce-MyAccount-navigation li{
-    padding: 0 10px;
+    padding: 0 1.5em;
     border-left: solid white 2px;
 }
 
@@ -474,11 +476,12 @@ li {
 }
 
 .woocommerce-EditAccountForm .woocommerce-Input{
+    padding: 5px;
+    color: #00685a;
     border: none;
     background-color: inherit;
     border-bottom: #a5a5a5 solid 2px;
     text-align: center;
-    padding: 5px;
 }
 
 .woocommerce-EditAccountForm {
@@ -491,7 +494,12 @@ li {
 }
 
 .woocommerce-notices-wrapper .woocommerce-error{
-    background-color: #42210b;
-    color: white;
-    padding: 10px
+    color: #c62e2b;
+    list-style: none;
+    padding: 10px;
+    border-left: #ffe66a 3px solid;
+}
+
+.woocommerce-form-row span{
+    font-size: 0.7em;
 }
