@@ -592,3 +592,32 @@ ul.wp-block-categories li::before {
     border: 3px solid white;
 
 } 
+
+/* Archive block */
+ul.wp-block-archives li {
+    margin: 0 0 1rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    background-color: lightgray;
+    max-width: 350px;
+    
+}
+
+ul.wp-block-archives li::before {
+    content: counter(my-awesome-counter);
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 35px;
+    left: calc(-1 * var(--size) - -12px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: -3px;
+    background: yellow;
+    border-radius: 100%;
+    text-align: center;
+    border: 3px solid white;
+
+}
