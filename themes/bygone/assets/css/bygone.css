@@ -402,14 +402,14 @@ li {
     font-size: 1.5em;
 }
 
-.woocommerce-MyAccount-content p:first-of-type {
+/* .woocommerce-MyAccount-content p:first-of-type {
     display: inline-block;
     font-size: 1em;
     background-color: #f0f0f0;
     padding: 10px 30px 10px 10px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-}
+} */
 
 
 /* woocommerce my account orders */
@@ -445,13 +445,36 @@ li {
 .woocommerce-Address address{
     font-size: 1.2em;
 }
-    .woocommerce-Address address:before{
+.woocommerce-Address address:before{
     content: url(../img/home.png);
 }
 
 
-/* border-style: solid;
-border-width: 1px 0 1px 20px;
-    border-image: url(http://opbokken.nu/meuk/curly.png) 1 20 stretch;
-    padding-left: 0.5em 5em;
-    font-size: 1.5em; */
+/* woocommerce my account - account detail */
+
+.woocommerce-Button[type="submit"]{
+    background-color: #00685a;
+    color: #ffe66a;
+    padding: 20px;
+    box-shadow: #333333 5px 5px 5px;
+}
+
+
+
+.woocommerce-EditAccountForm .required{
+    position: relative;
+    top: -10px;
+    content: url(../img/required.png);
+}
+
+.woocommerce-EditAccountForm .woocommerce-Input{
+    border: none;
+    background-color: inherit;
+    border-bottom: #a5a5a5 solid 2px;
+    text-align: center;
+}
+
+.woocommerce-EditAccountForm {
+    background-color: #f3f4f5;
+    padding: 20px;
+}
