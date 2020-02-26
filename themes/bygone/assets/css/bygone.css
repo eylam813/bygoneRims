@@ -519,7 +519,7 @@ li {
     font-size: 0.7em;
 }
 
-/* latest posts and list view and catergories block */
+/* latest posts and list view block */
 
 
 ul.wp-block-latest-posts li {
@@ -557,3 +557,9 @@ a {
     padding-left: 20px;
 }
 
+/* latest posts grid view block */
+.wp-block-latest-posts.is-grid {
+    display: block;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
