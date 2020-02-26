@@ -405,4 +405,8 @@ li {
     padding: 10px 30px 10px 10px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+=======
+/*  cover image inner text*/
+.wp-block-cover .wp-block-cover__inner-container { 
+    color: #00685a;
 }
