@@ -543,7 +543,7 @@ ul.wp-block-latest-posts li::before {
     width: var(--size);
     height: var(--size);
     top: -3px;
-    background: yellow;
+    background: #ffe66a;
     border-radius: 100%;
     text-align: center;
     border: 3px solid white;
@@ -586,7 +586,7 @@ ul.wp-block-categories li::before {
     width: var(--size);
     height: var(--size);
     top: -3px;
-    background: yellow;
+    background: #ffe66a;
     border-radius: 100%;
     text-align: center;
     border: 3px solid white;
@@ -615,7 +615,7 @@ ul.wp-block-archives li::before {
     width: var(--size);
     height: var(--size);
     top: -3px;
-    background: yellow;
+    background: #ffe66a;
     border-radius: 100%;
     text-align: center;
     border: 3px solid white;
@@ -645,7 +645,7 @@ ul#recentcomments li::before {
     width: var(--size);
     height: var(--size);
     top: -3px;
-    background: yellow;
+    background: #ffe66a;
     border-radius: 100%;
     text-align: center;
     border: 3px solid white;
