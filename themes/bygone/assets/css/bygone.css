@@ -351,3 +351,8 @@ li {
 .page-links {
     text-align: center;
 }
+
+/*  cover image inner text*/
+.wp-block-cover .wp-block-cover__inner-container { 
+    color: #00685a;
+}
