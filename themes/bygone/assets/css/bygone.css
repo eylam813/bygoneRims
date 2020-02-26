@@ -670,15 +670,22 @@ ol li {
     counter-increment: list;
     list-style-type: none;
     position: relative;
+    margin: 0 0 0.5rem 0;
 }
 
 /* Outp ut the numbers using the counter() function, but use a custom color, and position the numbers how we want */
 ol li:before {
-    color: #00685a;
+    color:#42210b;
     content: counter(list) ".";
     left: -32px;
     position: absolute;
-    text-align: right;
+    text-align: center;
     width: 26px;
+    background-color:#ccb2a2 ;
+    border-radius: 100%;
+    
 }
 
+ul {
+    list-style-image: url("/unorderedList.svg");
+}
