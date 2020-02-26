@@ -245,7 +245,7 @@ if (defined('JETPACK__VERSION')) {
 // start custom post type
 
 // the function to initialize the new post type
-function create_posttype() {
+function create_post_type_events() {
  
 	// post type will be called "events"
     register_post_type( 'events',
@@ -266,9 +266,16 @@ function create_posttype() {
     );
 }
 // adding the above function as action 
-add_action( 'init', 'create_posttype' );
+add_action( 'init', 'create_post_type_events' );
 
 
+// getting our events post type on the front page with other posts
+function add_events_to_query( $query ) {
+    if ( is_home() && $query->is_main_query() )
+        $query->set( 'post_type', array( 'post', 'events' ) );
+    return $query;
+}
+add_action( 'pre_get_posts', 'add_events_to_query' );
 
 
 
