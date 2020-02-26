@@ -33,8 +33,12 @@ ul#Nav-right.menu, ul#header-menu-left.menu {
     margin-bottom: auto;
 }
 /* add border on end */
+/* ul#header-menu-left.menu:last-child{ */
 ul#Nav-right.menu:first-child, ul#header-menu-left.menu:last-child{
     border-left: 1px solid gainsboro;
+}
+ul#Nav-right.menu {
+    justify-content: flex-end;
 }
 #Nav-right li, #header-menu-left li {
     height: 100%;
@@ -54,9 +58,6 @@ ul#Nav-right.menu:first-child, ul#header-menu-left.menu:last-child{
     display: flex;
     justify-content: center;
 }
-/* #custom-logo-container a img.custom-logo{
-    border: 1px solid purple;
-} */
 
 
 /* -------- header right -------- */
