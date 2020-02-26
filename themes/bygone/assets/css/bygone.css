@@ -523,29 +523,31 @@ li {
 
 
 ul.wp-block-latest-posts li {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.7rem 0;
     counter-increment: my-awesome-counter;
     position: relative;
     background-color: lightgray;
     max-width: 350px;
+    font-size: 1rem;
     
 }
 
 ul.wp-block-latest-posts li::before {
     content: counter(my-awesome-counter);
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     position: absolute;
-    --size: 35px;
+    --size: 32px;
     left: calc(-1 * var(--size) - -12px);
-    line-height: var(--size);
+    line-height: var(--size) - 0px;
     width: var(--size);
     height: var(--size);
-    top: -3px;
+    top: -4px;
+    text-align: center;
     background: #ffe66a;
     border-radius: 100%;
-    text-align: center;
+    padding-top: 1px;
     border: 3px solid white;
 
 }
@@ -566,58 +568,61 @@ a {
 
 /* Categories block */
 ul.wp-block-categories li {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.7rem 0;
     counter-increment: my-awesome-counter;
     position: relative;
     background-color: lightgray;
     max-width: 350px;
-    
+    font-size: 1rem;
 }
 
 ul.wp-block-categories li::before {
     content: counter(my-awesome-counter);
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     position: absolute;
-    --size: 35px;
+    --size: 32px;
     left: calc(-1 * var(--size) - -12px);
-    line-height: var(--size);
+    line-height: var(--size) - 0px;
     width: var(--size);
     height: var(--size);
-    top: -3px;
+    top: -4px;
+    text-align: center;
     background: #ffe66a;
     border-radius: 100%;
-    text-align: center;
+    padding-top: 1px;
     border: 3px solid white;
 
 } 
 
 /* Archive block */
 ul.wp-block-archives li {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.7rem 0;
     counter-increment: my-awesome-counter;
     position: relative;
     background-color: lightgray;
     max-width: 350px;
+    font-size: 1rem;
     
 }
 
 ul.wp-block-archives li::before {
     content: counter(my-awesome-counter);
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     position: absolute;
-    --size: 35px;
+    --size: 32px;
     left: calc(-1 * var(--size) - -12px);
-    line-height: var(--size);
+    line-height: var(--size) - 0px;
     width: var(--size);
     height: var(--size);
-    top: -3px;
+    top: -4px;
+    text-align: center;
     background: #ffe66a;
     border-radius: 100%;
-    text-align: center;
+    padding-top: 1px;
     border: 3px solid white;
 
 }
@@ -625,29 +630,31 @@ ul.wp-block-archives li::before {
 /* recent comments block */
 
 ul#recentcomments li {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.7rem 0;
     counter-increment: my-awesome-counter;
     position: relative;
     background-color: lightgray;
-    max-width: 700px;
+    max-width: 400px;
+    font-size: 1rem;
     
 }
 
 ul#recentcomments li::before {
     content: counter(my-awesome-counter);
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     position: absolute;
-    --size: 35px;
+    --size: 32px;
     left: calc(-1 * var(--size) - -12px);
-    line-height: var(--size);
+    line-height: var(--size) - 0px;
     width: var(--size);
     height: var(--size);
-    top: -3px;
+    top: -4px;
+    text-align: center;
     background: #ffe66a;
     border-radius: 100%;
-    text-align: center;
+    padding-top: 1px;
     border: 3px solid white;
 
 }
