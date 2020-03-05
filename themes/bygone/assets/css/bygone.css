@@ -24,7 +24,7 @@ brown: #42210b
 
 
 /* colours */
-#quick-links .blackTitle a{
+#quick-links .blackTitle a {
     color: black;
     font-weight: 500;
     text-transform: uppercase;
@@ -508,7 +508,7 @@ li {
     padding: 10px;
 }
 
-.woocommerce-notices-wrapper .woocommerce-error li{
+.woocommerce-notices-wrapper .woocommerce-error li {
     border-left: #ffe66a 3px solid;
     margin-bottom: 15px;
     padding-left: 10px;
@@ -517,4 +517,175 @@ li {
 
 .woocommerce-form-row span {
     font-size: 0.7em;
+}
+
+/* latest posts and list view block */
+
+
+ul.wp-block-latest-posts li {
+    margin: 0 0 0.7rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    background-color: lightgray;
+    max-width: 350px;
+    font-size: 1rem;
+
+}
+
+ul.wp-block-latest-posts li::before {
+    content: counter(my-awesome-counter);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - -12px);
+    line-height: var(--size) - 0px;
+    width: var(--size);
+    height: var(--size);
+    top: -4px;
+    text-align: center;
+    background: #ffe66a;
+    border-radius: 100%;
+    padding-top: 1px;
+    border: 3px solid white;
+
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+/* latest posts grid view block */
+.wp-block-latest-posts.is-grid {
+    display: block;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+/* Categories block */
+ul.wp-block-categories li {
+    margin: 0 0 0.7rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    background-color: lightgray;
+    max-width: 350px;
+    font-size: 1rem;
+}
+
+ul.wp-block-categories li::before {
+    content: counter(my-awesome-counter);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - -12px);
+    line-height: var(--size) - 0px;
+    width: var(--size);
+    height: var(--size);
+    top: -4px;
+    text-align: center;
+    background: #ffe66a;
+    border-radius: 100%;
+    padding-top: 1px;
+    border: 3px solid white;
+
+}
+
+/* Archive block */
+ul.wp-block-archives li {
+    margin: 0 0 0.7rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    background-color: lightgray;
+    max-width: 350px;
+    font-size: 1rem;
+
+}
+
+ul.wp-block-archives li::before {
+    content: counter(my-awesome-counter);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - -12px);
+    line-height: var(--size) - 0px;
+    width: var(--size);
+    height: var(--size);
+    top: -4px;
+    text-align: center;
+    background: #ffe66a;
+    border-radius: 100%;
+    padding-top: 1px;
+    border: 3px solid white;
+
+}
+
+/* recent comments block */
+
+ul#recentcomments li {
+    margin: 0 0 0.7rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    background-color: lightgray;
+    max-width: 400px;
+    font-size: 1rem;
+
+}
+
+ul#recentcomments li::before {
+    content: counter(my-awesome-counter);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - -12px);
+    line-height: var(--size) - 0px;
+    width: var(--size);
+    height: var(--size);
+    top: -4px;
+    text-align: center;
+    background: #ffe66a;
+    border-radius: 100%;
+    padding-top: 1px;
+    border: 3px solid white;
+
+}
+
+span {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+/* Tell the <li> to not display numbers, but keep track of what the numbers should be */
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+    margin: 0 0 0.5rem 0;
+}
+
+/* Outp ut the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+ol li:before {
+    color:#42210b;
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: center;
+    width: 26px;
+    background-color:#ccb2a2 ;
+    border-radius: 100%;
+    
+}
+
+ul {
+    list-style-image: url("/unorderedList.svg");
 }

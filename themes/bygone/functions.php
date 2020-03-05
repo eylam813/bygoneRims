@@ -172,7 +172,7 @@ add_action('widgets_init', 'bygone_widgets_init');
 /**
  * Enqueue scripts and styles.
  */
-function bygone_scripts()
+/* function bygone_scripts()
 {
 	wp_enqueue_style('bygone-style', get_stylesheet_uri());
 
@@ -183,8 +183,8 @@ function bygone_scripts()
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
-}
-add_action('wp_enqueue_scripts', 'bygone_scripts');
+} */
+// add_action('wp_enqueue_scripts', 'bygone_scripts');
 
 
 function bygone_theme_scripts()
@@ -206,14 +206,9 @@ function bygone_theme_scripts()
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('wp_enqueue_scripts', 'bygone_scripts');
+// add_action('wp_enqueue_scripts', 'bygone_scripts');
 
 add_action('wp_enqueue_scripts', 'bygone_theme_scripts');
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -223,7 +218,7 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+require get_template_directory() . '/inc/template-hooks.php';
 
 /**
  * Customizer additions.
