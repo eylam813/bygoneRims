@@ -206,9 +206,9 @@ function bygone_theme_scripts()
 		wp_enqueue_script('comment-reply');
 	}
 }
+add_action('wp_enqueue_scripts', 'bygone_scripts');
 
 add_action('wp_enqueue_scripts', 'bygone_theme_scripts');
-
 
 /**
  * Implement the Custom Header feature.
