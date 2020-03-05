@@ -23,6 +23,7 @@ brown: #42210b
 }
 
 
+
 /* colours */
 #quick-links .blackTitle a {
     color: black;
@@ -136,6 +137,7 @@ ul {
 
 li {
     font-size: 1.2rem;
+    list-style: none;
 }
 
 /* blockquote */
@@ -686,6 +688,5 @@ ol li:before {
     
 }
 
-ul {
-    list-style-image: url("/unorderedList.svg");
-}
+
+    
