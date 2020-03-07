@@ -339,26 +339,28 @@ ul li {
 }
 
 .site-header {
-    height: 150px;
+    /* height: 150px; */
     max-width: 90vw;
     margin: 0 auto;
     border-bottom: var(--green) solid 3px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 
 }
 
 .site-header>* {
     margin-top: 0;
 }
-
-.site-header img {
-    position: absolute;
-    top: 100px;
-    left: calc(50vw - 123px)
+#custom-logo-container{
+    padding: 10px;
 }
 
-.menu-item {
+.site-header img {
+    width: 200px;
+}
+
+.bygone-header-menu{
     display: flex;
+    justify-content: flex-end;
 }
 
 .menu-item {

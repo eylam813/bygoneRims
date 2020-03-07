@@ -56,7 +56,7 @@ ul#Nav-right.menu {
 }
 #custom-logo-container a {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 
@@ -80,3 +80,7 @@ ul#Nav-right.menu {
     background-color: gainsboro;
 }
 
+/* mobile view */
+@media only screen and (max-width: 600px) {
+
+}
