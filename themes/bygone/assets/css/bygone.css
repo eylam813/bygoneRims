@@ -41,6 +41,15 @@ brown: #42210b
 .row {
     display: flex;
 }
+.row .wp-block-group__inner-container{
+    display: flex;
+}
+
+/* woocommerce product block */
+.wc-block-grid.has-3-columns .wc-block-grid__product {
+    list-style-image: none;
+    list-style: none;
+}
 
 .center-horizontal {
     justify-content: center;
