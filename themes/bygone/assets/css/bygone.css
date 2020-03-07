@@ -23,6 +23,7 @@ brown: #42210b
 }
 
 
+
 /* colours */
 #quick-links .blackTitle a {
     color: black;
@@ -134,11 +135,25 @@ ul {
     font-family: 'Kulim Park', sans-serif;
 }
 
+.foot-menu .menu ul li{
+    list-style: disc;
+}
+    /* .entry-content ul li:before{
+        content: '';
+        display: inline-block;
+        background-image: url(../img/unorderedList.svg);
+    } */
+
 li {
     font-size: 1.2rem;
+    list-style: none;
+}
+ul li {
+    list-style-image: url(../img/Asset\ 1.png); 
 }
 
-/* blockquote */
+
+
 
 .wp-block-quote p {
     border-left: var(--green) solid 3px;
@@ -529,7 +544,7 @@ ul.wp-block-latest-posts li {
     background-color: lightgray;
     max-width: 350px;
     font-size: 1rem;
-
+    list-style: none;
 }
 
 ul.wp-block-latest-posts li::before {
@@ -686,6 +701,5 @@ ol li:before {
     
 }
 
-ul {
-    list-style-image: url("/unorderedList.svg");
-}
+
+    
