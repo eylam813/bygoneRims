@@ -19,8 +19,10 @@ brown: #42210b
 :root {
     --header-font: mr-eaves-modern, sans-serif;
     /* --header-font: 'Kulim Park', sans-serif; */
-    --green: #00685a;
+    --green: rgb(2, 107, 121);
+    /* --green: #00685a; */
 }
+
 
 
 /* colours */
@@ -39,6 +41,15 @@ brown: #42210b
 
 .row {
     display: flex;
+}
+.row .wp-block-group__inner-container{
+    display: flex;
+}
+
+/* woocommerce product block */
+.wc-block-grid.has-3-columns .wc-block-grid__product {
+    list-style-image: none;
+    list-style: none;
 }
 
 .center-horizontal {
@@ -134,11 +145,40 @@ ul {
     font-family: 'Kulim Park', sans-serif;
 }
 
+.foot-menu .menu ul li{
+    list-style: disc;
+}
+    /* .entry-content ul li:before{
+        content: '';
+        display: inline-block;
+        background-image: url(../img/unorderedList.svg);
+    } */
+
 li {
     font-size: 1.2rem;
+    list-style: none;
+}
+ul li {
+    list-style-image: url(../img/Asset\ 1.png); 
 }
 
-/* blockquote */
+.menu-item {
+    display: flex;
+    /* align-items: center;
+    flex-wrap: wrap; */
+}
+
+.menu-item a {
+    margin: 0 15px;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+
 
 .wp-block-quote p {
     border-left: var(--green) solid 3px;
@@ -296,63 +336,6 @@ li {
 
 
 
-/* testing the foundation on header */
-.option:hover {
-    background-color: #dddddd;
-}
-
-.option h4 {
-    text-align: center;
-    color: black;
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-.option,
-.menu-item li {
-    border-left: solid 1px #999999;
-    border-right: solid 1px #999999;
-}
-
-.site-header {
-    height: 150px;
-    max-width: 90vw;
-    margin: 0 auto;
-    border-bottom: var(--green) solid 3px;
-    margin-bottom: 50px;
-
-}
-
-.site-header>* {
-    margin-top: 0;
-}
-
-.site-header img {
-    position: absolute;
-    top: 100px;
-    left: calc(50vw - 123px)
-}
-
-.menu-item {
-    display: flex;
-}
-
-.menu-item {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.menu-item a {
-    margin: 0 15px;
-    text-align: center;
-    color: black;
-    font-family: sans-serif;
-    font-weight: normal;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
 /* file block */
 .wp-block-file {
     padding: 20px;
@@ -371,8 +354,6 @@ li {
 }
 
 
-
-
 /* woocommerce my account page */
 
 /* woocommerce my account dashboard */
@@ -385,7 +366,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #00685a;
+    background-color: var(--green);
     color: white;
     padding: 1em;
     border-left: #ffe66a 10px solid;
@@ -470,7 +451,7 @@ li {
 /* woocommerce my account - account detail */
 
 .woocommerce-Button[type="submit"] {
-    background-color: #00685a;
+    background-color: var(--green);
     color: #ffe66a;
     padding: 20px;
     box-shadow: #333333 5px 5px 5px;
@@ -529,7 +510,7 @@ ul.wp-block-latest-posts li {
     background-color: lightgray;
     max-width: 350px;
     font-size: 1rem;
-
+    list-style: none;
 }
 
 ul.wp-block-latest-posts li::before {
@@ -686,6 +667,5 @@ ol li:before {
     
 }
 
-ul {
-    list-style-image: url("/unorderedList.svg");
-}
+
+    
