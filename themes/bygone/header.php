@@ -50,16 +50,6 @@
 							// 'link_after' => '</div>',
 							'container_class' => 'nav-menu-cont'
 						));
-						// if ( has_nav_menu( 'Header Upper')){
-						// 	$args = array(
-						// 		'theme_location' => 'Header Upper',
-						// 		'fallback_cb'     => 'true',
-						// 		// 'menu_id' => 'custom-id',
-						// 		// 'menu_class' => 'custom-class',
-						// 		'container' => ''
-						// 	);
-						// 	wp_nav_menu($args);
-						// }
 					?>
 				</div>
 				<div id="nav-lower-menu" class="cell bygone-header-menu"> <!-- lower menu -->
@@ -72,16 +62,6 @@
 						// 'link_after' => '</div>',
 						'container_class' => 'nav-menu-cont',
 					));
-					// if ( has_nav_menu( 'Nav-right')){
-					// 	$args = array(
-					// 		'theme_location' => 'Nav-right',
-					// 		'fallback_cb'     => 'false',
-					// 		// 'menu_id' => 'custom-id',
-					// 		// 'menu_class' => 'custom-class',
-					// 		'container' => ''
-					// 	);
-					// 	wp_nav_menu($args);
-					// }
 					?>
 				</div>
 			</div>
@@ -93,8 +73,8 @@
 							$args = array(
 								'theme_location' => 'Header Upper',
 								'fallback_cb'     => 'true',
-								// 'menu_id' => 'custom-id',
-								// 'menu_class' => 'custom-class',
+								// 'menu_id'        => 'hamburger-header-upper',
+								'menu_class' => 'hamburger-menu',
 								'container' => ''
 							);
 							wp_nav_menu($args);
@@ -103,8 +83,8 @@
 							$args = array(
 								'theme_location' => 'Header Lower',
 								'fallback_cb'     => 'true',
-								// 'menu_id' => 'custom-id',
-								// 'menu_class' => 'custom-class',
+								// 'menu_id'        => 'hamburger-header-lower',
+								'menu_class' => 'hamburger-menu',
 								'container' => ''
 							);
 							wp_nav_menu($args);
