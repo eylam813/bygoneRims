@@ -161,6 +161,21 @@ ul li {
     list-style-image: url(../img/Asset\ 1.png); 
 }
 
+.menu-item {
+    display: flex;
+    /* align-items: center;
+    flex-wrap: wrap; */
+}
+
+.menu-item a {
+    margin: 0 15px;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 1.1em;
+}
 
 
 
@@ -320,65 +335,6 @@ ul li {
 
 
 
-/* testing the foundation on header */
-.option:hover {
-    background-color: #dddddd;
-}
-
-.option h4 {
-    text-align: center;
-    color: black;
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-.option,
-.menu-item li {
-    border-left: solid 1px #999999;
-    border-right: solid 1px #999999;
-}
-
-.site-header {
-    /* height: 150px; */
-    max-width: 90vw;
-    margin: 0 auto;
-    border-bottom: var(--green) solid 3px;
-    /* margin-bottom: 50px; */
-
-}
-
-.site-header>* {
-    margin-top: 0;
-}
-#custom-logo-container{
-    padding: 10px;
-}
-
-.site-header img {
-    width: 200px;
-}
-
-.bygone-header-menu{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu-item {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.menu-item a {
-    margin: 0 15px;
-    text-align: center;
-    color: black;
-    font-family: sans-serif;
-    font-weight: normal;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
 /* file block */
 .wp-block-file {
     padding: 20px;
@@ -395,8 +351,6 @@ ul li {
 .wp-block-cover .wp-block-cover__inner-container {
     color: #00685a;
 }
-
-
 
 
 /* woocommerce my account page */

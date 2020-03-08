@@ -46,13 +46,13 @@ if (!function_exists('bygone_setup')) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(array(
-			'Nav-right' => esc_html__('Nav-right', 'bygone'),
-			'Nav-left' => esc_html__('Nav-left', 'bygone'),
-			'footer-social' => esc_html__('footer-social', 'bygone'),
-			'footer-menu-1' => esc_html__('foot-menu-1', 'bygone'),
-			'footer-menu-2' => esc_html__('foot-menu-2', 'bygone'),
-			'footer-menu-3' => esc_html__('foot-menu-3', 'bygone'),
-			'footer-menu-4' => esc_html__('foot-menu-4', 'bygone'),
+			'Header Upper' => esc_html__('header-upper', 'bygone'),
+			'Header Lower' => esc_html__('header-lower', 'bygone'),
+			'Footer Top ' => esc_html__('footer-social', 'bygone'),
+			'Footer Menu 1' => esc_html__('foot-menu-1', 'bygone'),
+			'Footer Menu 2' => esc_html__('foot-menu-2', 'bygone'),
+			'Footer Menu 3' => esc_html__('foot-menu-3', 'bygone'),
+			'Footer Menu 4' => esc_html__('foot-menu-4', 'bygone'),
 		));
 
 		/*
