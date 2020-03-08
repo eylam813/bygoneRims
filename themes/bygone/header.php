@@ -29,7 +29,7 @@
 		<header id="masthead" class="site-header grid-x">
 			<div class="hamburger-wrapper small-2"> <!-- hamburger menu-->
 			<!-- <div class="hamburger-wrapper small-2" onclick="showHamburgerMenu()"> -->
-				<button class="hamburger-icon" type="button" data-toggle="bygone-menu">menu</button>
+				<button id="hamburger-icon" type="button" data-toggle="bygone-menu">menu</button>
 				<!-- <div class="title-bar-title">Menu</div> -->
 			</div>	
 
@@ -85,8 +85,6 @@
 					?>
 				</div>
 			</div>
-
-
 
 		</header><!-- #masthead -->
 		<div class="hamburger-menu" id="bygone-hamburger-menu">
