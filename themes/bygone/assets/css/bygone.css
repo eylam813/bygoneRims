@@ -19,7 +19,8 @@ brown: #42210b
 :root {
     --header-font: mr-eaves-modern, sans-serif;
     /* --header-font: 'Kulim Park', sans-serif; */
-    --green: #00685a;
+    --green: rgb(2, 107, 121);
+    /* --green: #00685a; */
 }
 
 
@@ -365,7 +366,7 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #00685a;
+    background-color: var(--green);
     color: white;
     padding: 1em;
     border-left: #ffe66a 10px solid;
@@ -450,7 +451,7 @@ ul li {
 /* woocommerce my account - account detail */
 
 .woocommerce-Button[type="submit"] {
-    background-color: #00685a;
+    background-color: var(--green);
     color: #ffe66a;
     padding: 20px;
     box-shadow: #333333 5px 5px 5px;
