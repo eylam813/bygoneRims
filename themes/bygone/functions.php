@@ -277,7 +277,14 @@ function add_events_to_query( $query ) {
 }
 add_action( 'pre_get_posts', 'add_events_to_query' );
 
+// getting our products by woocommerce tag or category to loop
+// define the loop_shop_per_page callback 
 
+function bygone_theme_loop_shop_per_page( $bygone_theme_loop_shop_per_page ) { 
+    // make filter magic happen here... 
+    return $bygone_theme_shop_per_page; 
+}; 
+add_filter( 'loop_shop_per_page', 'bygone_theme_loop_shop_per_page', 10, 1 ); 
 
 /**
  * Customized menu output
