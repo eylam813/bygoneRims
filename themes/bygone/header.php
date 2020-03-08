@@ -66,7 +66,11 @@
 				</div>
 			</div>
 
+
 		</header><!-- #masthead -->
+		<div class="mini-cart-wrapper">
+			<?php woocommerce_mini_cart(); ?>
+		</div>
 		<div class="hamburger-menu" id="bygone-hamburger-menu">
 					<?php
 						if ( has_nav_menu( 'Header Upper')){
@@ -92,8 +96,6 @@
 					?>
 				</div>
 
-		<!-- <div class="mini-cart-wrapper"> -->
-			<!-- <?php woocommerce_mini_cart(); ?> -->
-		<!-- </div> -->
+
 
 		<div id="content" class="site-content">
