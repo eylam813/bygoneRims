@@ -39,6 +39,7 @@
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-1',
+						'container_class' => 'footer-menu-cont'
 					) );
 				?>
 			</div>
@@ -46,6 +47,7 @@
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-2',
+						'container_class' => 'footer-menu-cont'
 					) );
 				?>
 			</div>
@@ -53,6 +55,7 @@
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-3',
+						'container_class' => 'footer-menu-cont'
 					) );
 				?>
 			</div>
@@ -60,6 +63,7 @@
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'footer-menu-4',
+						'container_class' => 'footer-menu-cont'
 					) );
 				?>
 			</div>
