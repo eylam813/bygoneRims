@@ -27,8 +27,13 @@
 		<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'bygone'); ?></a> -->
 
 		<header id="masthead" class="site-header grid-x">
+			<div class="hamburger-wrapper small-2"> <!-- hamburger menu-->
+			<!-- <div class="hamburger-wrapper small-2" onclick="showHamburgerMenu()"> -->
+				<button class="hamburger-icon" type="button" data-toggle="bygone-menu">menu</button>
+				<!-- <div class="title-bar-title">Menu</div> -->
+			</div>	
 
-			<div class="large-4 medium-3 small-6"> <!-- logo holder -->
+			<div class="large-4 large-offset-0 medium-3 medium-offset-0 small-offset-1 small-5"> <!-- logo holder -->
 				<div id="custom-logo-container">
 					<?php the_custom_logo(); ?>
 				</div>
@@ -79,19 +84,35 @@
 					// }
 					?>
 				</div>
-
-
-				<div class="hamburger-wrapper"> <!-- hamburger menu-->
-					<button class="menu-icon" type="button" data-toggle="bygone-menu"></button>
-					<!-- <div class="title-bar-title">Menu</div> -->
-				</div>	
-				
-				<div class="top-bar" id="bygone-menu">
-				</div>
 			</div>
 
 
+
 		</header><!-- #masthead -->
+		<div class="hamburger-menu" id="bygone-hamburger-menu">
+					<?php
+						if ( has_nav_menu( 'Header Upper')){
+							$args = array(
+								'theme_location' => 'Header Upper',
+								'fallback_cb'     => 'true',
+								// 'menu_id' => 'custom-id',
+								// 'menu_class' => 'custom-class',
+								'container' => ''
+							);
+							wp_nav_menu($args);
+						}
+						if ( has_nav_menu( 'Header Lower')){
+							$args = array(
+								'theme_location' => 'Header Lower',
+								'fallback_cb'     => 'true',
+								// 'menu_id' => 'custom-id',
+								// 'menu_class' => 'custom-class',
+								'container' => ''
+							);
+							wp_nav_menu($args);
+						}
+					?>
+				</div>
 
 		<!-- <div class="mini-cart-wrapper"> -->
 			<!-- <?php woocommerce_mini_cart(); ?> -->
