@@ -10,24 +10,34 @@ div#page.site footer#colophon.site-footer div#social-media-icons {
 
 /* adding background colour to lower footer */
 div#page.site footer#colophon.site-footer #quick-links{
-    background-color: gainsboro;
+    background-color: var(--green);
+    /* background-color: gainsboro; */
     display: flex;
 }
 #quick-links {
     padding-top: 1rem;
 }
+
 #quick-links-title {
     margin: 1rem;
     padding-left: 40px;
+    color: var(--yellow);
 }
 #quick-links a {
-    color: var(--green);
+    color: var(--white);
+    /* color: var(--green); */
     font-size: 1rem;
     line-height: 2rem;
 }
 
+#quick-links .blackTitle a {
+    color: var(--yellow);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 #social-title {
-    color: black;
+    color: var(--green);
 }
 #social-media-icons-container {
     display: flex;
@@ -64,8 +74,12 @@ footer.entry-footer {
 
 .site-info {
     text-align: center;
-    background-color: gainsboro;
-    color: grey;
+    background-color: var(--darkgreen);
+    color: var(--green);
+}
+
+#quick-links .foot-menu ul{
+    padding-inline-start: 20px
 }
 
 
