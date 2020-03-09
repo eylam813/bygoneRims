@@ -46,10 +46,10 @@
 			<?php } ?>
 
 			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'footer-social',
-				'menu_class' => 'row add-child-border',
-			));
+			// wp_nav_menu(array(
+			// 	'theme_location' => 'footer-social',
+			// 	'menu_class' => 'row add-child-border',
+			// ));
 			?>
 		</div>
 	</div>
