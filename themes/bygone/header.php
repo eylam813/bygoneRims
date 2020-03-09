@@ -29,30 +29,30 @@
 		<header id="masthead" class="site-header grid-x">
 
 			<div class="large-4">
-			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'Nav-left',
-				'menu_id'        => 'header-menu-left',
-				'link_before' => '<div class="header-right">',
-				'link_after' => '</div>',
-				'container_class' => 'nav-menu-cont'
-			));
-			?>
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'Nav-left',
+					'menu_id'        => 'header-menu-left',
+					'link_before' => '<div class="header-right">',
+					'link_after' => '</div>',
+					'container_class' => 'nav-menu-cont'
+				));
+				?>
 			</div>
 			<div id="custom-logo-container" class="large-4">
 				<?php the_custom_logo(); ?>
 			</div>
 
 			<div class="large-4">
-			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'Nav-right',
-				'menu_id'        => 'Nav-right',
-				'link_before' => '<div class="header-right">',
-				'link_after' => '</div>',
-				'container_class' => 'nav-menu-cont'
-			));
-			?>
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'Nav-right',
+					'menu_id'        => 'Nav-right',
+					'link_before' => '<div class="header-right">',
+					'link_after' => '</div>',
+					'container_class' => 'nav-menu-cont'
+				));
+				?>
 			</div>
 
 
@@ -61,5 +61,21 @@
 		<div class="mini-cart-wrapper">
 			<?php woocommerce_mini_cart(); ?>
 		</div>
+
+		<p>
+			<?php
+			$array = apply_filters('woocommerce_cart_contents_count', $array);
+
+			if (!empty($array)) {
+
+				// everything has led up to this point... 
+				echo $array;
+				echo "hey";
+			} else {
+				echo $array;
+				echo "no hey";
+			}
+			?>
+		</p>
 
 		<div id="content" class="site-content">
