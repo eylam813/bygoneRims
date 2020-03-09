@@ -3,9 +3,7 @@
 /* header h1.entry-title {
     display: none;
 } */
-header{
-    position: relative;
-}
+
 /* layout header elements in a row */
 .site-branding {
     display: flex;
@@ -18,202 +16,66 @@ header{
     height: 100%;
     padding-top: auto;
 }
-
+/* class added to header nav menus */
+.nav-menu-cont {
+    height: 100%;
+}
 /* layout primary menu li in a row */
-.nav-menu-cont ul.menu{
+ul#Nav-right.menu, ul#header-menu-left.menu {
     display: flex;
+    /* justify-content: space-between; */
     align-items: flex-end;
     height: 100%;
+    /* remove menu bullets */
     list-style: none;
     padding:0;
     margin:0;
     margin-bottom: auto;
 }
-
-/* testing the foundation on header */
-.option:hover {
-    background-color: #dddddd;
+/* add border on end */
+ul#Nav-right.menu:first-child, ul#header-menu-left.menu:last-child{
+    border-left: 1px solid gainsboro;
 }
+#Nav-right li, #header-menu-left li {
+    height: 100%;
 
-.option h4 {
+    /* took the bottom line away - AJAY */
+    /* width: 33%; */
+    border-right: 1px solid gainsboro;
     text-align: center;
-    color: black;
-    font-family: sans-serif;
-    font-weight: normal;
 }
-
-.option,
-.menu-item li {
-    border-left: solid 1px #999999;
-    border-right: solid 1px #999999;
+#Nav-right li:hover, #header-menu-left li:hover  {
+    background-color: gainsboro;
 }
-
-.site-header {
-    padding: 0 2%;
-    margin: 0 auto;
-    background-color: rgb(2, 107, 121);
+#Nav-right .menu-item a, #header-menu-left .menu-item a{
+    line-height: 90%;
 }
-
-.site-header>* {
-    margin-top: 0;
-}
-#custom-logo-container{
-    padding: 10px;
-}
-
-.site-header img {
-    width: 200px;
-}
-
-.bygone-header-menu{
+#custom-logo-container a {
     display: flex;
-    justify-content: flex-end;
-    height: 50%;
+    justify-content: center;
 }
+/* #custom-logo-container a img.custom-logo{
+    border: 1px solid purple;
+} */
 
-.bygone-header-menu a{
-    padding-left: 0;
-}
 
-ul#header-upper.menu{
+/* -------- header right -------- */
+#header-right-container {
+    width: 30vw;
     display: flex;
-    align-items: flex-start;
-    padding: 10px 0;
+    justify-content: space-evenly;
 }
-
-ul#header-lower.menu{
-    display: flex;
-    align-items: flex-end;
-    padding: 10px 0;
+/* add border on end */
+#header-right-container:last-child{
+    border-right: 1px solid gainsboro;
 }
-
-ul#header-upper.menu li.menu-item a,
-ul#header-lower.menu li.menu-item a{
-    color:white;
-    /* color: rgb(39, 20, 1); */
-    /* color: var(--green); */
+.header-right {
+    /* width: 25%; */
+    height: 100%;
+    /* border-left: 1px solid gainsboro; */
     text-align: center;
-    padding-left: 0;
-    position: relative;
-    font-family: var(--header-font);
 }
-ul#header-upper.menu li.menu-item a:hover{
-    cursor: pointer;
+.header-right:hover {
+    background-color: gainsboro;
 }
 
-ul#header-upper.menu li.menu-item > a:before, 
-ul#header-lower.menu li.menu-item > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background: yellow;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: .25s linear;
-}
-ul#header-upper.menu li.menu-item > a:hover:before,
-ul#header-upper.menu li.menu-item > a:focus:before,  
-ul#header-lower.menu li.menu-item > a:hover:before,
-ul#header-lower.menu li.menu-item > a:focus:before {
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-#bygone-hamburger-menu .hamburger-menu{
-    display: none;
-}
-.hamburger-wrapper {
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-/* mobile view */
-@media screen and (max-width: 39.9375em) {
-    /* custom logo */
-    .site-header img {
-        width: 200px;
-    }
-    /* header menu */
-    #nav-top-menu ul#header-upper.menu{
-        display: none;
-    }
-    #nav-lower-menu ul#header-lower.menu{
-        display: none;
-    }
-    .hamburger-wrapper {
-        display: block;
-    }
-
-    
-    /* for hamburger menu setting display none initially then will control through JS */
-    #bygone-hamburger-menu{
-        display: none;
-        background-color: var(--green);
-        position: absolute;
-        z-index: 10;
-
-    }
-
-    #bygone-hamburger-menu .hamburger-menu{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        left:0;
-        background-color: var(--green);
-        z-index: 5;
-        padding: 10px;
-        
-    }
-
-    /* hamburger menu pop out */
-    #bygone-hamburger-menu .hamburger-menu ul{
-        padding-inline-start: 0px;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-    }
-    ul.hamburger-menu li.menu-item a{
-    color:white;
-    margin: 5px 5px;
-    padding-right: 5px;
-    }
-
-    ul.hamburger-menu li.menu-item > a:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        bottom: 0;
-        left: 0;
-        background: yellow;
-        visibility: hidden;
-        border-radius: 5px;
-        transform: scaleX(0);
-        transition: .25s linear;
-    }
-    ul.hamburger-menu li.menu-item > a:focus:before {
-        visibility: visible;
-        transform: scaleX(1);
-    }
-    /* hamburger icon wrapper */
-    .hamburger-wrapper{
-        display: flex;
-        align-items: flex-end;
-        padding: 10px;
-    }
-    #hamburger-icon {
-        color: white;
-    }
-
-}
