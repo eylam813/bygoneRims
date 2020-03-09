@@ -41,7 +41,7 @@
 				</div>
 			</div>
 
-			<div class="large-8 medium-9 small-6">
+			<div class="large-8 medium-9 small-0">
 				<!-- menu holder -->
 				<div id="nav-top-menu" class="cell bygone-header-menu">
 					<!-- top menu -->
@@ -74,34 +74,39 @@
 
 		</header><!-- #masthead -->
 
+			<!-- <div class="hamburger-menu" id="bygone-hamburger-menu"> -->
+			<div class="grid-x">
+			<div class="hamburger-menu small-6" id="bygone-hamburger-menu" style="display: none;">
+				<?php
+				if (has_nav_menu('Header Upper')) {
+					$args = array(
+						'theme_location' => 'Header Upper',
+						'fallback_cb'     => 'true',
+						'menu_class' => 'hamburger-menu',
+						'container' => ''
+					);
+					wp_nav_menu($args);
+				}
+				if (has_nav_menu('Header Lower')) {
+					$args = array(
+						'theme_location' => 'Header Lower',
+						'fallback_cb'     => 'true',
+						'menu_class' => 'hamburger-menu',
+						'container' => ''
+					);
+					wp_nav_menu($args);
+				}
+				?>
+			</div>
+			</div>
+
+
+
 		<div class="mini-cart-wrapper">
 			<?php woocommerce_mini_cart(); ?>
 		</div>
 
-		<div class="hamburger-menu" id="bygone-hamburger-menu" style="display: none;">
-			<?php
-			if (has_nav_menu('Header Upper')) {
-				$args = array(
-					'theme_location' => 'Header Upper',
-					'fallback_cb'     => 'true',
-					// 'menu_id'        => 'hamburger-header-upper',
-					'menu_class' => 'hamburger-menu',
-					'container' => ''
-				);
-				wp_nav_menu($args);
-			}
-			if (has_nav_menu('Header Lower')) {
-				$args = array(
-					'theme_location' => 'Header Lower',
-					'fallback_cb'     => 'true',
-					// 'menu_id'        => 'hamburger-header-lower',
-					'menu_class' => 'hamburger-menu',
-					'container' => ''
-				);
-				wp_nav_menu($args);
-			}
-			?>
-		</div>
+
 
 
 
