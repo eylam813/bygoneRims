@@ -14,6 +14,26 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer grid-x">
+
+		<!-- social links -->
+		<?php if (get_theme_mod('bygone_facebook_url') || get_theme_mod('bygone_twitter_url') || get_theme_mod('bygone_instagram_url')) { ?>
+			<ul class="social-media">
+				<?php if (get_theme_mod('bygone_facebook_url')) { ?>
+
+					<li class="facebook"><a href=" <?php echo get_theme_mod('bygone_facebook_url'); ?> "> <img src="<?php echo get_template_directory_uri().'/assets/img/facebook.svg'; ?>" alt="<?php echo esc_html__('Facebook'); ?>"></a></li>
+				<?php } ?>
+
+				<?php if (get_theme_mod('bygone_twitter_url')) { ?>
+					<li class="instagram"><a href=" <?php echo get_theme_mod('bygone_twitter_url'); ?> "> <img src="<?php echo get_template_directory_uri().'/assets/img/intagram.svg'; ?>" alt="<?php echo esc_html__('Instagram'); ?>"></a></li>
+				<?php } ?>
+
+				<?php if (get_theme_mod('bygone_twitter_url')) { ?>
+					<li class="facebook"><a href=" <?php echo get_theme_mod('bygone_twitter_url'); ?> "> <img src="<?php echo get_template_directory_uri().'/assets/img/twitter.svg'; ?>" alt="<?php echo esc_html__('Twitter'); ?>"></a></li>
+				<?php } ?>
+			</ul>
+		<?php } ?>
+
+
 		<!-- decorative footer line -->
 		<hr id="footer-line">
 		<!-- social media footer section -->
