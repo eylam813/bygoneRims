@@ -162,6 +162,7 @@ ul#header-lower.menu li.menu-item > a:focus:before {
         display: none;
         background-color: var(--green);
         position: absolute;
+        z-index: 10;
 
     }
 
