@@ -37,7 +37,7 @@
 
 					<?php if (get_theme_mod('bygone_twitter_url')) { ?>
 
-						<div class="instagram social-icon"><a href=" <?php echo get_theme_mod('bygone_instagram_url'); ?> "> <img src="<?php echo get_template_directory_uri() . '/assets/img/intagram.svg'; ?>" alt="<?php echo esc_html__('Instagram'); ?>"></a></div>
+						<div class="instagram social-icon"><a href=" <?php echo get_theme_mod('bygone_instagram_url'); ?> "> <img src="<?php echo get_template_directory_uri() . '/assets/img/instagram.svg'; ?>" alt="<?php echo esc_html__('Instagram'); ?>"></a></div>
 					<?php } ?>
 
 					<?php if (get_theme_mod('bygone_twitter_url')) { ?>
@@ -90,7 +90,7 @@
 		</div>
 	</div>
 	<div class="site-info cell">
-		<p>Copyright &copy 2020 - ByGone Rims</p>
+		<p>Copyright &copy 20<?php echo date("y") ?> - ByGone Rims</p>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
