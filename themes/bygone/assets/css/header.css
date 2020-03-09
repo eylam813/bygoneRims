@@ -123,7 +123,7 @@ ul#header-lower.menu li.menu-item > a:focus:before {
     transform: scaleX(1);
 }
 
-#bygone-hamburger-menu.hamburger-menu{
+#bygone-hamburger-menu .hamburger-menu{
     display: none;
 }
 .hamburger-wrapper {
@@ -155,7 +155,14 @@ ul#header-lower.menu li.menu-item > a:focus:before {
     .hamburger-wrapper {
         display: block;
     }
-    #bygone-hamburger-menu.hamburger-menu{
+
+    
+    /* for hamburger menu setting display none initially then will control through JS */
+    #bygone-hamburger-menu{
+        display: none;
+    }
+
+    #bygone-hamburger-menu .hamburger-menu{
         display: block;
         position: absolute;
         left:0;
