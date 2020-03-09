@@ -37,7 +37,7 @@
 
 					<?php if (get_theme_mod('bygone_twitter_url')) { ?>
 
-						<div class="instagram social-icon"><a href=" <?php echo get_theme_mod('bygone_twitter_url'); ?> "> <img src="<?php echo get_template_directory_uri() . '/assets/img/intagram.svg'; ?>" alt="<?php echo esc_html__('Instagram'); ?>"></a></div>
+						<div class="instagram social-icon"><a href=" <?php echo get_theme_mod('bygone_instagram_url'); ?> "> <img src="<?php echo get_template_directory_uri() . '/assets/img/intagram.svg'; ?>" alt="<?php echo esc_html__('Instagram'); ?>"></a></div>
 					<?php } ?>
 
 					<?php if (get_theme_mod('bygone_twitter_url')) { ?>
