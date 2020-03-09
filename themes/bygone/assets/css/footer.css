@@ -28,6 +28,7 @@ div#page.site footer#colophon.site-footer #quick-links{
 
 #social-title {
     color: black;
+    margin-right: 2rem;
 }
 #social-media-icons-container {
     display: flex;
@@ -84,18 +85,27 @@ footer.entry-footer {
 
 /* for tablet size and down */
 @media only screen and (max-width: 768px) {
+    #social-title {
+        color: var(--green);
+        margin-right: 0;
+    }
+    hr{
+        padding:0;
+        margin:0;
+    }
     #social-media-icons-container {
         display: flex;
         flex-wrap: wrap;
-        width: 90vw;
-        margin-left: 5vw;
-
         justify-content: center;
         align-items: center;
+        width: 90vw;
+        margin: 1.5rem 0;
+        margin-left: 5vw;
     }
     #social-media-icons-inner-container .social-media{
         display: flex;
     }
+    
     .social-media .social-icon a{
         padding-left: 0;
         padding: 0 5px;
