@@ -834,6 +834,9 @@ span.wsf-required-wrapper{
 .wsf-required-wrapper small {
     font-size: 0.5rem;
 }
+label {
+    color: var(--green);
+}
 input {
     border: none;
     border-bottom: 2px solid var(--green);
