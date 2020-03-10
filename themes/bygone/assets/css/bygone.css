@@ -678,25 +678,36 @@ ol li:before {
 }
 
 
+
+
 /* cart page */
 
-.remove:before{
-    content: url(../img/delete_from_cart.png);
+.remove{
+    border-radius: 10%;
+    font-size: 24px;
+    background-color: red;
+    padding: 1px 5px;
+    color: white;
 }
 
 .shop_table{
     width: 100%;
-    border-top: var(--yellow) 2px solid;
+    border-top: var(--green) 3px solid;
     padding-top: 1em;
 }
 
 .shop_table thead{
     font-size: 1.5em;
-    color: #d3d3d3;
+    color: #cecece;
+}
+
+.shop_table tbody{
+    color: white;
 }
 
 .shop_table tbody tr:nth-child(odd){
-    background-color: #f3f4f5;
+    /* background-color: #f3f4f5; */
+    background-color: rgba(248, 244, 0, 0.15);
 }
 
 
@@ -722,7 +733,7 @@ ol li:before {
 .product-name a{
     font-size: 1.5em;
     font-weight: 600;
-    color: var(--darkgreen);
+    /* color: white; */
 
     text-align: center;
     display: block;
@@ -741,14 +752,64 @@ ol li:before {
     padding: 0;
 }
 
-{
 
+
+/* stuff after the main table on cart page */
+
+.coupon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.coupon .input-text{
+    height: 2em;
+    margin: 10px;
+}
+
+.actions .button{
+    background-color: var(--green);
+    color: white;
+    font-size: 1em;
+    padding: 3px 11px;
+    border-radius: 10px;
+}
+
+.actions button[name="update_cart"]{
+    margin-left: auto;
 }
 
 
 
+.cart_totals .cart-subtotal {
+    font-size: 1.2em;
+} 
+
+.cart_totals .order-total{
+    font-size: 2    em;
+}
 
 
+.cart-subtotal, .order-total{
+    color: black;
+}
+
+.wc-proceed-to-checkout{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wc-proceed-to-checkout a{
+    background-color: var(--green);
+    color: white;
+    font-size: 1.25em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.wc-proceed-to-checkout a:hover{
+    box-shadow: #000000 0px 0px 5px;
+    transition: 0.2s;
+}
 
 
 
