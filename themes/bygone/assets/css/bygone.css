@@ -816,7 +816,14 @@ ol li:before {
 }
 
 
+/* FORM STYLING */
 
+.form-error {
+    font-size: 0.6rem;
+    color: red;
+    display: block;
+    padding-left: 10px;
+}
 
 
 
