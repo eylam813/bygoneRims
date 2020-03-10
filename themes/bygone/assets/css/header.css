@@ -162,6 +162,7 @@ ul#header-lower.menu li.menu-item > a:focus:before {
         display: none;
         background-color: var(--green);
         position: absolute;
+        z-index: 10;
 
     }
 
@@ -216,4 +217,3 @@ ul#header-lower.menu li.menu-item > a:focus:before {
     }
 
 }
->>>>>>> parent of ca5ed5b... adds z-index to hamburger pop out menu to fix overlapping text issue
