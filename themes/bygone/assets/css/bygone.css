@@ -672,5 +672,23 @@ ol li:before {
     
 }
 
+/* Mobile Query*/
 
-    
+@media screen and (max-width: 39.9375em) {
+
+
+    .woocommerce-MyAccount-navigation li {
+        border: none;
+    }
+
+    .woocommerce-MyAccount-navigation a {
+        font-size: 1.4rem;
+        padding-left: 7px;
+    }
+
+}
+
+
+
+
+
