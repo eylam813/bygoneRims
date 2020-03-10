@@ -474,7 +474,7 @@ hr {
 
 .woocommerce-EditAccountForm .required {
     position: relative;
-    top: -10px;
+    top: -4px;
     content: url(../img/required.png);
 }
 
@@ -494,6 +494,9 @@ hr {
 
 .woocommerce-EditAccountForm label {
     font-size: 0.8em;
+}
+.required {
+    padding-left: 0px;
 }
 
 .woocommerce-notices-wrapper .woocommerce-error {
@@ -1080,6 +1083,8 @@ ol.flex-control-nav li::before {
     padding: 18px 7%;
 
 }
+
+
 
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
