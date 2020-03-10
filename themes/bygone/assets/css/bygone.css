@@ -816,6 +816,41 @@ ol li:before {
 
 
 
+/* single product page */
+.entry-title{
+    text-align: center;
+}
+
+.single-product .wp-post-image{
+    width: 25vw;
+}
+
+.single-product .woocommerce-product-gallery__image{
+    display: flex;
+    justify-content: center;
+}
+
+.single-product .entry-summary{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.woocommerce-product-details__short-description{
+    
+}
+
+.sku_wrapper{
+    display: none;
+}
+
+
+
 
 /* Mobile Query*/
 
