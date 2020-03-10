@@ -32,14 +32,21 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
+				?>
+				<div class="grid-x">
+					<div class="cell large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 grid-padding-x">
+						<?php
+						/*
+						* Include the Post-Type-specific template for the content.
+						* If you want to override this in a child theme, then include a file
+						* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+						*/
+						get_template_part( 'template-parts/content', get_post_type() );
+						?>
+					</div>
+				</div>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
+				<?php
 			endwhile;
 
 			the_posts_navigation();
