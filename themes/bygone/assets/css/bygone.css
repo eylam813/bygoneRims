@@ -684,7 +684,18 @@ ol li:before {
     border-radius: 20px;
 }
 
+.wp-block-media-text>figure>img {
+    width: 75%;
+    margin: 0.5rem;
+}
 
+.has-text-align-left {
+    margin-left: -60px;
+}
+
+#post-98{
+    display: none;
+}
 
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
