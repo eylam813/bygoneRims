@@ -876,12 +876,30 @@ ol li:before {
     margin-top: 2em;
 }
 
+.single-product .wc-tabs-wrapper ul{
+    width: 50%;
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: var(--green); */
+}
+
+.single-product .wc-tabs-wrapper ul li a{
+    /* color: white; */
+    padding: 15px;
+    border: var(--green) solid 2px;
+}
+
 
 .single-product .product_meta .posted_in a{
     text-decoration: underline;
 }
 
 
+.single-product .woocommerce-Tabs-panel{
+    width: 75%;
+    margin: 0 auto;
+}
 
 
 
