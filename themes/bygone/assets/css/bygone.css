@@ -721,8 +721,11 @@ ol li:before {
     list-style-image: none;
 }
 
-.flex-control-nav li {
+/* orderlist of product page*/
+ol.flex-control-nav li::before {
     list-style-image: none;
+    list-style: none;
+    content: none;
 }
 
 .description_tab {
