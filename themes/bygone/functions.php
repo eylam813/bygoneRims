@@ -94,9 +94,14 @@ if (!function_exists('bygone_setup')) :
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => esc_html__('Green', 'bygone-theme'),
-					'slug'  => 'green',
-					'color' => '#00685a',
+					'name'  => esc_html__('Dark Teal', 'bygone-theme'),
+					'slug'  => 'dark-teal',
+					'color' => '#004049',
+				),
+				array(
+					'name'  => esc_html__('Teal', 'bygone-theme'),
+					'slug'  => 'teal',
+					'color' => '#026b79',
 				),
 				array(
 					'name'  => esc_html__('Lightyellow', 'bygone-theme'),
