@@ -872,6 +872,35 @@ fieldset button[type="submit"]:hover{
 }
 
 
+/* WOOCOMMERCE FORM */
+.shop_table {
+    border-top: none;
+}
+.cart_item .product-name{
+    color: var(--green);
+}
+.woocommerce-billing-fields__field-wrapper, .woocommerce-additional-fields,.woocommerce-checkout-review-order{
+    border: 3px solid var(--green);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.woocommerce-privacy-policy-text p a {
+    color: var(--green);
+    padding-left: 0;
+}
+
+#payment ul li {
+    list-style-image: none;
+}
+#place_order{
+    border: 2px solid var(--green);
+    padding: 5px;
+    color: var(--green);
+}
+#place_order:hover{
+    background-color: rgba(4, 216, 198, 0.171);
+}
 
 /* Mobile Query*/
 
