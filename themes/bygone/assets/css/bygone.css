@@ -398,6 +398,15 @@ ul li {
 .woocommerce-MyAccount-content p {
     font-size: 1.5em;
 }
+.woocommerce-MyAccount-content legend {
+    font-size: 1.5em;
+    color: var(--green);
+    padding: 0 5px;
+    line-height: 2px;
+}
+.woocommerce-MyAccount-content fieldset {
+    margin-top:4rem;
+} 
 
 /* .woocommerce-MyAccount-content p:first-of-type {
     display: inline-block;
