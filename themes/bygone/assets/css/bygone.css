@@ -678,7 +678,7 @@ ol li:before {
 }
 /* styling the first blog post */
 .wp-block-media-text {
-    border: 4px solid rgb(2, 107, 121);;
+    border: 4px solid rgb(2, 107, 121);
     width: 50%;
     margin-left: 20rem;
     border-radius: 20px;
@@ -687,7 +687,7 @@ ol li:before {
 
 .wp-block-media-text>figure>img {
     width: 75%;
-    margin: 0.5rem;
+    margin: 1.2rem;
 }
 
 #post-98{
@@ -696,11 +696,16 @@ ol li:before {
 
 .has-text-align-left {
     font-size: 16px;
+    
+}
+
+.has-normal-font-size {
+    margin-bottom: 0px;
 }
 
 /* styled the third blog post */
 .wp-block-media-text__content {
-    margin-left: -60px;
+    margin-left: -40px;
 }
 #post-1 {
     display: none;
@@ -731,6 +736,24 @@ ol.flex-control-nav li::before {
 .description_tab, .additional_information_tab{
     list-style-image: none;
 }
+
+/* button for the blog posts*/
+.more-link {
+    border: 1px solid rgb(2, 107, 121) ;
+    border-radius: 7px;
+    padding-right: 10px;
+    margin-left: 13.5rem;
+}
+.screen-reader-text {
+    display: none;
+}
+
+.wp-block-media-text .wp-block-media-text__content{
+    padding: 18px 7%;
+
+}
+
+
 
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
