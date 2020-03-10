@@ -753,6 +753,9 @@ ol.flex-control-nav li::before {
 
 }
 
+#post-119, #post-43, #post-120 {
+    display: none;
+}
 
 
 /* Mobile Query*/
