@@ -728,7 +728,7 @@ ol.flex-control-nav li::before {
     content: none;
 }
 
-.description_tab {
+.description_tab, .additional_information_tab{
     list-style-image: none;
 }
 
