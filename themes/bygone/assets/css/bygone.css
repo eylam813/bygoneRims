@@ -676,9 +676,17 @@ ol li:before {
     border-radius: 100%;
     
 }
+/* styling the first blog post */
+.wp-block-media-text {
+    border: 4px solid rgb(2, 107, 121);;
+    width: 50%;
+    margin-left: 20rem;
+    border-radius: 20px;
+}
+
+
 
 /* Mobile Query*/
-
 @media screen and (max-width: 39.9375em) {
 
 
