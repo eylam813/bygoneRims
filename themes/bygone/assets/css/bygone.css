@@ -546,7 +546,7 @@ ul.wp-block-latest-posts li::before {
 a {
     color: black;
     text-decoration: none;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 /* latest posts grid view block */
@@ -704,6 +704,11 @@ ol li:before {
 }
 #post-1 {
     display: none;
+}
+
+/* header content*/
+.page_item {
+    list-style-image: none;
 }
 
 /* Mobile Query*/
