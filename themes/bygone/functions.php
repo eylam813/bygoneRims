@@ -198,8 +198,8 @@ function bygone_theme_scripts()
 	wp_enqueue_style('bygone-foundation', get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', null, '6.5.1');
 
 	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
-	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery', 'bygone-theme-what-input'), '6.5.1', true);
-	wp_enqueue_script('bygone-script', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '6.5.1');
+	wp_enqueue_script('bygone-theme-foundation', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery', 'bygone-theme-what-input'), '6.5.1', true);
+	wp_enqueue_script('bygone-script', get_template_directory_uri() . '/assets/js/app.js', array('jquery', 'bygone-theme-foundation'), '6.5.1', true);
 
 
 	// loading the custom CSS file
