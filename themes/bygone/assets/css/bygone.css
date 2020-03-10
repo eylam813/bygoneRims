@@ -1213,3 +1213,16 @@ ol.flex-control-nav li::before {
     }
 
 }
+
+.theBlogs {
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    margin: 10px;
+}
+.theBlogs .entry-header .entry-meta.authorText {
+    color: var(--green);
+}
+
+
+
