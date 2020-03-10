@@ -817,14 +817,56 @@ ol li:before {
 
 
 /* FORM STYLING */
+.wsf-form .wsf-form-canvas{
+    border: 3px solid var(--green);
+}
 
 .form-error {
     font-size: 0.6rem;
-    color: red;
+    /* color: red; */
     display: block;
     padding-left: 10px;
+    margin-bottom: 1rem;
 }
-
+span.wsf-required-wrapper{
+    padding-left: 5px;
+}
+.wsf-required-wrapper small {
+    font-size: 0.5rem;
+}
+input {
+    border: none;
+    border-bottom: 2px solid var(--green);
+    margin-left: 5px;
+    padding: 4px;
+}
+input:focus{
+    outline: none;
+    background-color: rgba(0, 192, 176, 0.342);
+}
+textarea {
+    border: none;
+    /* border-bottom: 1px solid var(--green); */
+    margin-left: 5px;
+    padding: 4px;
+    background-color: rgba(4, 216, 198, 0.171);
+}
+textarea:focus{
+    outline: none;
+    background-color: rgba(0, 192, 176, 0.342);
+}
+[data-type="submit"]{
+    display: flex;
+    justify-content: flex-end;
+}
+fieldset button[type="submit"]{
+    border: 2px solid var(--green);
+    padding: 5px;
+    color: var(--green);
+}
+fieldset button[type="submit"]:hover{
+    background-color: rgba(4, 216, 198, 0.171);
+}
 
 
 
