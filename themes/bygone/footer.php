@@ -62,30 +62,34 @@
 		</div>
 		<div id="foot-menu-1" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'footer-menu-1',
-			));
+				wp_nav_menu( array(
+					'theme_location' => 'footer-menu-1',
+					'container_class' => 'footer-menu-cont'
+				) );
 			?>
 		</div>
 		<div id="foot-menu-2" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'footer-menu-2',
-			));
+				wp_nav_menu( array(
+					'theme_location' => 'footer-menu-2',
+					'container_class' => 'footer-menu-cont'
+				) );
 			?>
 		</div>
 		<div id="foot-menu-3" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'footer-menu-3',
-			));
+				wp_nav_menu( array(
+					'theme_location' => 'footer-menu-3',
+					'container_class' => 'footer-menu-cont'
+				) );
 			?>
 		</div>
 		<div id="foot-menu-4" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			wp_nav_menu(array(
-				'theme_location' => 'footer-menu-4',
-			));
+				wp_nav_menu( array(
+					'theme_location' => 'footer-menu-4',
+					'container_class' => 'footer-menu-cont'
+				) );
 			?>
 		</div>
 	</div>
