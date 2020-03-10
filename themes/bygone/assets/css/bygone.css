@@ -841,13 +841,51 @@ ol li:before {
     font-weight: 800;
 }
 
-.woocommerce-product-details__short-description{
-    
+.woocommerce-product-details__short-description p{
+    border-left: var(--yellow) 2px dashed;
+    padding: 0 10px;
 }
 
 .sku_wrapper{
     display: none;
 }
+
+.entry-summary .cart{
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.entry-summary .quantity input{
+    width: 4em;
+    padding: 5px;
+    font-size: 1.25em;
+}
+
+.entry-summary .cart button{
+    background-color: var(--green);
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.single-product .product_meta{
+    margin-top: 2em;
+}
+
+
+.single-product .product_meta .posted_in a{
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
 
 
