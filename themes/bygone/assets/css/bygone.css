@@ -716,6 +716,11 @@ ol li:before {
     list-style-image: none;
 }
 
+/* woocommerce widgets*/
+.woocommerce-widget-layered-nav-list__item {
+    list-style-image: none;
+}
+
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
 
