@@ -158,6 +158,10 @@ ul li {
     list-style-image: url(../img/Asset\ 1.png); 
 }
 
+hr {
+    border: 1px dashed var(--green);
+    width: 30vw;
+}
 .menu-item {
     display: flex;
     /* align-items: center;
@@ -820,7 +824,12 @@ ol li:before {
 /* Mobile Query*/
 
 @media screen and (max-width: 39.9375em) {
-
+    hr  {
+        border: 1px dashed var(--green);
+        width: 30vw;
+        margin-left: 35vw;
+        margin:auto;
+    }
 
     .woocommerce-MyAccount-navigation li {
         border: none;
