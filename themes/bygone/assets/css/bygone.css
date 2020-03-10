@@ -682,6 +682,7 @@ ol li:before {
     width: 50%;
     margin-left: 20rem;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .wp-block-media-text>figure>img {
@@ -695,6 +696,12 @@ ol li:before {
 
 #post-98{
     display: none;
+}
+
+
+
+.has-text-align-left {
+    font-size: 16px;
 }
 
 /* Mobile Query*/
