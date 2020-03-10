@@ -40,7 +40,7 @@ div#page.site footer#colophon.site-footer #quick-links{
     height: 3px;
     bottom: 0;
     left: 0;
-    background: yellow;
+    background: var(--yellow);
     visibility: hidden;
     border-radius: 5px;
     transform: scaleX(0);

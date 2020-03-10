@@ -19,10 +19,10 @@ brown: #42210b
 :root {
     --header-font: mr-eaves-modern, sans-serif;
     /* --header-font: 'Kulim Park', sans-serif; */
-    --darkgreen: rgb(0, 64, 73);
-    --green: rgb(2, 107, 121);
+    --darkgreen: #004049;
+    --green: #026b79;
     --white: #fff;
-    --yellow: rgb(248, 244, 0);
+    --yellow: #f8f400;
     /* --green: #00685a; */
 }
 
