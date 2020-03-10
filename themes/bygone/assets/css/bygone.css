@@ -358,8 +358,11 @@ ul li {
 
 /* woocommerce my account dashboard */
 
+.woocommerce-MyAccount-navigation ul li{
+    list-style-image: none;
+}
+
 .woocommerce-MyAccount-navigation ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -379,6 +382,7 @@ ul li {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+    padding-left: 0px;
 }
 
 .woocommerce-MyAccount-navigation a:visited {
