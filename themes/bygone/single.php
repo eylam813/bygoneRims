@@ -16,6 +16,11 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
+			?>
+			<div class="grid-x">
+				<div class="cell large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 grid-padding-x">
+					<?php
+
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
@@ -25,6 +30,12 @@ get_header();
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
+			?>
+			</div>
+		</div>
+
+		<?php
+
 
 		endwhile; // End of the loop.
 		?>
