@@ -681,13 +681,20 @@ ol li:before {
 
 
 /* cart page */
-
+thead tr th{
+    color: #026b79;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
 .remove{
-    border-radius: 10%;
-    font-size: 24px;
-    background-color: red;
-    padding: 1px 5px;
-    color: white;
+    border-radius: 50%;
+    /* font-size: 24px; */
+    font-weight: 600;
+    margin-left: 10px;
+    /* background-color: red; */
+    padding: 1px 4px;
+    border: 2px solid var(--green);
+    color: var(--green);
 }
 
 .shop_table{
@@ -707,9 +714,16 @@ ol li:before {
 
 .shop_table tbody tr:nth-child(odd){
     /* background-color: #f3f4f5; */
+    color: var(--green);
     background-color: rgba(248, 244, 0, 0.15);
 }
-
+.actions {
+    padding: 5px 15px 10px 15px;
+}
+.coupon{
+    display: flex;
+    align-items: center;
+}
 
 .attachment-woocommerce_thumbnail{
     width: 7em;
