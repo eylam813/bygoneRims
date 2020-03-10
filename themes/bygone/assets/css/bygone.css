@@ -890,6 +890,11 @@ ol li:before {
     border: var(--green) solid 2px;
 }
 
+.single-product .wc-tabs-wrapper ul li a:focus{
+    background-color: var(--green);
+    color: white
+}
+
 
 .single-product .product_meta .posted_in a{
     text-decoration: underline;
