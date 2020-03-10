@@ -123,7 +123,7 @@ ul#header-lower.menu li.menu-item > a:focus:before {
     transform: scaleX(1);
 }
 
-#bygone-hamburger-menu.hamburger-menu{
+#bygone-hamburger-menu .hamburger-menu{
     display: none;
 }
 .hamburger-wrapper {
@@ -146,26 +146,38 @@ ul#header-lower.menu li.menu-item > a:focus:before {
         width: 200px;
     }
     /* header menu */
-    ul#header-upper.menu{
+    #nav-top-menu ul#header-upper.menu{
         display: none;
     }
-    ul#header-lower.menu{
+    #nav-lower-menu ul#header-lower.menu{
         display: none;
     }
     .hamburger-wrapper {
         display: block;
     }
-    #bygone-hamburger-menu.hamburger-menu{
-        display: block;
+
+    
+    /* for hamburger menu setting display none initially then will control through JS */
+    #bygone-hamburger-menu{
+        display: none;
+        background-color: var(--green);
         position: absolute;
+
+    }
+
+    #bygone-hamburger-menu .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         left:0;
-        background-color: rgb(2, 107, 121);
+        background-color: var(--green);
         z-index: 5;
         padding: 10px;
+        
     }
 
     /* hamburger menu pop out */
-    #bygone-hamburger-menu.hamburger-menu ul{
+    #bygone-hamburger-menu .hamburger-menu ul{
         padding-inline-start: 0px;
         margin-block-start: 0em;
         margin-block-end: 0em;
@@ -204,3 +216,4 @@ ul#header-lower.menu li.menu-item > a:focus:before {
     }
 
 }
+>>>>>>> parent of ca5ed5b... adds z-index to hamburger pop out menu to fix overlapping text issue

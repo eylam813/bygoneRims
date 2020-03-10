@@ -191,8 +191,10 @@ function bygone_theme_scripts()
 {
 	// queueing the foundation stuff
 	wp_enqueue_style('bygone-foundation', get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', null, '6.5.1');
+
 	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/what-input.js', array('jquery'), '6.5.1', true);
 	wp_enqueue_script('bygone-theme-what-input', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery', 'bygone-theme-what-input'), '6.5.1', true);
+	wp_enqueue_script('bygone-script', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '6.5.1');
 
 
 	// loading the custom CSS file
@@ -245,46 +247,40 @@ if (defined('JETPACK__VERSION')) {
 // start custom post type
 
 // the function to initialize the new post type
-function create_post_type_events() {
- 
+function create_post_type_events()
+{
+
 	// post type will be called "events"
-    register_post_type( 'events',
-    // CPT Options
-        array(
+	register_post_type(
+		'events',
+		// CPT Options
+		array(
 			// 
-            'labels' => array(
-                'name' => __( 'Events' ),
-                'singular_name' => __( 'Event' )
+			'labels' => array(
+				'name' => __('Events'),
+				'singular_name' => __('Event')
 			),
-            'public' => true,
+			'public' => true,
 			// to show this post type in block editor (dashboard)
 			'show_in_rest' => true,
 			'has_archive' => true,
 			// slug for the post type will be "events"
-            'rewrite' => array('slug' => 'events'),
-        )
-    );
+			'rewrite' => array('slug' => 'events'),
+		)
+	);
 }
 // adding the above function as action 
-add_action( 'init', 'create_post_type_events' );
+add_action('init', 'create_post_type_events');
 
 
 // getting our events post type on the front page with other posts
-function add_events_to_query( $query ) {
-    if ( is_home() && $query->is_main_query() )
-        $query->set( 'post_type', array( 'post', 'events' ) );
-    return $query;
+function add_events_to_query($query)
+{
+	if (is_home() && $query->is_main_query())
+		$query->set('post_type', array('post', 'events'));
+	return $query;
 }
-add_action( 'pre_get_posts', 'add_events_to_query' );
-
-// getting our products by woocommerce tag or category to loop
-// define the loop_shop_per_page callback 
-
-function bygone_theme_loop_shop_per_page( $bygone_theme_loop_shop_per_page ) { 
-    // make filter magic happen here... 
-    return $bygone_theme_shop_per_page; 
-}; 
-add_filter( 'loop_shop_per_page', 'bygone_theme_loop_shop_per_page', 10, 1 ); 
+add_action('pre_get_posts', 'add_events_to_query');
 
 /**
  * Customized menu output
