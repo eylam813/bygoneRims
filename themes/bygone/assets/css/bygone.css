@@ -721,6 +721,10 @@ ol li:before {
     list-style-image: none;
 }
 
+.flex-control-nav li {
+    list-style-image: none;
+}
+
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
 
