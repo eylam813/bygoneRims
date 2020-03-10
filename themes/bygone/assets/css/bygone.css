@@ -19,10 +19,10 @@ brown: #42210b
 :root {
     --header-font: mr-eaves-modern, sans-serif;
     /* --header-font: 'Kulim Park', sans-serif; */
-    --darkgreen: rgb(0, 64, 73);
-    --green: rgb(2, 107, 121);
+    --darkgreen: #004049;
+    --green: #026b79;
     --white: #fff;
-    --yellow: rgb(248, 244, 0);
+    --yellow: #f8f400;
     /* --green: #00685a; */
 }
 
@@ -158,6 +158,10 @@ ul li {
     list-style-image: url(../img/Asset\ 1.png); 
 }
 
+hr {
+    border: 1px dashed var(--green);
+    width: 30vw;
+}
 .menu-item {
     display: flex;
     /* align-items: center;
@@ -677,10 +681,236 @@ ol li:before {
     
 }
 
+
+
+
+/* cart page */
+
+.remove{
+    border-radius: 10%;
+    font-size: 24px;
+    background-color: red;
+    padding: 1px 5px;
+    color: white;
+}
+
+.shop_table{
+    width: 100%;
+    border-top: var(--green) 3px solid;
+    padding-top: 1em;
+}
+
+.shop_table thead{
+    font-size: 1.5em;
+    color: #cecece;
+}
+
+.shop_table tbody{
+    color: white;
+}
+
+.shop_table tbody tr:nth-child(odd){
+    /* background-color: #f3f4f5; */
+    background-color: rgba(248, 244, 0, 0.15);
+}
+
+
+.attachment-woocommerce_thumbnail{
+    width: 7em;
+    margin: 1em 0;
+}
+
+.screen-reader-text{
+    display: none;
+}
+
+.shop_table .qty {
+    width: 3em;
+    margin: 0 auto;
+}
+
+.quantity{
+    display: flex;
+    justify-content: center;
+}
+
+.product-name a{
+    font-size: 1.5em;
+    font-weight: 600;
+    /* color: white; */
+
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.product-name a:hover{
+    text-decoration: underline;
+}
+
+.product-price .woocommerce-Price-amount, .product-subtotal .woocommerce-Price-amount{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/* stuff after the main table on cart page */
+
+.coupon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.coupon .input-text{
+    height: 2em;
+    margin: 10px;
+}
+
+.actions .button{
+    background-color: var(--green);
+    color: white;
+    font-size: 1em;
+    padding: 3px 11px;
+    border-radius: 10px;
+}
+
+.actions button[name="update_cart"]{
+    margin-left: auto;
+}
+
+
+
+.cart_totals .cart-subtotal {
+    font-size: 1.2em;
+} 
+
+.cart_totals .order-total{
+    font-size: 2    em;
+}
+
+
+.cart-subtotal, .order-total{
+    color: black;
+}
+
+.wc-proceed-to-checkout{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wc-proceed-to-checkout a{
+    background-color: var(--green);
+    color: white;
+    font-size: 1.25em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.wc-proceed-to-checkout a:hover{
+    box-shadow: #000000 0px 0px 5px;
+    transition: 0.2s;
+}
+
+
+/* FORM STYLING */
+.wsf-form .wsf-form-canvas{
+    border: 3px solid var(--green);
+}
+
+.form-error {
+    font-size: 0.6rem;
+    /* color: red; */
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+span.wsf-required-wrapper{
+    padding-left: 5px;
+}
+.wsf-required-wrapper small {
+    font-size: 0.5rem;
+}
+label {
+    color: var(--green);
+}
+input {
+    border: none;
+    border-bottom: 2px solid var(--green);
+    margin-left: 5px;
+    padding: 4px;
+}
+input:focus{
+    outline: none;
+    background-color: rgba(0, 192, 176, 0.342);
+}
+textarea {
+    border: none;
+    /* border-bottom: 1px solid var(--green); */
+    margin-left: 5px;
+    padding: 4px;
+    background-color: rgba(4, 216, 198, 0.171);
+}
+textarea:focus{
+    outline: none;
+    background-color: rgba(0, 192, 176, 0.342);
+}
+[data-type="submit"]{
+    display: flex;
+    justify-content: flex-end;
+}
+fieldset button[type="submit"]{
+    border: 2px solid var(--green);
+    padding: 5px;
+    color: var(--green);
+}
+fieldset button[type="submit"]:hover{
+    background-color: rgba(4, 216, 198, 0.171);
+}
+
+
+/* WOOCOMMERCE FORM */
+.shop_table {
+    border-top: none;
+}
+.cart_item .product-name{
+    color: var(--green);
+}
+.woocommerce-billing-fields__field-wrapper, .woocommerce-additional-fields,.woocommerce-checkout-review-order{
+    border: 3px solid var(--green);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.woocommerce-privacy-policy-text p a {
+    color: var(--green);
+    padding-left: 0;
+}
+
+#payment ul li {
+    list-style-image: none;
+}
+#place_order{
+    border: 2px solid var(--green);
+    padding: 5px;
+    color: var(--green);
+}
+#place_order:hover{
+    background-color: rgba(4, 216, 198, 0.171);
+}
+
 /* Mobile Query*/
 
 @media screen and (max-width: 39.9375em) {
-
+    hr  {
+        border: 1px dashed var(--green);
+        width: 30vw;
+        margin-left: 35vw;
+        margin:auto;
+    }
 
     .woocommerce-MyAccount-navigation li {
         border: none;
