@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				bygone_posted_on();
-				bygone_posted_by();
+				// bygone_posted_on();
+				// bygone_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>

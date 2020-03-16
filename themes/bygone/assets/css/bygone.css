@@ -171,6 +171,7 @@ hr {
 
 .menu-item a {
     margin: 0 15px;
+
     color: black;
     font-family: sans-serif;
     font-weight: normal;
@@ -1084,9 +1085,7 @@ ol.flex-control-nav li::before {
 
 }
 
-.entry-meta {
-    display:none;
-}
+
 
 
 /* Mobile Query*/
