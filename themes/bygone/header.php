@@ -102,12 +102,5 @@
 
 
 
-		<div class="mini-cart-wrapper">
-			<?php woocommerce_mini_cart(); ?>
-		</div>
-
-
-
-
 
 		<div id="content" class="site-content">
