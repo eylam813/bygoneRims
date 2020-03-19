@@ -68,6 +68,7 @@ brown: #42210b
 /* dynamically generated menu links */
 .menu-item a {
     text-decoration: none;
+    
 }
 
 /* BLOCK STYLINGS ----------- */
@@ -174,7 +175,7 @@ hr {
 
 .menu-item a {
     margin: 0 15px;
-    text-align: center;
+
     color: black;
     font-family: sans-serif;
     font-weight: normal;
@@ -385,7 +386,7 @@ hr {
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-left: 0px;
 }
 
@@ -480,7 +481,7 @@ hr {
 
 .woocommerce-EditAccountForm .required {
     position: relative;
-    top: -10px;
+    top: -4px;
     content: url(../img/required.png);
 }
 
@@ -500,6 +501,9 @@ hr {
 
 .woocommerce-EditAccountForm label {
     font-size: 0.8em;
+}
+.required {
+    padding-left: 0px;
 }
 
 .woocommerce-notices-wrapper .woocommerce-error {
