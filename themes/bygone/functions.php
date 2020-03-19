@@ -256,32 +256,6 @@ if (defined('JETPACK__VERSION')) {
 
 // old custom post type. will delete once everything is working
 
-				// the function to initialize the new post type
-				/* function create_post_type_events()
-				{
-
-					// post type will be called "events"
-					register_post_type(
-						'events',
-						// CPT Options
-						array(
-							// 
-							'labels' => array(
-								'name' => __('Events'),
-								'singular_name' => __('Event')
-							),
-							'public' => true,
-							// to show this post type in block editor (dashboard)
-							'show_in_rest' => true,
-							'has_archive' => true,
-							// slug for the post type will be "events"
-							'rewrite' => array('slug' => 'events'),
-						)
-					);
-				} */
-				// adding the above function as action 
-				// add_action('init', 'create_post_type_events');
-
 
 // getting our events post type on the front page with other posts
 function add_events_to_query($query)
