@@ -248,6 +248,9 @@ if (defined('JETPACK__VERSION')) {
 }
 
 
+// loading the block-editor.php 
+require get_template_directory() . '/inc/block-editor.php';
+
 
 // start custom post type
 
