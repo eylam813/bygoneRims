@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="theBlogs"<?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -20,7 +20,7 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
+			<div class="entry-meta authorText">
 				<?php
 				bygone_posted_on();
 				bygone_posted_by();
@@ -29,11 +29,12 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php bygone_post_thumbnail(); ?>
+	<!-- <?php bygone_post_thumbnail(); ?> -->
 
 	<div class="entry-content">
 		<?php
-		the_content( sprintf(
+		if ( is_singular() ) :
+					the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
 				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'bygone' ),
@@ -45,11 +46,31 @@
 			),
 			get_the_title()
 		) );
+		else :
+			the_excerpt( sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'bygone' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			) );
+		endif;
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bygone' ),
-			'after'  => '</div>',
-		) );
+
+
+		
+
+
+
+		// wp_link_pages( array(
+		// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bygone' ),
+		// 	'after'  => '</div>',
+		// ) );
 		?>
 	</div><!-- .entry-content -->
 
