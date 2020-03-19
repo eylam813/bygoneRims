@@ -15,11 +15,12 @@ Thumbs.db
 /uploads/
 
 #WordPress plugins
-/plugins/advance-custom-fields/
+/plugins/advanced-custom-fields/
 /plugins/block-unit-test/
 /plugins/jetpack/
 /plugins/show-current-template/
 /plugins/safe-svg/
 /plugins/woocommerce/
 /plugins/woocommerce-shipstation-integration/
+/plugins/wordpress-importer/
 /plugins/
