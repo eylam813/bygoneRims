@@ -1110,11 +1110,14 @@ ol.flex-control-nav li::before {
 
 .wp-block-media-text .wp-block-media-text__content {
     padding: 18px 7%;
-
 }
 
-
-
+.theBlogs {
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    margin: 10px;
+}
 
 
 
@@ -1188,7 +1191,6 @@ ol.flex-control-nav li::before {
 .entry-content .woocommerce .products .product .price .woocommerce-Price-amount span {
     padding: 0;
 }
-
 
 
 

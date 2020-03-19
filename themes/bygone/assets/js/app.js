@@ -1,6 +1,6 @@
-jQuery(document).ready(function ($) {
+// jQuery(document).ready(function ($) {
 
-    $(document).foundation()
+    // $(document).foundation()
 
 
     let hamburgerMenu = document.querySelector("#bygone-hamburger-menu.hamburger-menu")
@@ -32,6 +32,6 @@ jQuery(document).ready(function ($) {
             x.style.display = "none";
         }
     }
-});
+// });
 
 
