@@ -51,7 +51,7 @@ header{
 .site-header {
     padding: 0 2%;
     margin: 0 auto;
-    background-color: rgb(2, 107, 121);
+    background-color: var(--green);
 }
 
 .site-header>* {
@@ -109,7 +109,7 @@ ul#header-lower.menu li.menu-item > a:before {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: yellow;
+    background: var(--yellow);
     visibility: hidden;
     border-radius: 5px;
     transform: scaleX(0);
@@ -162,6 +162,7 @@ ul#header-lower.menu li.menu-item > a:focus:before {
         display: none;
         background-color: var(--green);
         position: absolute;
+        z-index: 10;
 
     }
 
@@ -195,7 +196,7 @@ ul#header-lower.menu li.menu-item > a:focus:before {
         height: 3px;
         bottom: 0;
         left: 0;
-        background: yellow;
+        background: var(--yellow);
         visibility: hidden;
         border-radius: 5px;
         transform: scaleX(0);
@@ -216,4 +217,3 @@ ul#header-lower.menu li.menu-item > a:focus:before {
     }
 
 }
->>>>>>> parent of ca5ed5b... adds z-index to hamburger pop out menu to fix overlapping text issue

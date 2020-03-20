@@ -11,13 +11,11 @@ div#page.site footer#colophon.site-footer div#social-media-icons {
 /* adding background colour to lower footer */
 div#page.site footer#colophon.site-footer #quick-links{
     background-color: var(--green);
-    /* background-color: gainsboro; */
     display: flex;
 }
 #quick-links {
     padding-top: 1rem;
 }
-
 #quick-links-title {
     margin: 1rem;
     padding-left: 40px;
@@ -32,6 +30,7 @@ div#page.site footer#colophon.site-footer #quick-links{
     margin: 0 0 0 60px;
     padding-left: 0px;
 }
+
 /* add animation */
 #quick-links .foot-menu .footer-menu-cont ul.menu li.menu-item > a:before, 
 #quick-links .foot-menu .footer-menu-cont ul.menu li.menu-item > a:before {
@@ -41,7 +40,7 @@ div#page.site footer#colophon.site-footer #quick-links{
     height: 3px;
     bottom: 0;
     left: 0;
-    background: yellow;
+    background: var(--yellow);
     visibility: hidden;
     border-radius: 5px;
     transform: scaleX(0);
@@ -72,8 +71,10 @@ div#page.site footer#colophon.site-footer #quick-links{
     padding-inline-start: 0px;
 }
 
+
 #social-title {
     color: var(--green);
+    margin-right: 2rem;
 }
 #social-media-icons-container {
     display: flex;
@@ -81,12 +82,23 @@ div#page.site footer#colophon.site-footer #quick-links{
     width: 90vw;
     margin-left: 5vw;
     align-items: center;
+    padding: 10px 0;
 }
+#social-media-icons-inner-container .social-media{
+    display: flex;
+    padding-left: 0;
+}
+
+.social-icon a img{
+    height: 40px;
+    margin: 0 5px;
+}
+
 #footer-line {
     border: 2px solid var(--green);
     border-radius: 2px;
-    width: 90vw;
-    margin-left: 5vw;
+    width: 100vw;
+    margin-left: 0vw;
 }
 
 /* adding the border to social media links menu */
@@ -115,11 +127,14 @@ footer.entry-footer {
 }
 
 
-
 /* MEDIA QUERIES -------- */
 
 /* for tablet size and down */
 @media only screen and (max-width: 768px) {
+    #social-title {
+        color: var(--green);
+        margin-right: 0;
+    }
     #social-media-icons-container {
         display: flex;
         flex-wrap: wrap;
