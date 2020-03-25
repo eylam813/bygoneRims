@@ -74,8 +74,8 @@
 
 		</header><!-- #masthead -->
 
-			<!-- <div class="hamburger-menu" id="bygone-hamburger-menu"> -->
-			<div class="grid-x">
+		<!-- <div class="hamburger-menu" id="bygone-hamburger-menu"> -->
+		<div class="grid-x">
 			<div class="hamburger-menu small-6" id="bygone-hamburger-menu" style="display: none;">
 				<?php
 				if (has_nav_menu('Header Upper')) {
@@ -98,7 +98,7 @@
 				}
 				?>
 			</div>
-			</div>
+		</div>
 
 
 
