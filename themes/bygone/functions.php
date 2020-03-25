@@ -253,6 +253,9 @@ if (defined('JETPACK__VERSION')) {
 }
 
 
+// loading the block-editor.php 
+require get_template_directory() . '/inc/block-editor.php';
+
 
 // old custom post type. will delete once everything is working
 
