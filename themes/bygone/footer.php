@@ -60,6 +60,19 @@
 		<div class="cell">
 			<h3 id="quick-links-title">Quick Links</h3>
 		</div>
+		<?php
+			if ( has_nav_menu( 'footer-menu-1' ) ) {
+				wp_nav_menu( array( 'theme_location' => 'footer-menu-1' ) );
+			}
+			// if ( has_nav_menu(' footer-menu-1 ') ) {
+			// 	$args = array(
+			// 		'theme_location' => 'footer-menu-1',
+			// 		'container' => '',
+			// 	);
+			// 	wp_nav_menu( $args );
+			// }
+		?>
+		
 		<div id="foot-menu-1" class="foot-menu large-3 medium-3 small-6">
 			<?php
 				wp_nav_menu( array(

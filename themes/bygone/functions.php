@@ -49,10 +49,10 @@ if (!function_exists('bygone_setup')) :
 			'Header Upper' => esc_html__('header-upper', 'bygone'),
 			'Header Lower' => esc_html__('header-lower', 'bygone'),
 			'Footer Top ' => esc_html__('footer-social', 'bygone'),
-			'Footer Menu 1' => esc_html__('foot-menu-1', 'bygone'),
-			'Footer Menu 2' => esc_html__('foot-menu-2', 'bygone'),
-			'Footer Menu 3' => esc_html__('foot-menu-3', 'bygone'),
-			'Footer Menu 4' => esc_html__('foot-menu-4', 'bygone'),
+			'foot-menu-1' => esc_html__('Footer Menu 1', 'bygone'),
+			'foot-menu-2' => esc_html__('Footer Menu 2', 'bygone'),
+			'foot-menu-3' => esc_html__('Footer Menu 3', 'bygone'),
+			'foot-menu-4' => esc_html__('Footer Menu 4', 'bygone'),
 		));
 
 		/*
