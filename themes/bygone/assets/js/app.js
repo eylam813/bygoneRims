@@ -12,14 +12,15 @@ jQuery(document).ready(function ($) {
 
 
     function showHamburgerMenu() {
-        // let x = hamburgerMenu;
-        // let x = document.querySelector("#bygone-hamburger-menu .hamburger-menu");
         let x = document.querySelector("#bygone-hamburger-menu");
         console.log(x.style.display);
 
 
         if (x.style.display == "none") {
             x.style.display = "block";
+            $("#bygone-hamburger-menu").animate({
+                opacity: 1
+            }, 500);
         } else {
             x.style.display = "none";
         }
