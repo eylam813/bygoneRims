@@ -163,7 +163,8 @@ ul#header-lower.menu li.menu-item > a:focus:before {
         background-color: var(--green);
         position: absolute;
         z-index: 10;
-
+        /* adding the opacity 0 for animation */
+        opacity: 0;
     }
 
     #bygone-hamburger-menu .hamburger-menu{
