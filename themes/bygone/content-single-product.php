@@ -27,6 +27,7 @@ global $product;
  */
 do_action( 'woocommerce_before_single_product' );
 
+
 if ( post_password_required() ) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
@@ -34,14 +35,12 @@ if ( post_password_required() ) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
     <section>
-    <div class="bygone-product-before">
+    <!-- <div class="bygone-product-before">
     <?php
-        woocommerce_show_product_images();
-        //  {
-            // wc_get_template( 'single-product/product-image.php' );
-        // }
+    // by own addition
+        // woocommerce_show_product_images();
     ?>
-    </div>
+    </div> -->
     <p>My turn to rule</p>
         <?php
         /**
@@ -53,10 +52,10 @@ if ( post_password_required() ) {
         do_action( 'woocommerce_before_single_product_summary' );
         
         ?>
-    <section>
-    <h1>HELLOOOOOOOOOO</h1>
+    <section class="bygone-product-images">
+    <!-- <h1>HELLOOOOOOOOOO</h1> -->
 	<div class="summary entry-summary">
-		<?php
+        <?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
 		 *
@@ -72,17 +71,18 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
-
-	<?php
-	/**
-	 * Hook: woocommerce_after_single_product_summary.
-	 *
-	 * @hooked woocommerce_output_product_data_tabs - 10
-	 * @hooked woocommerce_upsell_display - 15
-	 * @hooked woocommerce_output_related_products - 20
-	 */
-    do_action( 'woocommerce_after_single_product_summary' );
-	?>
+    <div class="bygone-product-description">
+        <?php
+        /**
+         * Hook: woocommerce_after_single_product_summary.
+         *
+         * @hooked woocommerce_output_product_data_tabs - 10
+         * @hooked woocommerce_upsell_display - 15
+         * @hooked woocommerce_output_related_products - 20
+         */
+        do_action( 'woocommerce_after_single_product_summary' );
+        ?>
+    </div>
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

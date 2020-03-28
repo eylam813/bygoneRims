@@ -3,12 +3,12 @@
     background-color: rgb(192, 250, 231);
 }
 
-/* html{
+html{
     background-color: aquamarine;
 }
 body {
     background-color: aquamarine;
-} */
+}
 
 figure.woocommerce-product-gallery__wrapper div {
     display: flex;
@@ -33,4 +33,29 @@ button.pswp__button {
 .pswp--has_mouse .pswp__button--arrow--left, .pswp--has_mouse .pswp__button--arrow--right {
     background-color: rebeccapurple;
 
+}
+
+
+/* single product info holder */
+.single-product .entry-summary{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* single product page price and tags info box */
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
+    width: 50%;
+    border: 3px solid red;
+}
+/* single product page image with thumbnails */
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+    width: 50%;
+    max-width: 400px;
+    display: inline-block;
+    border: 3px solid green;
+}
+/* single product tabs with info - description and additional information */
+.bygone-product-description{
+    display: block;
+    border: 3px solid yellow;
 }
