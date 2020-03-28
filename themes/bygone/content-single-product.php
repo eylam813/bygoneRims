@@ -41,7 +41,6 @@ if ( post_password_required() ) {
         // woocommerce_show_product_images();
     ?>
     </div> -->
-    <p>My turn to rule</p>
         <?php
         /**
          * Hook: woocommerce_before_single_product_summary.
