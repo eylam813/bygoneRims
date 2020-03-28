@@ -68,6 +68,7 @@ brown: #42210b
 /* dynamically generated menu links */
 .menu-item a {
     text-decoration: none;
+    
 }
 
 /* BLOCK STYLINGS ----------- */
@@ -85,6 +86,9 @@ a:visited {
     color: inherit;
 }
 
+.wp-block-button__link {
+    background-color: var(--green) !important;
+}
 
 /* headings */
 h1 {
@@ -174,7 +178,6 @@ hr {
 
 .menu-item a {
     margin: 0 15px;
-    text-align: center;
     color: black;
     font-family: sans-serif;
     font-weight: normal;
@@ -385,7 +388,7 @@ hr {
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-left: 0px;
 }
 
@@ -480,7 +483,8 @@ hr {
 
 .woocommerce-EditAccountForm .required {
     position: relative;
-    top: -10px;
+    top: -8px;
+    left: -6px;
     content: url(../img/required.png);
 }
 
@@ -500,6 +504,9 @@ hr {
 
 .woocommerce-EditAccountForm label {
     font-size: 0.8em;
+}
+.required {
+    padding-left: 0px;
 }
 
 .woocommerce-notices-wrapper .woocommerce-error {
@@ -909,6 +916,7 @@ fieldset button[type="submit"] {
     border: 2px solid var(--green);
     padding: 5px;
     color: var(--green);
+    cursor: pointer;
 }
 
 fieldset button[type="submit"]:hover {
@@ -1119,6 +1127,12 @@ ol.flex-control-nav li::before {
     margin: 10px;
 }
 
+button, optgroup {
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -1212,6 +1226,10 @@ ol.flex-control-nav li::before {
     .woocommerce-MyAccount-navigation a {
         font-size: 1.4rem;
         padding-left: 7px;
+    }
+    .wp-block-media-text  {
+        width: 100%;
+        margin-left: 0px;
     }
 
 }
