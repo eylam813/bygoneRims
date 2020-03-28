@@ -1,0 +1,36 @@
+.bygone-product-before {
+    display: flex;
+    background-color: rgb(192, 250, 231);
+}
+
+/* html{
+    background-color: aquamarine;
+}
+body {
+    background-color: aquamarine;
+} */
+
+figure.woocommerce-product-gallery__wrapper div {
+    display: flex;
+    background-color: tomato;
+}
+
+ol.flex-control-nav.flex-control-thumbs {
+    display: flex;
+}
+
+button.pswp__button.pswp__button--arrow--right::before {
+    opacity: 1;
+    border-color: 3px solid rgb(177, 38, 38);
+    /* border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186); */
+    background-color: rebeccapurple;
+    z-index: 1000;
+
+}
+button.pswp__button {
+    border: 10px solid orange;
+}
+.pswp--has_mouse .pswp__button--arrow--left, .pswp--has_mouse .pswp__button--arrow--right {
+    background-color: rebeccapurple;
+
+}
