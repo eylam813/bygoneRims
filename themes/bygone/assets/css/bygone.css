@@ -1246,21 +1246,36 @@ button, optgroup {
     }
 
     /* PRODUCTS DISPLAY */
+    .woocommerce .products {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 0;
+    }
     .woocommerce .products li {
         /* flex-basis: 21%; */
         /* border: var(--yellow) solid 2px; */
-        margin: 1rem;
+        margin: 1rem 0;
         background-color: white;
         box-shadow: 5px 5px 10px 5px #00404030;
         padding: 5px;
         display: grid;
-        min-width: 275px;
-        width: 80vw;
+        min-width: 100%;
+        width: 100%;
+        max-width: 80vw;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 2fr 1fr 1fr;
-        grid-template-areas: "image title title"
-                            "image price price"
-                            "addCart addCart addCart";
+        grid-template-areas: "productLink"
+                            "addCart";
+    }
+    .woocommerce .woocommerce-loop-product__link{
+        grid-area: productLink;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: "image title"
+                            "image price";
     }
     .entry-content .woocommerce .products .product .woocommerce-LoopProduct-link .attachment-woocommerce_thumbnail {
         grid-area: image;
