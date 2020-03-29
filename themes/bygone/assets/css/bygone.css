@@ -1209,6 +1209,55 @@ ol.flex-control-nav li::before {
 
 
 
+/* events styling */
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-previous{
+    font-size: 1.5em;
+    background-color: var(--green);
+    color: white;
+    border: 5px solid var(--darkgreen);
+    border-radius: 100px;
+    font-weight: bold;
+    padding: 0 15px;
+    line-height: 2;
+}
+
+.nav-previous:hover{
+    background-color: white;
+    color: var(--green);
+}
+
+.nav-previous::before{
+    content: "<"
+}
+
+.nav-next{
+    font-size: 1.5em;
+    background-color: var(--green);
+    color: white;
+    border: 5px solid var(--darkgreen);
+    border-radius: 100px;
+    font-weight: bold;
+    padding: 0 15px;
+    line-height: 2;
+}
+
+.nav-next:hover{
+    background-color: white;
+    color: var(--green);
+}
+
+.nav-next::after{
+    margin-left: 10px;
+    content: " >"
+}
+
+
 
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
