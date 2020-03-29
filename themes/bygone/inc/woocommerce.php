@@ -71,6 +71,14 @@ function woocommerce_header_add_to_cart_fragment($fragments)
 
 add_filter('woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
 
+/**removed the downloads section from the my account page */
+add_filter( 'woocommerce_account_menu_items', 'custom_remove_downloads_my_account', 999 );
+
+    function custom_remove_downloads_my_account( $items ) {
+    unset($items['downloads']);
+    return $items;
+    }
+
 /**
  * @snippet       Hide Menu Mini-Cart Widget Dropdown Content
  * @how-to        Get CustomizeWoo.com FREE
@@ -80,3 +88,4 @@ add_filter('woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_
  */
 
 add_filter( 'woocommerce_widget_cart_is_hidden', '__return_true' );
+

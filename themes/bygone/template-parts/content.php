@@ -22,14 +22,16 @@
 			?>
 			<div class="entry-meta authorText">
 				<?php
-				bygone_posted_on();
-				bygone_posted_by();
+				// bygone_posted_on();
+				// bygone_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<!-- <?php bygone_post_thumbnail(); ?> -->
+	<?php 
+	//bygone_post_thumbnail(); 
+	?>
 
 	<div class="entry-content">
 		<?php
