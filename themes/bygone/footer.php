@@ -20,7 +20,7 @@
 
 	<!-- latest 3 "event" post type for the footer -->
 	
-	<div class="grid-x grid-container" id="footer-events">
+	<div class="grid-x grid-container footer-events">
 		<?php
 			$args = array(
 				'post_type' => 'bygone_theme_event',
@@ -34,7 +34,7 @@
 				while ($events->have_posts()) : 
 					$events->the_post(); 
 		?>
-					<div id="one-footer-event">
+					<div class="one-footer-event">
 						<h2 class="large-10 large-offset-1"><?php the_title(); ?></h2>
 						<img src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
 						<p><?php echo get_the_excerpt() ?></p>
