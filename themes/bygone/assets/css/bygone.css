@@ -1210,13 +1210,36 @@ ol.flex-control-nav li::before {
 
 
 /* events styling */
-.nav-links{
+
+.one-event h2 {
+    text-align: center;
+    background-color: rgba(2, 107, 121, 0.75);
+    color: white;
+}
+
+.event-container {
+    background-image: url(../img/confetti.png);
+    background-repeat: no-repeat;
+}
+
+.one-event .event-featured-image {
+    border: 10px groove var(--darkgreen);
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+.one-event p {
+    font-size: 1.75em;
+    background-color: white;
+}
+
+.nav-links {
     display: flex;
     justify-content: space-between;
 }
 
 
-.nav-previous{
+.nav-previous {
     font-size: 1.5em;
     background-color: var(--green);
     color: white;
@@ -1227,16 +1250,16 @@ ol.flex-control-nav li::before {
     line-height: 2;
 }
 
-.nav-previous:hover{
+.nav-previous:hover {
     background-color: white;
     color: var(--green);
 }
 
-.nav-previous::before{
+.nav-previous::before {
     content: "<"
 }
 
-.nav-next{
+.nav-next {
     font-size: 1.5em;
     background-color: var(--green);
     color: white;
@@ -1247,14 +1270,36 @@ ol.flex-control-nav li::before {
     line-height: 2;
 }
 
-.nav-next:hover{
+.nav-next:hover {
     background-color: white;
     color: var(--green);
 }
 
-.nav-next::after{
+.nav-next::after {
     margin-left: 10px;
     content: " >"
+}
+
+/* events archive page */
+.events-container {
+    border: 2px var(--darkgreen) solid;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.events-container p{
+    font-size: 1.25em;
+}
+
+.events-container .events-read-more{
+    background-color: var(--green);
+    color: white;
+    border: 5px solid var(--darkgreen);
+}
+
+.events-container .events-read-more:hover{
+    background-color: white;
+    color: var(--green);
 }
 
 
@@ -1277,6 +1322,27 @@ ol.flex-control-nav li::before {
         padding-left: 7px;
     }
 
+    /* events style */
+    .one-event p {
+        font-size: 1.5em;
+    }
+
+    .nav-previous {
+        font-size: 1.25em;
+    }
+
+    .nav-next {
+        font-size: 1.25em;
+    }
+
+    .nav-next::before {
+        margin-left: 2px;
+    }
+
+    .nav-next::after {
+        margin-left: 2px;
+    }
+
 }
 
 .theBlogs {
@@ -1285,9 +1351,7 @@ ol.flex-control-nav li::before {
     padding: 0 10px 10px 10px;
     margin: 10px;
 }
+
 .theBlogs .entry-header .entry-meta.authorText {
     color: var(--green);
 }
-
-
-
