@@ -1186,6 +1186,13 @@ button, optgroup {
 .woocommerce .price {
     order: 4;
 }
+.woocommerce .price del span {
+    font-size: 0.9rem;
+    color: red;
+}
+.woocommerce .price ins span {
+    background-color: yellow;
+} 
 
 
 .woocommerce .add_to_cart_button {
@@ -1264,32 +1271,41 @@ button, optgroup {
         min-width: 100%;
         width: 100%;
         max-width: 80vw;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 2fr 1fr 1fr;
-        grid-template-areas: "productLink"
-                            "addCart";
-    }
-    .woocommerce .woocommerce-loop-product__link{
-        grid-area: productLink;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 2fr 1fr;
-        grid-template-areas: "image title"
-                            "image price";
-    }
-    .entry-content .woocommerce .products .product .woocommerce-LoopProduct-link .attachment-woocommerce_thumbnail {
-        grid-area: image;
-    }
-    .woocommerce .woocommerce-loop-product__title{
-        grid-area: title;
-    }
-    .entry-content .woocommerce .products .product .price{
-        grid-area: price;
-        justify-self: right;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 0.5fr 0.4fr;
+        grid-template-areas: "productLink productLink"
+                            "productLink productLink"
+                            ". addCart";
     }
     .woocommerce .add_to_cart_button{
         grid-area: addCart;
     }
+    .woocommerce .woocommerce-loop-product__link{
+        width: 100%;
+        grid-area: productLink;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 0.5fr;
+        grid-template-areas: "image image"
+                            "title price";
+    }
+    .entry-content .woocommerce .products .product .woocommerce-LoopProduct-link .attachment-woocommerce_thumbnail {
+        grid-area: image;
+        margin-right: 5px;
+    }
+    .woocommerce .woocommerce-loop-product__title{
+        grid-area: title;
+        text-align: left;
+    }
+    .entry-content .woocommerce .products .product .price{
+        grid-area: price;
+        display: flex;
+        align-self: center;
+        justify-self: right;
+    }
+    /* .woocommerce .add_to_cart_button{
+        grid-area: addCart;
+    } */
     
 
 }
