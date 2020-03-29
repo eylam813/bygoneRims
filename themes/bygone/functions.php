@@ -204,6 +204,7 @@ function bygone_theme_scripts()
 
 	// loading the custom CSS file
 	wp_enqueue_style('bygone-theme-style', get_stylesheet_directory_uri() . '/assets/css/bygone.css', array());
+	wp_enqueue_style('bygone-product-style', get_stylesheet_directory_uri() . '/assets/css/bygone-product.css', array());
 	wp_enqueue_style('bygone-header-style', get_stylesheet_directory_uri() . '/assets/css/header.css', array());
 	wp_enqueue_style('bygone-footer-style', get_stylesheet_directory_uri() . '/assets/css/footer.css', array());
 

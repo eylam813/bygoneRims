@@ -29,7 +29,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<!-- <?php bygone_post_thumbnail(); ?> -->
+	<?php 
+	//bygone_post_thumbnail(); 
+	?>
 
 	<div class="entry-content">
 		<?php

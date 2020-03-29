@@ -88,3 +88,4 @@ add_filter( 'woocommerce_account_menu_items', 'custom_remove_downloads_my_accoun
  */
 
 add_filter( 'woocommerce_widget_cart_is_hidden', '__return_true' );
+
