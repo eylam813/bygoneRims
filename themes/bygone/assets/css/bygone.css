@@ -1302,6 +1302,7 @@ button, optgroup {
         display: flex;
         align-self: center;
         justify-self: right;
+        padding-right: 10px;
     }
     /* .woocommerce .add_to_cart_button{
         grid-area: addCart;
