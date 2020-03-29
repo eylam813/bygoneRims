@@ -1209,6 +1209,100 @@ button, optgroup {
 
 
 
+/* events styling */
+
+.one-event h2 {
+    text-align: center;
+    background-color: rgba(2, 107, 121, 0.75);
+    color: white;
+}
+
+.event-container {
+    background-image: url(../img/confetti.png);
+    background-repeat: no-repeat;
+}
+
+.one-event .event-featured-image {
+    border: 10px groove var(--darkgreen);
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+.one-event p {
+    font-size: 1.75em;
+    background-color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-previous {
+    font-size: 1.5em;
+    background-color: var(--green);
+    color: white;
+    border: 5px solid var(--darkgreen);
+    border-radius: 100px;
+    font-weight: bold;
+    padding: 0 15px;
+    line-height: 2;
+}
+
+.nav-previous:hover {
+    background-color: white;
+    color: var(--green);
+}
+
+.nav-previous::before {
+    content: "<"
+}
+
+.nav-next {
+    font-size: 1.5em;
+    background-color: var(--green);
+    color: white;
+    border: 5px solid var(--darkgreen);
+    border-radius: 100px;
+    font-weight: bold;
+    padding: 0 15px;
+    line-height: 2;
+}
+
+.nav-next:hover {
+    background-color: white;
+    color: var(--green);
+}
+
+.nav-next::after {
+    margin-left: 10px;
+    content: " >"
+}
+
+/* events archive page */
+.events-container {
+    border: 2px var(--darkgreen) solid;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.events-container p{
+    font-size: 1.25em;
+}
+
+.events-container .events-read-more{
+    background-color: var(--green);
+    color: white;
+    border: 5px solid var(--darkgreen);
+}
+
+.events-container .events-read-more:hover{
+    background-color: white;
+    color: var(--green);
+}
+
+
 
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
@@ -1232,6 +1326,27 @@ button, optgroup {
         margin-left: 0px;
     }
 
+    /* events style */
+    .one-event p {
+        font-size: 1.5em;
+    }
+
+    .nav-previous {
+        font-size: 1.25em;
+    }
+
+    .nav-next {
+        font-size: 1.25em;
+    }
+
+    .nav-next::before {
+        margin-left: 2px;
+    }
+
+    .nav-next::after {
+        margin-left: 2px;
+    }
+
 }
 
 .theBlogs {
@@ -1240,9 +1355,7 @@ button, optgroup {
     padding: 0 10px 10px 10px;
     margin: 10px;
 }
+
 .theBlogs .entry-header .entry-meta.authorText {
     color: var(--green);
 }
-
-
-
