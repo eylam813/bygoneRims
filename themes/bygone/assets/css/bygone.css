@@ -438,6 +438,26 @@ blockquote {
 }
 
 
+/* WooCommerce Blocks */
+.wp-block-woocommerce-all-products .wc-block-all-products .wc-block-sort-select__select{
+    display: flex;
+    /* justify-self: flex-end; */
+}
+.wc-block-sort-select__select {
+    width: fit-content;
+    width: -moz-fit-content;
+    min-width: 250px;
+    background-color: #026b7970;
+    border: none;
+    padding: 5px;
+    display: flex;
+    justify-self: right;
+}
+/* .wc-block-grid__products{
+
+} */
+
+
 /* woocommerce my account page */
 
 /* woocommerce my account dashboard */
