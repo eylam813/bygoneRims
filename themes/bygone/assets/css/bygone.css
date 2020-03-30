@@ -302,6 +302,13 @@ hr {
 }
 
 /* pullquote block */
+blockquote {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
 .alignright {
     display: block;
     margin-left: auto;
@@ -311,28 +318,32 @@ hr {
     display: block;
     margin-right: auto;
 }
-
+.wp-block-pullquote{
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+}
 .wp-block-pullquote .aligncenter {
     max-width: 80vw;
 }
 
 .wp-block-pullquote p {
-    border-left: var(--green)solid 3px;
-    border-right: var(--green) solid 3px;
-    padding: 0.5em 2em;
-    font-style: italic;
+    font-style: none;
+    font-family: serif;
 }
 
 
 .wp-block-pullquote cite {
     font-size: 1em;
-    color: var(--green);
     font-style: normal;
     font-weight: 500;
+    font-family: serif;
 }
 
 .wp-block-pullquote cite::before {
     content: "— ";
+}
+.wp-block-pullquote cite::after {
+    content: " —";
 }
 
 /* verse block */
