@@ -26,7 +26,12 @@ brown: #42210b
     /* --green: #00685a; */
 }
 
-
+body {
+    background-image: url(../img/backgrounds/blobBg-top.svg), url(../img/backgrounds/blobBg-bottom.svg);
+    background-size: contain contain;
+    background-position: left top ,10% 90%;
+    background-repeat: no-repeat, no-repeat;
+}
 
 /* to take up full width of the page */
 .alignfull {
@@ -70,10 +75,9 @@ brown: #42210b
     text-decoration: none;
     
 }
-
 /* BLOCK STYLINGS ----------- */
 body {
-    background-color:white;
+    /* background-color:white; */
     font-family: mr-eaves-modern, sans-serif;
     /* font-family: 'Kulim Park', sans-serif; */
 }

@@ -3,13 +3,6 @@
     background-color: rgb(192, 250, 231);
 }
 
-html{
-    background-color: aquamarine;
-}
-body {
-    background-color: aquamarine;
-}
-
 figure.woocommerce-product-gallery__wrapper div {
     display: flex;
     background-color: tomato;
