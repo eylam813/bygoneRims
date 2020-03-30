@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Shop Sidebar Template
- * The template for displaying all pages
+ * The template is for the shop  page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -44,5 +44,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+get_sidebar('shop');
 get_footer();
