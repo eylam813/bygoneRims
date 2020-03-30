@@ -908,7 +908,6 @@ textarea {
     min-height: 50px !important;
     height: 40px;
     width: 20rem;
-
 }
 
 textarea:focus {
@@ -1448,6 +1447,18 @@ button, optgroup {
 
     .nav-next::after {
         margin-left: 2px;
+    }
+
+    /* Form Styling */
+    #wsf-1-section-4 {
+        font-size: 19px;
+        padding: 7px;
+    }
+    input {
+        width: 8rem;
+    }
+    textarea {
+        width: 17rem;
     }
 
 }
