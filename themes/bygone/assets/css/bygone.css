@@ -863,7 +863,7 @@ thead tr th {
 }
 
 .form-error {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     /* color: red; */
     display: block;
     padding-left: 10px;
