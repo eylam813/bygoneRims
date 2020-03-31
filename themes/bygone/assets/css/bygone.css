@@ -1490,6 +1490,7 @@ button, optgroup {
     text-align: center;
     background-color: rgb(2, 107, 121);
     color: white;
+    padding: 10px;
 }
 
 .one-footer-event img {
