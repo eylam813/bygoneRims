@@ -1452,6 +1452,17 @@ button, optgroup {
         margin-left: 2px;
     }
 
+    /* blog post styling */
+    .post-feature-image {
+        margin-top: 0px;
+    }
+    .entry-title a {
+        margin-left: 0rem;
+    }
+    .entry-content p {
+        margin-left: 1rem;
+    }
+
 }
 
 .theBlogs {
