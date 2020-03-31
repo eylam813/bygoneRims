@@ -1342,6 +1342,10 @@ button, optgroup {
     margin-left: 1rem;
 }
 
+.post-feature-image1 img {
+    width: 100%;
+}
+
 
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
