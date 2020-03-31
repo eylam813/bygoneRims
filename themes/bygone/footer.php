@@ -34,7 +34,7 @@
 			while ($events->have_posts()) :
 				$events->the_post();
 		?>
-				<a class="one-footer-event-holder" href=" <?php echo get_permalink() ?>">>
+				<a class="one-footer-event-holder" href=" <?php echo get_permalink() ?>">
 					<div class="one-footer-event" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
 						<h2 class="large-12"><?php the_title(); ?></h2>
 					</div>
