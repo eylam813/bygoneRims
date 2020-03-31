@@ -455,10 +455,28 @@ blockquote {
     display: flex;
     justify-self: right;
 }
-/* .wc-block-grid__products{
 
-} */
+/* woocommerce product tags/category search results */
+.woocommerce-result-count{
+    color: var(--green);
+    width: fit-content;
+    min-width: fit-content;
+    margin-right: 10px;
+    display: inline-block;
+    /* margin-left: auto; */
+}
 
+.woocommerce-ordering{
+    min-width: 200px;
+    width: 5vw;
+    max-width: 250px;
+    display: inline-block;
+    /* position: relative; */
+}
+.woocommerce-ordering.orderby{
+    max-width: inherit;
+    /* position: absolute; */
+}
 
 /* woocommerce my account page */
 
