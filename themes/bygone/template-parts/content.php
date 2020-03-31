@@ -30,7 +30,13 @@
 	</header><!-- .entry-header -->
 
 
-	<img class="cell large-4 large-offset small-12 post-feature-image" src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
+	<div class="cell large-4 large-offset small-12 post-feature-image">
+	<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+			echo get_the_post_thumbnail($post->ID);
+			} else {
+				echo main_image();
+			} ?>
+	</div>
 	
 
 	<div class="entry-content large-8 small-12">
