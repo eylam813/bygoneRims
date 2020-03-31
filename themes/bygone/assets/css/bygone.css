@@ -888,11 +888,12 @@ thead tr th {
 }
 
 .product-price .woocommerce-Price-amount,
-.product-subtotal .woocommerce-Price-amount {
+.product-subtotal .woocommerce-Price-amount,.woocommerce-Price-amount.amount{
     text-align: center;
     display: block;
     margin: 0 auto;
     padding: 0;
+    padding-left: 0;
 }
 
 
