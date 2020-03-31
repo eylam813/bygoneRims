@@ -1121,7 +1121,7 @@ fieldset button[type="submit"]:hover {
 }
 
 .single-product .wc-tabs-wrapper ul {
-    width: 50%;
+    /* width: 50%; */
     margin: 3em auto;
     display: flex;
     justify-content: space-evenly;
