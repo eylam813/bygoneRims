@@ -38,17 +38,52 @@ button.pswp__button {
 /* single product page price and tags info box */
 .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
     width: 50%;
-    border: 3px solid red;
+    /* border: 3px solid red; */
+    flex-basis: 20%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
+
+.single-product, .bygone-product-images{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 /* single product page image with thumbnails */
 .woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
     width: 50%;
     max-width: 400px;
-    display: inline-block;
-    border: 3px solid green;
+    display: block;
+    margin: 0 auto;
+    
+    /* border: 3px solid green; */
 }
 /* single product tabs with info - description and additional information */
 .bygone-product-description{
     display: block;
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
+    flex-basis: 70%;
+}
+
+.woocommerce-Tabs-panel h2{
+    display: none;
+}
+
+/* Mobile Query*/
+@media screen and (max-width: 39.9375em) {
+
+    .single-product, .bygone-product-images{
+        flex-wrap: wrap;
+    }
+
+    .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    .bygone-product-description{
+        flex-basis: 100%;
+    }
 }
