@@ -1493,10 +1493,19 @@ button, optgroup {
     color: var(--green);
 }
 
-
-
 .post-feature-image1 img {
     width: 100%;
+}
+
+/* the blogs */
+.theBlogs {
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    margin: 10px;
+}
+
+.theBlogs .entry-header .entry-meta.authorText {
+    color: var(--green);
 }
 
 @media screen and (max-width: 63.9375em) {
@@ -1649,6 +1658,7 @@ button, optgroup {
     }
     .wp-block-image img {
         margin-left: -42px;
+    }
     /* Form Styling */
     #wsf-1-section-4 {
         font-size: 19px;
@@ -1662,14 +1672,4 @@ button, optgroup {
     }
 
 }
-/* the blogs */
-.theBlogs {
-    border-radius: 10px;
-    padding: 0 10px 10px 10px;
-    margin: 10px;
-}
 
-.theBlogs .entry-header .entry-meta.authorText {
-    color: var(--green);
-}
-}
