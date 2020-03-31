@@ -46,27 +46,25 @@
 				<div id="nav-top-menu" class="cell bygone-header-menu">
 					<!-- top menu -->
 					<?php
-					wp_nav_menu(array(
-						'theme_location' => 'Header Upper',
-						// 'theme_location' => 'header-upper',
-						'menu_id'        => 'header-upper',
-						// 'link_before' => '<div class="header-top">',
-						// 'link_after' => '</div>',
-						'container_class' => 'nav-menu-cont'
-					));
+					if (has_nav_menu("Header Upper")) {
+						wp_nav_menu(array(
+							'theme_location' => 'Header Upper',
+							'menu_id'        => 'header-upper',
+							'container_class' => 'nav-menu-cont'
+						));
+					}
 					?>
 				</div>
 				<div id="nav-lower-menu" class="cell bygone-header-menu">
 					<!-- lower menu -->
 					<?php
-					wp_nav_menu(array(
-						'theme_location' => 'Header Lower',
-						// 'theme_location' => 'header-lower',
-						'menu_id'        => 'header-lower',
-						// 'link_before' => '<div class="header-lower">',
-						// 'link_after' => '</div>',
-						'container_class' => 'nav-menu-cont',
-					));
+					if (has_nav_menu("Header Lower")) {
+						wp_nav_menu(array(
+							'theme_location' => 'Header Lower',
+							'menu_id'        => 'header-lower',
+							'container_class' => 'nav-menu-cont',
+						));
+					}
 					?>
 				</div>
 			</div>
