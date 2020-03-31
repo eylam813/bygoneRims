@@ -1333,6 +1333,7 @@ button, optgroup {
 
 .post-feature-image {
     margin-top: -100px;
+    border: 10px groove var(--darkgreen);
 }
 .entry-title a {
     margin-left: 6rem;
