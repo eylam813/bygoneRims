@@ -40,7 +40,6 @@ button.pswp__button {
     width: 50%;
     /* border: 3px solid red; */
     flex-basis: 20%;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .single-product, .bygone-product-images{
@@ -65,6 +64,7 @@ button.pswp__button {
     display: block;
     /* border: 3px solid yellow; */
     flex-basis: 70%;
+    min-width: 60vw;
 }
 
 .woocommerce-Tabs-panel h2{
