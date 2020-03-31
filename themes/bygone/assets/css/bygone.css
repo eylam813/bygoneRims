@@ -149,8 +149,10 @@ p {
 }
 
 a:visited {
-    color: inherit;
+    color: var(--green);
+    position: relative;
 }
+
 
 .wp-block-button__link {
     background-color: var(--green) !important;
@@ -158,7 +160,7 @@ a:visited {
 
 /* headings */
 h1 {
-    color: var(--green);
+    /* color: var(--green); */
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -166,7 +168,7 @@ h1 {
 }
 
 h2 {
-    color: var(--green);
+    /* color: var(--green); */
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -174,7 +176,7 @@ h2 {
 }
 
 h3 {
-    color: var(--green);
+    /* color: var(--green); */
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -182,7 +184,7 @@ h3 {
 }
 
 h4 {
-    color: var(--green);
+    /* color: var(--green); */
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -190,7 +192,7 @@ h4 {
 }
 
 h5 {
-    color: var(--green);
+    /* color: var(--green); */
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -198,7 +200,7 @@ h5 {
 }
 
 h6 {
-    color: var(--green);
+    /* color: var(--green); */
     font-family: var(--header-font);
     font-weight: 600;
     font-style: normal;
@@ -263,7 +265,7 @@ hr {
 
 .wp-block-quote cite {
     font-size: 1em;
-    color: var(--green);
+    /* color: var(--green); */
     font-style: normal;
     font-weight: 500;
 }
@@ -301,7 +303,7 @@ hr {
 
 .search-form .screen-reader-text {
     font-size: 1.5em;
-    color: var(--green);
+    /* color: var(--green); */
 }
 
 .search-form * {
@@ -1217,12 +1219,6 @@ ol.flex-control-nav li::before {
     padding: 18px 7%;
 }
 
-.theBlogs {
-    border: 2px solid var(--green);
-    border-radius: 10px;
-    padding: 0 10px 10px 10px;
-    margin: 10px;
-}
 
 button, optgroup {
     cursor: pointer;
@@ -1539,7 +1535,7 @@ button, optgroup {
     }
 
 }
-
+/* the blogs */
 .theBlogs {
     border: 2px solid var(--green);
     border-radius: 10px;
@@ -1550,3 +1546,11 @@ button, optgroup {
 .theBlogs .entry-header .entry-meta.authorText {
     color: var(--green);
 }
+
+/* .theBlogs a:visited::before{
+    content: "Read";
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: orange;
+} */
