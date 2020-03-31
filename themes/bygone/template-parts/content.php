@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="theBlogs grid-x grid-margin-x"<?php post_class(); ?>>
-	<header class="entry-header cell large-8 large-offset-2 small-12">
+	<header class="entry-header cell large-8 medium-11 large-offset-2 small-12">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );

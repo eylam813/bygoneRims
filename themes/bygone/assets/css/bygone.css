@@ -1346,7 +1346,12 @@ button, optgroup {
     width: 100%;
 }
 
-
+@media screen and (max-width: 63.9375em) {
+    .post-feature-image1 {
+        margin-top: 0px;
+        
+    }
+}
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
     hr {
