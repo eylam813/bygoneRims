@@ -1472,6 +1472,11 @@ button, optgroup {
     }
 }
 
+
+.one-footer-event-holder{
+    display: block;
+    margin: 0 auto;
+}
 .one-footer-event{
     height: 250px;
     position: relative;
