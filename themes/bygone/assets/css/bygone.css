@@ -1423,6 +1423,7 @@ button, optgroup {
 }
 
 /* Blog post Styling */
+/* Footer Event styling */
 
 .post-feature-image1 {
     margin-top: -100px;
@@ -1445,6 +1446,35 @@ button, optgroup {
         
     }
 }
+.one-footer-event h2 {
+    text-align: center;
+    background-color: rgba(2, 107, 121, 0.75);
+    color: white;
+}
+
+.one-footer-event img {
+    border: 10px groove var(--darkgreen);
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+.one-footer-event p {
+    font-size: 1.25em;
+    background-color: white;
+}
+.one-footer-event a {
+    background-color: var(--green);
+    color: white;
+    border: 5px solid var(--darkgreen);
+}
+
+.one-footer-event a:hover{
+    background-color: white;
+    color: var(--green);
+}
+
+
+
 /* Mobile Query*/
 @media screen and (max-width: 39.9375em) {
     hr {
