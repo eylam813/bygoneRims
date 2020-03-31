@@ -1331,7 +1331,7 @@ button, optgroup {
 
 /* Blog post Styling */
 
-.post-feature-image {
+.post-feature-image1 {
     margin-top: -100px;
     border: 10px groove var(--darkgreen);
 }
@@ -1454,7 +1454,7 @@ button, optgroup {
     }
 
     /* blog post styling */
-    .post-feature-image {
+    .post-feature-image1 {
         margin-top: 0px;
     }
     .entry-title a {
@@ -1463,7 +1463,8 @@ button, optgroup {
     .entry-content p {
         margin-left: 1rem;
     }
-
+    .wp-block-image img {
+        margin-left: -42px;
 }
 
 .theBlogs {

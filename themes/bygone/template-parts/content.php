@@ -30,13 +30,34 @@
 	</header><!-- .entry-header -->
 
 
-	<div class="cell large-4 large-offset small-12 post-feature-image">
-	<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
-			echo get_the_post_thumbnail($post->ID);
-			} else {
-				echo main_image();
-			} ?>
-	</div>
+	<?php if(is_singular() ) {
+			?>
+			<div class="cell large-6 large-offset-3 small-12 post-feature-image">
+				<?php
+				if ( (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+					echo get_the_post_thumbnail($post->ID);
+					} else {
+						echo main_image();
+					}
+				?>
+			</div>
+			<?php
+		}
+		else {
+			?>
+			
+			<div class="cell large-4 large-offset small-12 post-feature-image1" >
+			<?php
+				if ( (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) {
+					echo get_the_post_thumbnail($post->ID);
+					} else {
+						echo main_image();
+					}
+				?>
+			</div>
+
+			<?php
+		}?>
 	
 
 	<div class="entry-content large-8 small-12">
