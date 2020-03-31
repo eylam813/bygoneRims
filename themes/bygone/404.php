@@ -10,8 +10,8 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div id="primary" class="content-area grid-x">
+		<main id="main" class="site-main cell large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 grid-padding-x">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
