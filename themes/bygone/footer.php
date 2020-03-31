@@ -34,11 +34,19 @@
 				while ($events->have_posts()) : 
 					$events->the_post(); 
 		?>
-					<div class="one-footer-event">
-						<h2 class="large-10 large-offset-1"><?php the_title(); ?></h2>
-						<img src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
-						<p><?php echo get_the_excerpt() ?></p>
-						<a href=" <?php echo get_permalink() ?>">Read More: </a>
+					<div class="one-footer-event grid-x grid-margin-x">
+						<h2 class="cell large-8 large-offset-2 small-12"><?php the_title(); ?></h2>
+						<?php if (has_post_thumbnail()) { ?>
+                <img class="cell large-3 large-offset-1 small-12" src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                <p class="cell large-7 small-12"><?php echo get_the_excerpt() ?></p>
+                <div class="large-1"></div>
+            <?php } else { ?>
+
+                <p class="cell large-12 small-12"><?php echo get_the_excerpt() ?></p>
+            <?php } ?>
+            
+            <a class="cell large-offset-10 large-2 small-5 small-offset-7" href=" <?php echo get_permalink() ?>">Read More: </a>
+						
 					</div>
 			<?php endwhile; ?>
 			<!-- end of the loop -->
@@ -46,6 +54,8 @@
 				<p><?php esc_html__( 'Sorry, currently no events available.' ); ?></p>
 			<?php endif; ?>
 		</div>
+
+
 
 	<!-- decorative footer line -->
 	<hr id="footer-line">
