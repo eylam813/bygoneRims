@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="theBlogs"<?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" class="theBlogs grid-x grid-margin-x"<?php post_class(); ?>>
+	<header class="entry-header cell large-8 large-offset-2 small-12">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -29,11 +29,11 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php 
-	//bygone_post_thumbnail(); 
-	?>
 
-	<div class="entry-content">
+	<img class="cell large-4 large-offset small-12 post-feature-image" src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
+	
+
+	<div class="entry-content large-8 small-12">
 		<?php
 		if ( is_singular() ) :
 					the_content( sprintf(
