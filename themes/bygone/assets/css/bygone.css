@@ -1620,9 +1620,6 @@ button, optgroup {
     .entry-content p {
         margin-left: 1rem;
     }
-    .wp-block-image img {
-        margin-left: -42px;
-    }
     /* Form Styling */
     #wsf-1-section-4 {
         font-size: 19px;
