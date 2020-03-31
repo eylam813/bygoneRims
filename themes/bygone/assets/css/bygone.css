@@ -1364,7 +1364,7 @@ button, optgroup {
 }
 
 
-.nav-previous {
+.nav-previous, .nav-next {
     font-size: 1.5em;
     background-color: var(--green);
     color: white;
@@ -1374,36 +1374,32 @@ button, optgroup {
     padding: 0 15px;
     line-height: 2;
 }
-
-.nav-previous:hover {
-    background-color: white;
+.nav-previous a, .nav-next a{
+    color: white;
+}
+.nav-previous a:hover, .nav-next a:hover{
     color: var(--green);
+}
+
+.nav-previous:hover, .nav-next:hover {
+    color: white;
 }
 
 .nav-previous::before {
     content: "<"
 }
 
-.nav-next {
-    font-size: 1.5em;
-    background-color: var(--green);
-    color: white;
-    border: 5px solid var(--darkgreen);
-    border-radius: 100px;
-    font-weight: bold;
-    padding: 0 15px;
-    line-height: 2;
-}
-
-.nav-next:hover {
-    background-color: white;
-    color: var(--green);
-}
-
 .nav-next::after {
     margin-left: 10px;
     content: " >"
 }
+.nav-next a:visited, .nav-previous a:visited{
+    color: var(--white);
+}
+.nav-next a:visited:hover, .nav-previous a:visited:hover{
+    color: var(--yellow);
+}
+
 
 /* events archive page */
 .events-container {
