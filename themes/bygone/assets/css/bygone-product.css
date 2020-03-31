@@ -15,7 +15,6 @@ ol.flex-control-nav.flex-control-thumbs {
 button.pswp__button.pswp__button--arrow--right::before {
     opacity: 1;
     border-color: 3px solid rgb(177, 38, 38);
-    /* border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186); */
     background-color: rebeccapurple;
     z-index: 1000;
 
@@ -123,7 +122,6 @@ li.wc-block-grid__product {
     /* 
     * Styling woocommerce block - all products
     */
-
     li.wc-block-grid__product{
         position: relative;
         width: 100%;
@@ -132,13 +130,13 @@ li.wc-block-grid__product {
         box-shadow: 5px 5px 10px 5px #00404015;
         grid-area: productLink;
         display: grid;
-        grid-template-columns: 2fr 1.5fr;
-        grid-template-rows: 2fr 0.5fr 0.5fr;
-        grid-template-areas: "image image"
-                            "title price"
-                            ". addCart";
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr fit-content 0.5fr 0.5fr;
+        grid-template-areas: "image"
+                            "title"
+                            "price"
+                            "addCart";
     }
-
     .wc-block-grid__product-image {
         grid-area: image;
         margin-right: 5px;
@@ -146,7 +144,7 @@ li.wc-block-grid__product {
 
     .wc-block-grid__product-title {
         grid-area: title;
-        text-align: left;
+        text-align: center;
         line-height: 1.5rem;
     }
 
@@ -154,8 +152,11 @@ li.wc-block-grid__product {
         grid-area: price;
         display: flex;
         align-self: center;
-        justify-self: right;
+        justify-self: center;
         padding-right: 10px;
+    }
+    .wc-block-grid__product-price__value{
+        padding-left: 0;
     }
     .wc-block-grid__product-price .wc-block-grid__product-price__value {
         font-weight: 400;
@@ -163,15 +164,9 @@ li.wc-block-grid__product {
     .wc-block-grid__product-add-to-cart{
         grid-area: addCart;
         margin-block-start: none;
-        justify-self: end;
+        justify-self: center;
         min-width: 140px;
     }
-    /* .entry-content .wc-block-grid__product-image a, .wc-block-grid__product-image a{
-        position: relative;
-    } */
-    /* .wc-block-grid__product .wc-block-grid__product-image, .wc-block-grid__product .wc-block-grid__product-price, .wc-block-grid__product .wc-block-grid__product-rating, .wc-block-grid__product .wc-block-grid__product-title a{
-        position: relative;
-    } */
     .entry-content .wc-block-grid__product-image a, .wc-block-grid__product-image a {
         padding-left: 0;
     }
