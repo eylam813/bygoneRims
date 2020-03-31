@@ -88,6 +88,10 @@ if (!function_exists('bygone_setup')) :
 			'flex-height' => true,
 		));
 		/**
+		 * Add support for align-wide option
+		 */
+		add_theme_support( 'align-wide' );
+		/**
 		 * Add support for custom color palette
 		 */
 		add_theme_support(
@@ -104,6 +108,11 @@ if (!function_exists('bygone_setup')) :
 					'color' => '#026b79',
 				),
 				array(
+					'name'  => esc_html__('Translucent Teal', 'bygone-theme'),
+					'slug'  => 'translucent-teal',
+					'color' => '#026b7960',
+				),
+				array(
 					'name'  => esc_html__('Lightyellow', 'bygone-theme'),
 					'slug'  => 'lightyellow',
 					'color' => '#ffe66a',
@@ -111,7 +120,12 @@ if (!function_exists('bygone_setup')) :
 				array(
 					'name'  => esc_html__('Brown', 'bygone-theme'),
 					'slug'  => 'brown',
-					'color' => '#42210b',
+					'color' => '#221004',
+				),
+				array(
+					'name'  => esc_html__('Translucent Brown', 'bygone-theme'),
+					'slug'  => 'translucent-brown',
+					'color' => '#22100460',
 				),
 				array(
 					'name'  => esc_html__('Black', 'bygone-theme'),
@@ -126,7 +140,7 @@ if (!function_exists('bygone_setup')) :
 				array(
 					'name'  => esc_html__('Gray', 'bygone-theme'),
 					'slug'  => 'gray',
-					'color' => '#222222',
+					'color' => '#c7c7c7',
 				)
 			)
 		);
@@ -310,3 +324,20 @@ class top_bar_walker extends Walker_Nav_Menu
 		$output .= "\n<ul class=\"sub-menu dropdown\">\n";
 	}
 }
+
+function main_image() {
+	$files = get_children('post_parent='.get_the_ID().'&post_type=attachment
+	&post_mime_type=image&order=desc');
+	if($files) :
+		$keys = array_reverse(array_keys($files));
+		$j=0;
+		$num = $keys[$j];
+		$image=wp_get_attachment_image($num, 'large', true);
+		$imagepieces = explode('"', $image);
+		$imagepath = $imagepieces[1];
+		$main=wp_get_attachment_url($num);
+			$template=get_template_directory();
+			$the_title=get_the_title();
+		print "<img src='$main' alt='$the_title' class='frame' />";
+	endif;
+	}
