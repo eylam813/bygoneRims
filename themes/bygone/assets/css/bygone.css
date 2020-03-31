@@ -229,8 +229,12 @@ li {
     list-style: none;
 }
 
-ul li {
-    list-style-image: url(../img/Asset\ 1.png);
+.is-style-bygone-list li {
+    list-style-image: url(../img/bygone_list_image.png);
+}
+
+.is-style-bullet-list li{
+    list-style-type: disc;
 }
 
 hr {
