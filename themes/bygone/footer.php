@@ -104,9 +104,9 @@
 
 		<div id="foot-menu-1" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			if (has_nav_menu("footer-menu-1")) {
+			if (has_nav_menu("foot-menu-1")) {
 				wp_nav_menu(array(
-					'theme_location' => 'footer-menu-1',
+					'theme_location' => 'foot-menu-1',
 					'container_class' => 'footer-menu-cont'
 				));
 			}
@@ -114,9 +114,9 @@
 		</div>
 		<div id="foot-menu-2" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			if (has_nav_menu("footer-menu-2")) {
+			if (has_nav_menu("foot-menu-2")) {
 				wp_nav_menu(array(
-					'theme_location' => 'footer-menu-2',
+					'theme_location' => 'foot-menu-2',
 					'container_class' => 'footer-menu-cont'
 				));
 			}
@@ -124,9 +124,9 @@
 		</div>
 		<div id="foot-menu-3" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			if (has_nav_menu("footer-menu-3")) {
+			if (has_nav_menu("foot-menu-3")) {
 				wp_nav_menu(array(
-					'theme_location' => 'footer-menu-3',
+					'theme_location' => 'foot-menu-3',
 					'container_class' => 'footer-menu-cont'
 				));
 			}
@@ -134,9 +134,9 @@
 		</div>
 		<div id="foot-menu-4" class="foot-menu large-3 medium-3 small-6">
 			<?php
-			if (has_nav_menu("footer-menu-4")) {
+			if (has_nav_menu("foot-menu-4")) {
 				wp_nav_menu(array(
-					'theme_location' => 'footer-menu-4',
+					'theme_location' => 'foot-menu-4',
 					'container_class' => 'footer-menu-cont'
 				));
 			}
