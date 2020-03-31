@@ -1471,15 +1471,26 @@ button, optgroup {
         
     }
 }
+
+.one-footer-event{
+    height: 250px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .one-footer-event h2 {
     text-align: center;
-    background-color: rgba(2, 107, 121, 0.75);
+    background-color: rgb(2, 107, 121);
     color: white;
 }
 
 .one-footer-event img {
     border: 10px groove var(--darkgreen);
     /* width: 100%; */
+    display: block;
     margin: 0 auto;
 }
 

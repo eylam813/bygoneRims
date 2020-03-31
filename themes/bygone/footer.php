@@ -34,12 +34,12 @@
 			while ($events->have_posts()) :
 				$events->the_post();
 		?>
-				<div class="one-footer-event">
-					<h2 class="large-10 large-offset-1"><?php the_title(); ?></h2>
-					<img src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
-					<p><?php echo get_the_excerpt() ?></p>
-					<a href=" <?php echo get_permalink() ?>">Read More: </a>
-				</div>
+				<a href=" <?php echo get_permalink() ?>">>
+					<div class="one-footer-event" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
+						<h2 class="large-12"><?php the_title(); ?></h2>
+						<!-- <img src=" <?php echo get_the_post_thumbnail_url(); ?>" alt=""> -->
+					</div>
+				</a>
 			<?php endwhile; ?>
 			<!-- end of the loop -->
 		<?php else : ?>
