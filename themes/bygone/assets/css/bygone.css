@@ -1329,6 +1329,17 @@ button, optgroup {
     color: var(--green);
 }
 
+/* Blog post Styling */
+
+.post-feature-image {
+    margin-top: -100px;
+}
+.entry-title a {
+    margin-left: 6rem;
+}
+.entry-content p {
+    margin-left: 1rem;
+}
 
 
 /* Mobile Query*/
