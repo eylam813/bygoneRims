@@ -1606,6 +1606,7 @@ button, optgroup {
     }
     .wp-block-image img {
         margin-left: -42px;
+    }
     /* Form Styling */
     #wsf-1-section-4 {
         font-size: 19px;
@@ -1628,5 +1629,4 @@ button, optgroup {
 
 .theBlogs .entry-header .entry-meta.authorText {
     color: var(--green);
-}
 }
