@@ -34,20 +34,12 @@
 			while ($events->have_posts()) :
 				$events->the_post();
 		?>
-					<div class="one-footer-event grid-x grid-margin-x">
-						<h2 class="cell large-8 large-offset-2 small-12"><?php the_title(); ?></h2>
-						<?php if (has_post_thumbnail()) { ?>
-                <img class="cell large-3 large-offset-1 small-12" src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
-                <p class="cell large-7 small-12"><?php echo get_the_excerpt() ?></p>
-                <div class="large-1"></div>
-            <?php } else { ?>
-
-                <p class="cell large-12 small-12"><?php echo get_the_excerpt() ?></p>
-            <?php } ?>
-            
-            <a class="cell large-offset-10 large-2 small-5 small-offset-7" href=" <?php echo get_permalink() ?>">Read More: </a>
-						
-					</div>
+				<div class="one-footer-event">
+					<h2 class="large-10 large-offset-1"><?php the_title(); ?></h2>
+					<img src=" <?php echo get_the_post_thumbnail_url(); ?>" alt="">
+					<p><?php echo get_the_excerpt() ?></p>
+					<a href=" <?php echo get_permalink() ?>">Read More: </a>
+				</div>
 			<?php endwhile; ?>
 			<!-- end of the loop -->
 		<?php else : ?>
@@ -55,19 +47,19 @@
 		<?php endif; ?>
 	</div>
 
+	<?php if (get_theme_mod('bygone_facebook_url') || get_theme_mod('bygone_twitter_url') || get_theme_mod('bygone_instagram_url')) { ?>
+		<!-- decorative footer line -->
+		<hr id="footer-line">
 
+		<!-- social media footer section -->
+		<div id="social-media-icons-container" class="grid-x grid-padding-x large-12 medium-12 small-12">
+			<div>
+				<h3 id="social-title" class="reset">Connect With Us</h3>
+			</div>
+			<div id="social-media-icons-inner-container">
 
-	<!-- decorative footer line -->
-	<hr id="footer-line">
-	<!-- social media footer section -->
-	<div id="social-media-icons-container" class="grid-x grid-padding-x large-12 medium-12 small-12">
-		<div>
-			<h3 id="social-title" class="reset">Connect With Us</h3>
-		</div>
-		<div id="social-media-icons-inner-container">
+				<!-- social links -->
 
-			<!-- social links -->
-			<?php if (get_theme_mod('bygone_facebook_url') || get_theme_mod('bygone_twitter_url') || get_theme_mod('bygone_instagram_url')) { ?>
 				<div class="social-media">
 					<?php if (get_theme_mod('bygone_facebook_url')) { ?>
 
@@ -84,16 +76,17 @@
 						<div class="facebook social-icon"><a href=" <?php echo get_theme_mod('bygone_twitter_url'); ?> "> <img src="<?php echo get_template_directory_uri() . '/assets/img/twitter.svg'; ?>" alt="<?php echo esc_html__('Twitter'); ?>"></a></div>
 					<?php } ?>
 				</div>
-			<?php } ?>
 
-			<?php
-			// wp_nav_menu(array(
-			// 	'theme_location' => 'footer-social',
-			// 	'menu_class' => 'row add-child-border',
-			// ));
-			?>
+
+				<?php
+				// wp_nav_menu(array(
+				// 	'theme_location' => 'footer-social',
+				// 	'menu_class' => 'row add-child-border',
+				// ));
+				?>
+			</div>
 		</div>
-	</div>
+	<?php } ?>
 	<!-- quick links section -->
 	<div id="quick-links" class="grid-x large-12 medium-12 small-12">
 		<div class="cell">

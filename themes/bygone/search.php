@@ -49,7 +49,11 @@ get_header();
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
+	<div class="grid-x">
+		<div class="cell large-10 large-offset-1 medium-10 medium-offset-1 small-10 small-offset-1 grid-padding-x">
+		<?php get_sidebar(); ?>
+		</div>
+	</div>
 
 <?php
-get_sidebar();
 get_footer();
