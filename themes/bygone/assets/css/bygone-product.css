@@ -25,9 +25,7 @@ button.pswp__button {
 }
 .pswp--has_mouse .pswp__button--arrow--left, .pswp--has_mouse .pswp__button--arrow--right {
     background-color: rebeccapurple;
-
 }
-
 
 /* single product info holder */
 .single-product .entry-summary{
@@ -51,4 +49,101 @@ button.pswp__button {
 .bygone-product-description{
     display: block;
     border: 3px solid yellow;
+}
+
+
+
+
+/* 
+* Styling woocommerce block - all products
+*/
+
+li.wc-block-grid__product {
+    position: relative;
+    flex-basis: 21%;
+    /* margin: 0.5rem; */
+    background-color: #ffffff;
+    /* box-shadow: 5px 5px 10px 5px #00404015; */
+    padding: 15px;
+    min-width: 150px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/* .wp-block-woocommerce-all-products .wc-block-all-products .wc-block-grid.has-3-columns li.wc-block-grid__product {
+    max-width: none;
+} */
+/* .wc-block-grid.has-3-columns .wc-block-grid__product {
+    max-width: none;
+} */
+
+
+
+
+/* mobile view */
+@media screen and (max-width: 39.9375em) {
+    /* 
+    * Styling woocommerce block - all products
+    */
+
+    li.wc-block-grid__product{
+        position: relative;
+        width: 100%;
+        grid-area: productLink;
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        grid-template-rows: 2fr 0.5fr 0.5fr;
+        grid-template-areas: "image image"
+                            "title price"
+                            ". addCart";
+    }
+
+    .wc-block-grid__product-image {
+        grid-area: image;
+        margin-right: 5px;
+    }
+
+    .wc-block-grid__product-title {
+        grid-area: title;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    .wc-block-grid__product-price {
+        grid-area: price;
+        display: flex;
+        align-self: center;
+        justify-self: right;
+        padding-right: 10px;
+    }
+    .wc-block-grid__product-price .wc-block-grid__product-price__value {
+        font-weight: 400;
+    }
+    .wc-block-grid__product-add-to-cart{
+        grid-area: addCart;
+        margin-block-start: none;
+        justify-self: end;
+        min-width: 140px;
+    }
+    /* .entry-content .wc-block-grid__product-image a, .wc-block-grid__product-image a{
+        position: relative;
+    } */
+
+    .editor-styles-wrapper .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-image .wc-block-grid__product-onsale.wc-block-grid__product-onsale--alignright, .wc-block-grid__product-image .wc-block-grid__product-onsale.wc-block-grid__product-onsale--alignright {
+        color: red;
+        order: 2;
+        text-align: center;
+        position: absolute;
+        top: -4%;
+        left: -7%;
+        width: fit-content;
+        border: 2px dashed var(--green);
+        border-radius: 50%;
+        background-color: var(--white);
+        padding: 10px;
+        transform: rotate(-30deg); 
+    }
+
 }

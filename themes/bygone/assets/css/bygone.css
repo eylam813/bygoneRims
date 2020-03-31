@@ -1080,10 +1080,10 @@ fieldset button[type="submit"]:hover {
     flex-direction: column;
 }
 
-.price {
+/* .price {
     font-size: 2em;
     font-weight: 800;
-}
+} */
 
 .woocommerce-product-details__short-description p {
     border-left: var(--yellow) 2px dashed;
@@ -1472,7 +1472,8 @@ button, optgroup {
     }
     .woocommerce .add_to_cart_button{
         grid-area: addCart;
-        margin-block-start: none;}
+        margin-block-start: none;
+    }
 
     .woocommerce .woocommerce-loop-product__link{
         width: 100%;
